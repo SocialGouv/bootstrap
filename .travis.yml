@@ -8,8 +8,6 @@ node_js: stable
 
 addons:
   snaps:
-    - name: ruby
-      classic: true
     - name: hugo
       channel: extended
 
@@ -26,6 +24,9 @@ script:
   - yarn lint
 
 before_deploy:
+  - rvm install 2.5
+  - echo $(travis_internal_ruby)
+  - export travis_internal_ruby = 2.5
   - |
     git config user.name "Deployment Bot (from Travis CI)" &&
     git config user.email "deploy@travis-ci.org" &&
