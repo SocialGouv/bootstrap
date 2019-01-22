@@ -31,9 +31,9 @@ before_deploy:
   mkdir -p out/$TRAVIS_BRANCH/docs &&
   mv docs/public/* out/$TRAVIS_BRANCH/docs &&
   mkdir -p out/$TRAVIS_BRANCH/@design.beta.gouv/core &&
-  mv packages/core/dist out/$TRAVIS_BRANCH/@design.beta.gouv/core/dist
-  mv packages/core/fonts out/$TRAVIS_BRANCH/@design.beta.gouv/core/fonts
-  mv packages/core/LICENSE out/$TRAVIS_BRANCH/@design.beta.gouv/core/LICENSE
+  mv packages/core/dist out/$TRAVIS_BRANCH/@design.beta.gouv/core/dist &&
+  mv packages/core/fonts out/$TRAVIS_BRANCH/@design.beta.gouv/core/fonts &&
+  mv packages/core/LICENSE out/$TRAVIS_BRANCH/@design.beta.gouv/core/LICENSE &&
   mv packages/core/package.json out/$TRAVIS_BRANCH/@design.beta.gouv/core/package.json
 deploy:
   github-token: "$GITHUB_TOKEN"
