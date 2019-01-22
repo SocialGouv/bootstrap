@@ -24,9 +24,6 @@ script:
   - yarn lint
 
 before_deploy:
-  - rvm install 2.5
-  - echo $(travis_internal_ruby)
-  - export travis_internal_ruby = 2.5
   - |
     git config user.name "Deployment Bot (from Travis CI)" &&
     git config user.email "deploy@travis-ci.org" &&
@@ -39,6 +36,11 @@ before_deploy:
     mv packages/core/package.json out/$TRAVIS_BRANCH/@design.beta.gouv/core/package.json
 
 deploy:
+  # HACK(douglasduteil): downgrade dpl to old version
+  # This should be fixed but I don't know why it's still required to work...
+  # https://github.com/travis-ci/travis-ci/issues/9312
+  edge:
+    branch: v1.8.47
   github-token: "$GITHUB_TOKEN"
   keep-history: true
   local_dir: out
