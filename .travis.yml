@@ -8,6 +8,7 @@ node_js: stable
 
 addons:
   snaps:
+    - name: ruby
     - name: hugo
       channel: extended
 
