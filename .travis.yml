@@ -8,7 +8,8 @@ node_js: stable
 
 addons:
   snaps:
-    - hugo
+    - name: hugo
+      channel: extended
 
 cache: yarn
 before_install:
