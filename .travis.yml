@@ -17,8 +17,12 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
   - hugo version
 
+env:
+  - BASE_URL=https://douglasduteil.github.io/design/master/docs/
+
 install:
   - yarn
+
 script:
   - yarn build
   - yarn lint

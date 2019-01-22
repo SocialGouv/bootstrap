@@ -1,5 +1,5 @@
 scripts:
-  build: hugo
+  build: hugo -v -b $BASE_URL
   serve:
     default: concurrently "nps serve.web" "nps serve.static"
     static : nps "build -b 'http://localhost:8080/' -w"
