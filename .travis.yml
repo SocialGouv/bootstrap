@@ -9,6 +9,7 @@ node_js: stable
 addons:
   snaps:
     - name: ruby
+      classic: true
     - name: hugo
       channel: extended
 
