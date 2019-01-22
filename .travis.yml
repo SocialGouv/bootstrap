@@ -25,7 +25,7 @@ install:
 script:
   - yarn lint
   - yarn build --ignore docs
-  - yarn workspace docs build -b https://douglasduteil.github.io/design/master/docs/
+  - cd docs && hugo -v -b https://douglasduteil.github.io/design/master/docs/ && cd ..
 
 before_deploy:
   - |
