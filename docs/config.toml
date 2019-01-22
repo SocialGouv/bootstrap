@@ -34,7 +34,7 @@ sectionPagesMenu = "main"
 
 [params]
   description = "Design Beta Gouv"
-  version = "latest"
+  version = "master"
 
   [params.cdn]
-    baseURL = "@bootstrap.design.beta.gouv.fr"
+    baseURL = "https://douglasduteil.github.io/design/master/@design.beta.gouv/core"

@@ -2,7 +2,7 @@
 
 <link
   rel="stylesheet"
-  href="{{ .Site.BaseURL }}{{ .Site.Params.version }}/{{ .Site.Params.cdn.baseURL }}/{{ .Site.Data.design.cdn.core.path }}"
+  href="{{ .Site.Params.cdn.baseURL }}/{{ .Site.Data.design.cdn.core.path }}"
 />
 
 {{ $mainStyle := resources.Get "sass/main.scss" | resources.ToCSS | minify | fingerprint }}
