@@ -5,6 +5,7 @@ git:
   depth: 5
 
 node_js: stable
+
 addons:
-  apt:
+  snaps:
     - hugo
