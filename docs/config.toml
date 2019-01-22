@@ -1,4 +1,3 @@
-baseURL = "http://design.beta.gouv.fr/"
 languageCode = "fr-fr"
 
 title = "Design Beta Gouv"
@@ -37,4 +36,4 @@ sectionPagesMenu = "main"
   version = "master"
 
   [params.cdn]
-    baseURL = "https://douglasduteil.github.io/design/master/@design.beta.gouv/core"
+    baseURL = "../@design.beta.gouv/core"

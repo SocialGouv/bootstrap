@@ -6,5 +6,5 @@ scripts:
     web : "
     live-server
     --no-browser public
-    --mount=/latest/@bootstrap.design.beta.gouv.fr:../packages/core
+    --mount=/@design.beta.gouv/core:../packages/core
     "

@@ -8,7 +8,7 @@ scripts:
     --include-path node_modules
     --include-path src
     --output ./dist
-    --output-style compressed
+    --output-style expanded
     --precision 5
     ./src/design-beta-gouv.scss
     "
