@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Design Beta Gouv</title>
-    <link>http://design.beta.gouv.fr/tags/</link>
+    <link>https://douglasduteil.github.io/design/master/docs/tags/</link>
     <description>Recent content in Tags on Design Beta Gouv</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     
-	<atom:link href="http://design.beta.gouv.fr/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://douglasduteil.github.io/design/master/docs/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

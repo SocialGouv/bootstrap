@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Designers on Design Beta Gouv</title>
-    <link>http://design.beta.gouv.fr/designer/</link>
+    <link>https://douglasduteil.github.io/design/master/docs/designer/</link>
     <description>Recent content in Designers on Design Beta Gouv</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     
-	<atom:link href="http://design.beta.gouv.fr/designer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://douglasduteil.github.io/design/master/docs/designer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://design.beta.gouv.fr/designer/introduction/</link>
+      <link>https://douglasduteil.github.io/design/master/docs/designer/introduction/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://design.beta.gouv.fr/designer/introduction/</guid>
+      <guid>https://douglasduteil.github.io/design/master/docs/designer/introduction/</guid>
       <description> Introduction  TODO
  </description>
     </item>
