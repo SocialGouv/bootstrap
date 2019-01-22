@@ -18,14 +18,17 @@ before_install:
   - hugo version
 
 env:
-  - BASE_URL=https://douglasduteil.github.io/design/master/docs/
-
+  -
 install:
   - yarn
 
 script:
-  - yarn build
   - yarn lint
+  - yarn build --ignore docs
+  - "cd docs &&
+    hugo -v
+    -b https://douglasduteil.github.io/design/master/docs/
+    "
 
 before_deploy:
   - |
