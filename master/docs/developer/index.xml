@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developers on Design Beta Gouv</title>
+    <link>http://design.beta.gouv.fr/developer/</link>
+    <description>Recent content in Developers on Design Beta Gouv</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    
+	<atom:link href="http://design.beta.gouv.fr/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://design.beta.gouv.fr/developer/getting-started/download/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://design.beta.gouv.fr/developer/getting-started/download/</guid>
+      <description> download </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://design.beta.gouv.fr/developer/introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://design.beta.gouv.fr/developer/introduction/</guid>
+      <description> Introduction  TODO
+ </description>
+    </item>
+    
+  </channel>
+</rss>

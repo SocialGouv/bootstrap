@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/</loc>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/designer/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/developer/getting-started/download/</loc>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/developer/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/versions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/designer/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/developer/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://design.beta.gouv.fr/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
