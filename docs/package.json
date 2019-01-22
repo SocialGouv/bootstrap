@@ -1,0 +1,12 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "nps serve"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "nps": "^5.9.3"
+  }
+}

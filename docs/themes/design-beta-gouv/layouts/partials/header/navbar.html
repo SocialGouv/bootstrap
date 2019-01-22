@@ -1,0 +1,52 @@
+<header
+  class="navbar navbar-expand navbar-light bg-light flex-column flex-md-row"
+>
+  <a
+    class="navbar-brand mr-0 mr-md-2"
+    href="{{ .Site.BaseURL }}/"
+    aria-label="{{ .Site.Title }}"
+  >
+    {{ .Site.Title }}
+  </a>
+
+  <ul class="navbar-nav">
+    {{ $currentPage := . }}
+    {{ $baseURL := .Site.BaseURL }}
+
+    {{- range.Site.Menus.global -}}
+    <!-- prettier-ignore -->
+    <li class='nav-item {{ if $currentPage.IsMenuCurrent "global" . }}active{{ end }}'>
+        <a class="nav-link" href="{{ $baseURL }}{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+
+        {{ if $currentPage.IsMenuCurrent "global" . }}<span class="sr-only">(current)</span>{{ end }}
+    </li>
+    {{- end -}}
+
+    <li class="nav-item dropdown">
+      <a
+        class="nav-item nav-link dropdown-toggle mr-md-2"
+        href="#"
+        id="dbg-versions"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        0.0.x ({{ .Site.Params.version }})
+      </a>
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        aria-labelledby="dbg-versions"
+      >
+        <a
+          class="dropdown-item active"
+          href="{{ .Site.BaseURL }}/../../{{ .Site.Params.version }}/docs"
+          >Latest (0.0.x)</a
+        >
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="{{ .Site.BaseURL }}/versions/"
+          >All versions</a
+        >
+      </div>
+    </li>
+  </ul>
+</header>

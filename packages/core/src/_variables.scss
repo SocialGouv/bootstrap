@@ -1,0 +1,112 @@
+//
+
+@import "bootstrap/scss/variables";
+
+//
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source Sans Pro/SourceSansPro-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source Sans Pro/SourceSansPro-Bold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source Sans Pro/SourceSansPro-It.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Evolventa";
+  src: url("../fonts/Evolventa/Evolventa-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Evolventa";
+  src: url("../fonts/Evolventa/Evolventa-Bold.ttf");
+  font-weight: 800;
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+
+// Color system
+
+$blue: #0053b3 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+  ),
+  $colors
+);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark
+  ),
+  $theme-colors
+);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

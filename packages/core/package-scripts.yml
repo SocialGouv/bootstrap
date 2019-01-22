@@ -1,0 +1,16 @@
+scripts:
+  lint: sass-lint
+  test: jest
+  build: "
+    node-sass
+    --importer ../../node_modules/node-sass-yaml-importer/dist/node-sass-yaml-importer.js
+    --include-path ../../node_modules
+    --include-path node_modules
+    --include-path src
+    --output ./dist
+    --output-style compressed
+    --precision 5
+    ./src/design-beta-gouv.scss
+    "
+
+  serve: nps "build -w"

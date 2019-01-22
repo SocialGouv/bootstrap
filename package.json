@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "description": "The Design Gouv monorepo",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "docs",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.10.5"
+  }
+}

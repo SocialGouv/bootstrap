@@ -1,0 +1,24 @@
+{
+  "name": "@design.beta.gouv/tokens",
+  "version": "0.0.0",
+  "description": "Beta Gouv Design Tokens",
+  "main": "index.js",
+  "scripts": {
+    "lint": "yamllint src/**/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasduteil/design.git"
+  },
+  "keywords": [],
+  "author": "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
+  "license": "APACHE-2.0",
+  "bugs": {
+    "url": "https://github.com/douglasduteil/design/issues"
+  },
+  "homepage": "https://github.com/douglasduteil/design#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "yaml-lint": "^1.2.4"
+  }
+}

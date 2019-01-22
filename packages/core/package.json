@@ -1,0 +1,37 @@
+{
+  "name": "@design.beta.gouv/core",
+  "version": "0.0.0",
+  "description": "Beta Gouv Core Design",
+  "main": "index.js",
+  "scripts": {
+    "build": "nps build",
+    "lint": "nps lint",
+    "serve": "nps serve",
+    "start": "nps",
+    "test": "nps test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douglasduteil/design.git"
+  },
+  "keywords": [],
+  "author": "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
+  "license": "APACHE-2.0",
+  "bugs": {
+    "url": "https://github.com/douglasduteil/design/issues"
+  },
+  "homepage": "https://github.com/douglasduteil/design#readme",
+  "dependencies": {
+    "@design.beta.gouv/tokens": "^0.0.0",
+    "bootstrap": "^4.2.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "node-sass-yaml-importer": "^4.0.0",
+    "nps": "^5.9.3",
+    "popper.js": "^1.14.6",
+    "sass-lint": "^1.12.1"
+  }
+}

@@ -1,0 +1,10 @@
+scripts:
+  build: hugo
+  serve:
+    default: concurrently "nps serve.web" "nps serve.static"
+    static : nps "build -b 'http://localhost:8080/' -w"
+    web : "
+    live-server
+    --no-browser public
+    --mount=/latest/@bootstrap.design.beta.gouv.fr:../packages/core
+    "
