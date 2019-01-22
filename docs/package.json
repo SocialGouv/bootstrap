@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "nps build",
     "serve": "nps serve"
+  },
+  "dependencies": {
+    "@design.beta.gouv/core": "^0.0.0"
   },
   "devDependencies": {
     "live-server": "^1.2.1",
