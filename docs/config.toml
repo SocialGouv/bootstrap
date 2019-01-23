@@ -6,31 +6,6 @@ author = "Design Beta Gouv Team"
 theme = "design-beta-gouv"
 sectionPagesMenu = "main"
 
-[menu]
-  [[menu.global]]
-    identifier = "Designer"
-    name = "Designer"
-    title = "Designer documentation"
-    url = "designer/"
-
-  [[menu.global]]
-    identifier = "developer"
-    name = "developer"
-    title = "developer documentation"
-    url = "developer/"
-
-  [[menu.developer]]
-    identifier = "Instroduction"
-    name = "developer"
-    title = "developer documentation"
-    url = "designer/introduction"
-
-  [[menu.developer]]
-    identifier = ""
-    name = "developer"
-    title = ""
-    url = "developer/getting-started/download"
-
 [params]
   description = "Design Beta Gouv"
   version = "master"

@@ -1,3 +1,22 @@
-{{ $currentPage := . }}
+<aside>
+  <ul>
+    {{ $currentPage := . }}
+    {{- range.Site.Menus.sidebar -}}
+    <li>
+      <a href="{{ .URL }}">
+        {{ .Pre }} <span>{{ .Name }}</span>
+      </a>
+    </li>
 
-<aside></aside>
+    {{ if .HasChildren }}
+    <ul class="sub-menu">
+      {{- range.Children -}}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{- end -}}
+    </ul>
+    {{- end -}}
+    {{- end -}}
+  </ul>
+</aside>
