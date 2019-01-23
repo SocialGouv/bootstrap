@@ -3,23 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://douglasduteil.github.io/design/master/docs/</loc>
-  </url>
-  
-  <url>
     <loc>https://douglasduteil.github.io/design/master/docs/designer/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>https://douglasduteil.github.io/design/master/docs/developer/getting-started/download/</loc>
-  </url>
-  
-  <url>
-    <loc>https://douglasduteil.github.io/design/master/docs/developer/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>https://douglasduteil.github.io/design/master/docs/versions/</loc>
   </url>
   
   <url>
@@ -28,18 +12,40 @@
   </url>
   
   <url>
+    <loc>https://douglasduteil.github.io/design/master/docs/developer/components/</loc>
+  </url>
+  
+  <url>
     <loc>https://douglasduteil.github.io/design/master/docs/designer/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://douglasduteil.github.io/design/master/docs/developer/</loc>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://douglasduteil.github.io/design/master/docs/developer/getting-started/download/</loc>
+  </url>
+  
+  <url>
+    <loc>https://douglasduteil.github.io/design/master/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://douglasduteil.github.io/design/master/docs/developer/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://douglasduteil.github.io/design/master/docs/developer/components/navbar/</loc>
   </url>
   
   <url>
     <loc>https://douglasduteil.github.io/design/master/docs/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://douglasduteil.github.io/design/master/docs/versions/</loc>
   </url>
   
 </urlset>
