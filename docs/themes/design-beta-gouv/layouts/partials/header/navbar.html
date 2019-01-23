@@ -13,12 +13,12 @@
     {{ $currentPage := . }}
     {{ $baseURL := .Site.BaseURL }}
 
-    {{- range.Site.Menus.global -}}
+    {{- range.Site.Menus.navbar -}}
     <!-- prettier-ignore -->
-    <li class='nav-item {{ if $currentPage.IsMenuCurrent "global" . }}active{{ end }}'>
+    <li class='nav-item {{ if $currentPage.IsMenuCurrent "navbar" . }}active{{ end }}'>
         <a class="nav-link" href="{{ $baseURL }}{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
 
-        {{ if $currentPage.IsMenuCurrent "global" . }}<span class="sr-only">(current)</span>{{ end }}
+        {{ if $currentPage.IsMenuCurrent "navbar" . }}<span class="sr-only">(current)</span>{{ end }}
     </li>
     {{- end -}}
 

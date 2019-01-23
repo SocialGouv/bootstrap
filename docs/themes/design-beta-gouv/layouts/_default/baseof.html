@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="bg-light">
   <head>
     {{ partial "head/metadata.html" . }}
     {{ partial "head/favicons.html" . }}
@@ -13,7 +13,9 @@
 
   <body>
     {{- partial "header/navbar.html" . -}}
-    <div id="content">{{- block "main" . -}}{{- end -}}</div>
+    <!-- display: block -->
+    {{- block "main" . -}}{{- end -}}
+    <!-- display: block -->
     {{- partial "footer.html" . -}}
   </body>
 </html>
