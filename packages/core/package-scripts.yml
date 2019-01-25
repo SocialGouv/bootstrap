@@ -1,16 +1,28 @@
 scripts:
   lint: sass-lint
   test: jest
-  build: "
-    node-sass
-    --importer ../../node_modules/node-sass-yaml-importer/dist/node-sass-yaml-importer.js
-    --include-path ../../node_modules
-    --include-path node_modules
-    --include-path src
-    --output ./dist
-    --output-style expanded
-    --precision 5
-    ./src/design-beta-gouv.scss
-    "
+  build:
+    default: nps build.main build.prefix build.minify
+    main: >-
+      node-sass
+      --importer ../../node_modules/node-sass-yaml-importer/dist/node-sass-yaml-importer.js
+      --include-path ../../node_modules
+      --include-path node_modules
+      --include-path src
+      --output ./dist
+      --output-style expanded
+      --precision 5
+      ./src/design-beta-gouv.scss
+    prefix: >-
+      postcss
+      --config postcss.config.js
+      --replace dist/*.css !dist/*.min.css
+    minify: >-
+      cleancss
+      --level 1
+      --format breaksWith=lf
+      --source-map
+      --source-map-inline-sources
+      --output dist/design-beta-gouv.min.css dist/design-beta-gouv.css
 
-  serve: nps "build -w"
+  serve: chokidar src/**/* --initial -c "nps build"

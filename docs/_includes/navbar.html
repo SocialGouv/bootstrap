@@ -1,0 +1,16 @@
+<header class="dbg-navbar bg-white navbar navbar-expand navbar-light flex-column flex-md-row">
+  <a class="navbar-brand mr-0 mr-md-2" href="{{ site.baseurl }}/" aria-label="Bootstrap">
+    {%- include icons/french-republic.svg width="90" height="53" class="d-block" -%}
+  </a>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-self-start align-self-md-center">
+    <li class="nav-item">
+      {% if page.layout == "home" %}{% assign active = "active" %}{% endif %}
+      <a class="nav-link {{ active }}" href="{{ site.baseurl }}/">Home</a>
+    </li>
+    <li class="nav-item">
+      {% if page.layout == "home" %}{% assign active = "active" %}{% endif %}
+      <a class="nav-link {{ active }}" href="{{ site.baseurl }}/developer">Developer</a>
+    </li>
+  </ul>
+</header>

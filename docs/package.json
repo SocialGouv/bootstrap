@@ -10,6 +10,7 @@
     "@design.beta.gouv/core": "^0.0.0"
   },
   "devDependencies": {
+    "chokidar-cli": "^1.2.1",
     "concurrently": "^4.1.0",
     "live-server": "^1.2.1",
     "nps": "^5.9.3"

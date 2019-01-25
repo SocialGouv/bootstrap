@@ -1,10 +1,11 @@
 scripts:
-  build: hugo
+  build: bundle exec jekyll build
   serve:
-    default: concurrently "nps serve.web" "nps serve.static"
-    static : nps "build -b 'http://localhost:8080/' -w"
-    web : "
-    live-server
-    --no-browser public
-    --mount=/@design.beta.gouv/core:../packages/core
-    "
+    default: concurrently "nps serve.docs" "nps serve.web"
+    docs : nps "build -w"
+    web : >-
+      live-server
+      --no-browser
+      --mount=/@design.beta.gouv/core:../packages/core
+      _site
+

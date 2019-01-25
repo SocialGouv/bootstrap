@@ -1,8 +1,0 @@
----
-aliases:
-  - /designer
----
-
-# Introduction
-
-> TODO

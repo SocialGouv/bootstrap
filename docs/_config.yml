@@ -1,0 +1,37 @@
+title: Design Beta Gouv
+email: xxxxxx@beta.gouv.fr
+description: >-
+  The Design Beta Gouv Website
+baseurl: ""
+twitter_username: betagouv
+github_username: betagouv
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: design.beta.gouv
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-toc
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - themes
+  - package.json
+  - package-scripts.yml
+
+sass:
+  load_paths:
+    - node_modules
+    - ../packages
+    - ../node_modules
+  style: compressed
+
+#
+# Custom variables
+#
+
+version: master
