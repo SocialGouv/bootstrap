@@ -1,38 +1,33 @@
 dist: xenial
 sudo: false
-language: node_js
+language: generic
 git:
   depth: 5
 
-node_js: stable
 
 addons:
   snaps:
-    - name: hugo
-      channel: extended
+    - node
+    - ruby
 
 cache: yarn
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
-  - hugo version
 
-env:
-  -
-install:
-  - yarn
+install: yarn && cd docs && bundle install && cd ..
 
 script:
   - yarn lint
   - yarn build --ignore docs
-  - cd docs && hugo -v -b https://douglasduteil.github.io/design/master/docs/ && cd ..
+  - cd docs && bundle jekyll -v -b https://douglasduteil.github.io/design/master/docs/ && cd ..
 
 before_deploy:
   - |
     git config user.name "Deployment Bot (from Travis CI)" &&
     git config user.email "deploy@travis-ci.org" &&
     mkdir -p out/$TRAVIS_BRANCH/docs &&
-    mv docs/public/* out/$TRAVIS_BRANCH/docs &&
+    mv docs/_site/* out/$TRAVIS_BRANCH/docs &&
     mkdir -p out/$TRAVIS_BRANCH/@design.beta.gouv/core &&
     mv packages/core/dist out/$TRAVIS_BRANCH/@design.beta.gouv/core/dist &&
     mv packages/core/fonts out/$TRAVIS_BRANCH/@design.beta.gouv/core/fonts &&
