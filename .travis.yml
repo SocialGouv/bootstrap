@@ -34,7 +34,7 @@ script:
   - yarn lint
   - yarn build --ignore docs
   - cd docs
-  - bundle exec jekyll build -b https://douglasduteil.github.io/design/master/docs/
+  - bundle exec jekyll build -b https://douglasduteil.github.io/design/master/docs
   - cd ..
 
 before_deploy:
