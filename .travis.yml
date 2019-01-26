@@ -9,8 +9,10 @@ addons:
   snaps:
     - name: node
       classic: true
-      channel: edge
-    - ruby
+      channel: 10/stable
+    - name: ruby
+      classic: true
+      channel: 2.5/stable
 
 cache: yarn
 before_install:
