@@ -1,1 +1,1 @@
-Sitemap: /https://douglasduteil.github.io/design/master/docs/sitemap.xml
+Sitemap: /design/master/docs/sitemap.xml
