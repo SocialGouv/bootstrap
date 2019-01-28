@@ -54,9 +54,9 @@ Pull in {{ site.title }}'s **source files** into nearly any project with some of
 
 Install {{ site.title }} in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/{{ site.title }}):
 
-{% highlight sh %} 
+{%- highlight sh -%}
 npm install {{ site.data.cdn.core.css.name }}
-{% endhighlight %}
+{%- endhighlight -%}
 
 `require('{{ site.data.cdn.core.css.name }}')` will load all of {{ site.title }}'s jQuery plugins onto the jQuery object. The `{{ site.data.cdn.core.css.name }}` module itself does not export anything. You can manually load {{ site.title }}'s jQuery plugins individually by loading the `/js/*.js` files under the package's top-level directory.
 
@@ -69,6 +69,6 @@ npm install {{ site.data.cdn.core.css.name }}
 
 Install {{ site.title }} in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/yarn):
 
-{% highlight sh %}
+{%- highlight sh -%}
 yarn add {{ site.data.cdn.core.css.name }}
-{% endhighlight %}
+{%- endhighlight -%}

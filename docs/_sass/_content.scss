@@ -1,0 +1,36 @@
+//
+
+@import "bootstrap/scss/functions";
+@import "core/src/_variables.scss";
+@import "bootstrap/scss/mixins";
+@import "variables";
+
+//
+
+main {
+
+  padding-top: map-get($spacers, 5);
+
+  @for $i from 1 through 6 {
+    h#{$i}[id] {
+      margin-top: $dbg-docs-navbar-height;
+      margin-bottom: map-get($spacers, 4);
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    $magic-top-space: $dbg-docs-navbar-height * 2;
+
+    //
+
+    padding-top:$magic-top-space;
+
+    @for $i from 1 through 6 {
+      h#{$i}[id] {
+        padding-top: $magic-top-space;
+        margin-top: $magic-top-space * -1 / 4;
+      }
+    }
+  }
+
+}
