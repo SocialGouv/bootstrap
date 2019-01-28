@@ -7,14 +7,18 @@
 
 //
 
-.highlight pre {
+.dbg-example {
+  position: relative;
   padding: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: $gray-100;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin: 1rem (-$grid-gutter-width / 2) 0;
+  border: solid $gray-100;
+  border-width: .2rem 0 0;
+  @include clearfix();
 
   @include media-breakpoint-up(sm) {
     padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
   }
 }
