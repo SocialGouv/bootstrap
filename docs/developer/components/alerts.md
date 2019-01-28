@@ -14,6 +14,8 @@ toc: true
   </a>
 </div>
 
+<hr class="my-5">
+
 ## Overview
 
 
@@ -26,7 +28,7 @@ toc: true
 {% include example.html content=example %}
 
 
-### Link color
+## Link color
 
 {% capture example %}
 {% for color in site.data.theme-colors %}
@@ -36,7 +38,7 @@ toc: true
 {% endcapture %}
 {% include example.html content=example %}
 
-### Additional content
+## Additional content
 
 {% capture example %}
 <div class="alert alert-success" role="alert">
@@ -49,7 +51,7 @@ toc: true
 {% include example.html content=example %}
 
 
-### Dismissing
+## Dismissing
 
 
 {% capture example %}
