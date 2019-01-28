@@ -17,7 +17,7 @@ Download ready-to-use compiled code for **{{ site.title }} v{{ site.version }}**
 
 This doesn't include documentation, source files, or any optional JavaScript dependencies (jQuery and Popper.js).
 
-<a href="{{ site.download.dist }}" class="btn btn-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download {{ site.title }}');">Download</a>
+<a href="{{ site.download.dist }}" class="btn btn-primary">Download</a>
 
 ## Source files
 
@@ -35,15 +35,28 @@ Should you require [build tools](#), they are included for developing {{ site.ti
 Skip the download with [{{ site.title }} CDN]({{ site.data.cdn.url }}) to deliver cached version of {{ site.title }}'s compiled CSS and JS to your project.
 
 {% highlight html %}
-<link rel="stylesheet" href="{{ site.data.cdn.url }}/{{ site.data.cdn.core.css.name }}/{{ site.data.cdn.core.css.path }}" integrity="{{ site.data.cdn.core.css.hash }}" crossorigin="anonymous">
-<script src="{{ site.data.cdn.core.js.url }}" integrity="{{ site.data.cdn.core.js.hash }}" crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  href="{{ site.data.cdn.url }}/{{ site.version }}/{{ site.data.cdn.core.css.name }}/{{ site.data.cdn.core.css.path }}"
+  integrity="{{ site.data.cdn.core.css.hash }}"
+  crossorigin="anonymous" />
+<script
+  src="{{ site.data.cdn.core.js.url }}"
+  integrity="{{ site.data.cdn.core.js.hash }}"
+  crossorigin="anonymous"></script>
 {% endhighlight %}
 
 If you're using our compiled JavaScript, don't forget to include CDN versions of jQuery and Popper.js before it.
 
 {% highlight html %}
-<script src="{{ site.data.cdn.jquery.url }}" integrity="{{ site.cdn.jquery.hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.data.cdn.popper.url }}" integrity="{{ site.cdn.popper.hash }}" crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.jquery.url }}"
+  integrity="{{ site.data.cdn.jquery.hash }}"
+  crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.popper.url }}"
+  integrity="{{ site.data.cdn.popper.hash }}"
+  crossorigin="anonymous"></script>
 {% endhighlight %}
 
 ## Package managers

@@ -23,6 +23,8 @@ layout: home
 
 {% highlight sh %}
 npm install @design.beta.gouv/core
+# or
+$ yarn add @design.beta.gouv/core
 {% endhighlight %}
 
     <hr class="half-rule">
@@ -37,14 +39,27 @@ npm install @design.beta.gouv/core
 
 <h5>CSS only</h5>
 {% highlight html %}
-<link rel="stylesheet" href="{{ site.data.cdn.css }}" integrity="{{ site.data.cdn.css_hash }}" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="{{ site.data.cdn.url }}/{{ site.version }}/{{ site.data.cdn.core.css.name }}/{{ site.data.cdn.core.css.path }}"
+  integrity="{{ site.data.cdn.core.css.hash }}"
+  crossorigin="anonymous" />
 {% endhighlight %}
 
 <h5>JS, Popper.js, and jQuery</h5>
 {% highlight html %}
-<script src="{{ site.data.cdn.jquery }}" integrity="{{ site.data.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.data.cdn.popper }}" integrity="{{ site.data.cdn.popper_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.data.cdn.js }}" integrity="{{ site.data.cdn.js_hash }}" crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.jquery.url }}"
+  integrity="{{ site.data.cdn.jquery.hash }}"
+  crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.popper.url }}"
+  integrity="{{ site.data.cdn.popper.hash }}"
+  crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.core.js.url }}"
+  integrity="{{ site.data.cdn.core.js.hash }}"
+  crossorigin="anonymous"></script>
 {% endhighlight %}
     <hr class="half-rule">
     <a class="btn btn-outline-primary" href="#">Explore the docs</a>
