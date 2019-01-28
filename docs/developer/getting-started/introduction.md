@@ -19,7 +19,11 @@ Looking to quickly add {{ site.title }} to your project ? Use Design Beta Gouv C
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
 {% highlight html %}
-<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="{{ site.data.cdn.url }}/{{ site.version }}/{{ site.data.cdn.core.css.name }}/{{ site.data.cdn.core.css.path }}"
+  integrity="{{ site.data.cdn.core.css.hash }}"
+  crossorigin="anonymous" />
 {% endhighlight %}
 
 ### JS
@@ -29,9 +33,18 @@ Many of our components require the use of JavaScript to function. Specifically, 
 We use [jQuery's slim build](https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/), but the full version is also supported.
 
 {% highlight html %}
-<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.jquery.url }}"
+  integrity="{{ site.data.cdn.jquery.hash }}"
+  crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.popper.url }}"
+  integrity="{{ site.data.cdn.popper.hash }}"
+  crossorigin="anonymous"></script>
+<script
+  src="{{ site.data.cdn.core.js.url }}"
+  integrity="{{ site.data.cdn.core.js.hash }}"
+  crossorigin="anonymous"></script>
 {% endhighlight %}
 
 Curious which components explicitly require jQuery, our JS, and Popper.js? Click the show components link below. If you're at all unsure about the general page structure, keep reading for an example page template.
@@ -67,7 +80,11 @@ Be sure to have your pages set up with the latest design and development standar
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="{{ site.data.cdn.url }}/{{ site.version }}/{{ site.data.cdn.core.css.name }}/{{ site.data.cdn.core.css.path }}"
+      integrity="{{ site.data.cdn.core.css.hash }}"
+      crossorigin="anonymous" />
 
     <title>Hello, world!</title>
   </head>
@@ -76,9 +93,18 @@ Be sure to have your pages set up with the latest design and development standar
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-    <script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
-    <script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
+    <script
+      src="{{ site.data.cdn.jquery.url }}"
+      integrity="{{ site.data.cdn.jquery.hash }}"
+      crossorigin="anonymous"></script>
+    <script
+      src="{{ site.data.cdn.popper.url }}"
+      integrity="{{ site.data.cdn.popper.hash }}"
+      crossorigin="anonymous"></script>
+    <script
+      src="{{ site.data.cdn.core.js.url }}"
+      integrity="{{ site.data.cdn.core.js.hash }}"
+      crossorigin="anonymous"></script>
   </body>
 </html>
 {% endhighlight %}
