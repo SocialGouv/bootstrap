@@ -1,6 +1,6 @@
 dist: xenial
 sudo: false
-language: generic
+language: minimal
 git:
   depth: 5
 
