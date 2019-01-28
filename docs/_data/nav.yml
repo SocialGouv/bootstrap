@@ -2,3 +2,8 @@
   pages:
     - title: Introduction
     - title: Download
+
+- title: Components
+  pages:
+    - title: Alerts
+    - title: Badge

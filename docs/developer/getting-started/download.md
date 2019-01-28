@@ -3,8 +3,6 @@ layout: docs
 title: Download
 description: Download Design Beta Gouv to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, yarn.
 group: getting-started
-redirect_from: 
-  - /developer/getting-started/download/
 toc: true
 --- 
 

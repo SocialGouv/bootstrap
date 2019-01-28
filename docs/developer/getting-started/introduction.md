@@ -6,7 +6,6 @@ group: getting-started
 redirect_from: 
   - /developer/
   - /developer/getting-started/
-  - /developer/getting-started/introduction/
 toc: true
 ---
 

@@ -7,10 +7,15 @@ baseurl:
 twitter_username: betagouv
 github_username: betagouv
 
+collections:
+  developer:
+    output          : true
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
 theme: design.beta.gouv
+permalink: /:categories/:title/
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
@@ -31,8 +36,15 @@ sass:
     - ../node_modules
   style: compressed
 
+toc:
+  min_level:        2
+  max_level:        4
+  no_toc_section_class:
+    - "dbg-callout"
+    - "dbg-example"
 #
 # Custom variables
 #
 
 version: master
+bootstrap_doc_baseurl: https://getbootstrap.com/docs/4.2
