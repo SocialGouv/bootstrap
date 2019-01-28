@@ -9,7 +9,7 @@ github_username: betagouv
 
 collections:
   developer:
-    output          : true
+    output: true
 
 # Build settings
 markdown: kramdown
@@ -17,6 +17,7 @@ highlighter: rouge
 theme: design.beta.gouv
 permalink: /:categories/:title/
 plugins:
+  - jekyll-autoprefixer
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-toc
@@ -36,12 +37,17 @@ sass:
     - ../node_modules
   style: compressed
 
+#
+# jekyll-toc options
+#
+
 toc:
-  min_level:        2
-  max_level:        4
+  min_level: 2
+  max_level: 4
   no_toc_section_class:
     - "dbg-callout"
     - "dbg-example"
+
 #
 # Custom variables
 #

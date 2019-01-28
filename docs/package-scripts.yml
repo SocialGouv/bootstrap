@@ -1,11 +1,14 @@
 scripts:
-  build: bundle exec jekyll build
+  build:
+    default: nps build.rollup build.jekyll
+    jekyll: bundle exec jekyll build
+    rollup: rollup --config
   serve:
-    default: concurrently "nps serve.docs" "nps serve.web"
-    docs : nps "build -w"
-    web : >-
+    default: concurrently "nps serve.docs" "nps serve.web" "nps serve.rollup"
+    docs: nps "build.jekyll --watch"
+    rollup: nps "build.rollup --watch"
+    web: >-
       live-server
       --no-browser
       --mount=/@design.beta.gouv/core:../packages/core
       _site
-
