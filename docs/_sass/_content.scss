@@ -8,7 +8,6 @@
 //
 
 main {
-
   padding-top: map-get($spacers, 5);
 
   @for $i from 1 through 6 {
@@ -23,7 +22,7 @@ main {
 
     //
 
-    padding-top:$magic-top-space;
+    padding-top: $magic-top-space;
 
     @for $i from 1 through 6 {
       h#{$i}[id] {
@@ -32,5 +31,4 @@ main {
       }
     }
   }
-
 }
