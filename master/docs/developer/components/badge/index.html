@@ -1,19 +1,18 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="The Design Beta Gouv Website">
+<meta name="description" content="Documentation and examples for badges, our small count and labeling component.">
 <meta name="author" content="">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="master">
 
-<title>Design Beta Gouv · The Design Beta Gouv Website</title>
+<title>Badges · Design Beta Gouv</title>
 
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/developer/components/badge/">
 
 
 
@@ -67,32 +66,176 @@
 </header>
 
 
-    
-      <main id="content" role="main">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2">
+          <aside class="dbg-sidebar">
 
-<div class="container">
-  <h1>404</h1>
+  <nav class="dbg-sidebar-nav"><h6 class="mt-3 px-3">
+        Getting started
+      </h6>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+      <ul class="nav flex-column"><li class="nav-item">
+            <a
+              class="nav-link px-4 " href="/design/master/docs/developer/getting-started/introduction/">Introduction</a>
+          </li><li class="nav-item">
+            <a
+              class="nav-link px-4 " href="/design/master/docs/developer/getting-started/download/">Download</a>
+          </li></li>
+    </ul><h6 class="mt-3 px-3">
+        Components
+      </h6>
+
+      <ul class="nav flex-column"><li class="nav-item">
+            <a
+              class="nav-link px-4 " href="/design/master/docs/developer/components/alerts/">Alerts</a>
+          </li><li class="nav-item">
+            <a
+              class="nav-link px-4 active bd-sidenav-active" href="/design/master/docs/developer/components/badge/">Badge</a>
+          </li></li>
+    </ul></nav>
+
+</aside>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 order-2">
+            <aside class="dgb-toc mt-5"><ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#overview">Overview</a></li>
+<li class="toc-entry toc-h2"><a href="#in-buttons">In buttons</a></li>
+<li class="toc-entry toc-h2"><a href="#contextual-variations">Contextual variations</a></li>
+<li class="toc-entry toc-h2"><a href="#pill-badges">Pill badges</a></li>
+<li class="toc-entry toc-h2"><a href="#links">Links</a></li>
+</ul></aside>
+          </div>
+        
+
+        <div class="col-12 col-md-9 col-xl-8 px-0">
+          <div class="jumbotron mb-0">
+            <div class="container">
+              <hr class="border-0 d-flex my-5">
+              <h1 class="display-4 text-center">Badges</h1>
+              <hr class="border-0 d-flex my-5">
+            </div>
+          </div>
+
+          <main class="pb-5 px-4 px-md-5" role="main" id="content">
+
+            <p class="lead mb-5 text-justify text-muted">Documentation and examples for badges, our small count and labeling component.</p>
+
+            <hr class="my-5">
+
+            <div class="dbg-callout alert alert-info">
+  <h4 class="alert-heading">Bootstrap component </h4> 
+  This component is the as the Badges Bootstrap component.<br />
+  <a href="https://getbootstrap.com/docs/4.2/components/badges">
+  Refer to the original documentation for more information on how to use it.
+  </a>
 </div>
 
-      </main>
-    
+<h2 id="overview">Overview</h2>
+
+<div class="dbg-example">
+<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+<h2>Example heading <span class="badge badge-secondary">New</span></h2>
+<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>Example heading <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h6&gt;</span></code></pre></figure>
+
+<h2 id="in-buttons">In buttons</h2>
+
+<div class="dbg-example">
+<button type="button" class="btn btn-primary">
+  Profile <span class="badge badge-light">9</span>
+  <span class="sr-only">unread messages</span>
+</button>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+  Profile <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-light"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>unread messages<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+
+<h2 id="contextual-variations">Contextual variations</h2>
+
+<div class="dbg-example">
+
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-danger">Danger</span>
+<span class="badge badge-warning">Warning</span>
+<span class="badge badge-info">Info</span>
+<span class="badge badge-light">Light</span>
+<span class="badge badge-dark">Dark</span>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h2 id="pill-badges">Pill badges</h2>
+
+<div class="dbg-example">
+
+<span class="badge badge-pill badge-primary">Primary</span>
+<span class="badge badge-pill badge-secondary">Secondary</span>
+<span class="badge badge-pill badge-success">Success</span>
+<span class="badge badge-pill badge-danger">Danger</span>
+<span class="badge badge-pill badge-warning">Warning</span>
+<span class="badge badge-pill badge-info">Info</span>
+<span class="badge badge-pill badge-light">Light</span>
+<span class="badge badge-pill badge-dark">Dark</span>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-pill badge-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+
+<h2 id="links">Links</h2>
+
+<div class="dbg-example">
+
+<a href="#" class="badge badge-primary">Primary</a>
+<a href="#" class="badge badge-secondary">Secondary</a>
+<a href="#" class="badge badge-success">Success</a>
+<a href="#" class="badge badge-danger">Danger</a>
+<a href="#" class="badge badge-warning">Warning</a>
+<a href="#" class="badge badge-info">Info</a>
+<a href="#" class="badge badge-light">Light</a>
+<a href="#" class="badge badge-dark">Dark</a>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"badge badge-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+
+          </main>
+        </div>
+      </div>
+    </div>
 
     
-    
   </body>
+</html>
