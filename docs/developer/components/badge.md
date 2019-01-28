@@ -14,6 +14,8 @@ toc: true
   </a>
 </div>
 
+<hr class="my-5">
+
 ## Overview
 
 {% capture example %}
