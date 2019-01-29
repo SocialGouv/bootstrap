@@ -61,7 +61,7 @@ If you're using our compiled JavaScript, don't forget to include CDN versions of
 
 Pull in {{ site.title }}'s **source files** into nearly any project with some of the most popular package managers. No matter the package manager, {{ site.title }} will **require a Sass compiler and [Autoprefixer] (https://github.com/postcss/autoprefixer)** for a setup that matches our official compiled versions.
 
-### npm
+#### npm
 
 Install {{ site.title }} in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/{{ site.title }}):
 
@@ -76,7 +76,7 @@ npm install {{ site.data.cdn.core.css.name }}
 - `sass` - path to {{ site.title }}'s main [Sass](https://sass-lang.com/) source file
 - `style` - path to {{ site.title }}'s non-minified CSS that's been precompiled using the default settings (no customization)
 
-### yarn
+#### yarn
 
 Install {{ site.title }} in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/yarn):
 
