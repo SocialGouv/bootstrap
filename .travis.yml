@@ -3,7 +3,6 @@ language: minimal
 git:
   depth: 5
 
-
 addons:
   snaps:
     - name: node
@@ -18,22 +17,23 @@ cache:
     - $HOME/.cache/yarn
     - $HOME/.bundle
     - $HOME/.gem
+    - $TRAVIS_BUILD_DIR/vendor
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
 
 install:
-  - yarn
+  - yarn install --frozen-lockfile
   - cd docs
   - gem install bundler
-  - bundle update
-  - bundle install
+  - bundle install --jobs=3 --retry=3 --deployment
   - cd ..
 
 script:
-  - yarn lint
   - yarn build --ignore docs
+  - yarn lint
+  - yarn test
   - cd docs
   - yarn nps build.rollup "build.jekyll --baseurl /design/master/docs"
   - cd ..
