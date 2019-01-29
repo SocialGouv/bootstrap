@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Documentation and examples for Design Beta Gouv typography, including global settings, headings, body text, lists, and more.">
+<meta name="description" content="List of Design Beta Gouv main colors.">
 <meta name="author" content="">
 <meta name="generator" content="Jekyll v3.8.5">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="master">
 
-<title>Typography · Design Beta Gouv</title>
+<title>Colors · Design Beta Gouv</title>
 
-<link rel="canonical" href="/developer/content/typography/">
+<link rel="canonical" href="/developer/content/colors/">
 
 <!-- prettier-ignore -->
 
@@ -85,10 +85,10 @@
 
       <ul class="nav flex-column"><li class="nav-item">
             <a
-              class="nav-link px-4 active bd-sidenav-active" href="/design/master/docs/developer/content/typography/">Typography</a>
+              class="nav-link px-4 " href="/design/master/docs/developer/content/typography/">Typography</a>
           </li><li class="nav-item">
             <a
-              class="nav-link px-4 " href="/design/master/docs/developer/content/colors/">Colors</a>
+              class="nav-link px-4 active bd-sidenav-active" href="/design/master/docs/developer/content/colors/">Colors</a>
           </li></li>
     </ul><h6 class="mt-3 px-3">
         Components
@@ -110,26 +110,10 @@
         
           <div class="d-none d-xl-block col-xl-2 order-2">
             <aside class="dgb-toc mt-5"><ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#overview">Overview</a></li>
-<li class="toc-entry toc-h2"><a href="#headings">Headings</a></li>
-<li class="toc-entry toc-h2"><a href="#display-headings">Display headings</a></li>
-<li class="toc-entry toc-h2"><a href="#lead">Lead</a></li>
-<li class="toc-entry toc-h2"><a href="#inline-text-elements">Inline text elements</a></li>
-<li class="toc-entry toc-h2"><a href="#text-utilities">Text utilities</a></li>
-<li class="toc-entry toc-h2"><a href="#abbreviations">Abbreviations</a></li>
-<li class="toc-entry toc-h2"><a href="#blockquotes">Blockquotes</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#naming-a-source">Naming a source</a></li>
-<li class="toc-entry toc-h4"><a href="#alignment">Alignment</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#lists">Lists</a>
-<ul>
-<li class="toc-entry toc-h4"><a href="#unstyled">Unstyled</a></li>
-<li class="toc-entry toc-h4"><a href="#inline">Inline</a></li>
-<li class="toc-entry toc-h4"><a href="#description-list-alignment">Description list alignment</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#bootstrap-theme">Bootstrap theme</a></li>
+<li class="toc-entry toc-h2"><a href="#theme-colors">Theme colors</a></li>
+<li class="toc-entry toc-h2"><a href="#raw-colors">Raw colors</a></li>
+<li class="toc-entry toc-h2"><a href="#gray-scale">Gray scale</a></li>
 </ul></aside>
           </div>
         
@@ -138,7 +122,7 @@
           <div class="dbg-docs-jumbotron jumbotron jumbotron-fluid mb-0">
             <div class="align-items-center container d-flex flex-column">
               <hr class="border-0 d-flex my-5">
-              <h1 class="bg-white display-4 px-5 py-3">Typography</h1>
+              <h1 class="bg-white display-4 px-5 py-3">Colors</h1>
               <hr class="border-0 d-flex my-5">
             </div>
           </div>
@@ -146,359 +130,390 @@
 
           <main class="pb-5 px-4 px-md-5" role="main" id="content">
 
-            <p class="lead mb-5 text-justify text-muted">Documentation and examples for Design Beta Gouv typography, including global settings, headings, body text, lists, and more.</p>
+            <p class="lead mb-5 text-justify text-muted">List of Design Beta Gouv main colors.</p>
 
             <hr class="my-5">
 
-            <div class="dbg-docs-callout alert alert-info">
-  <h4 class="alert-heading">Bootstrap component </h4>
-  This component is the as the Typography Bootstrap component.<br />
-  <a href="https://getbootstrap.com/docs/4.2/content/typography">
-  Refer to the original documentation for more information on how to use it.
-  </a>
-</div>
+            <h2 id="bootstrap-theme">Bootstrap theme</h2>
 
-<hr class="my-5" />
+<p>Colors used by the Bootstrap Design Beta Gouv theme.</p>
 
-<h2 id="overview">Overview</h2>
-
-<p>We use <a href="https://github.com/adobe-fonts/source-sans-pro">Source Sans Pro</a> for body text and <a href="https://github.com/evolventa/evolventa">Evolventa</a> for heading.</p>
-
-<div class="dbg-docs-example">
-<h3>
-  Titre chili sin carne<br />
-  <small class="text-muted">Tagline libérer les données sans effort et sur data.gouv.fr</small>
-</h3>
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</p>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>
-  Titre chili sin carne<span class="nt">&lt;br&gt;</span>
-  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Tagline libérer les données sans effort et sur data.gouv.fr<span class="nt">&lt;/small&gt;</span>
-<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;p&gt;</span>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-<span class="nt">&lt;/p&gt;</span></code></pre></figure>
-
-<h2 id="headings">Headings</h2>
-
-<div class="dbg-docs-example"><h1><code>&lt;h1&gt;</code> Design Beta Gouv heading</h1>
-<h2><code>&lt;h2&gt;</code> Design Beta Gouv heading</h2>
-<h3><code>&lt;h3&gt;</code> Design Beta Gouv heading</h3>
-<h4><code>&lt;h4&gt;</code> Design Beta Gouv heading</h4>
-<h5><code>&lt;h5&gt;</code> Design Beta Gouv heading</h5>
-<h6><code>&lt;h6&gt;</code> Design Beta Gouv heading</h6>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>h1<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>h3<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>h4<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>h5<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;&lt;code&gt;</span><span class="ni">&amp;lt;</span>h6<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/h6&gt;</span></code></pre></figure>
-
-<div class="dbg-docs-example"><p class="h1"><code>.h1</code> Design Beta Gouv heading</p>
-<p class="h2"><code>.h2</code> Design Beta Gouv heading</p>
-<p class="h3"><code>.h3</code> Design Beta Gouv heading</p>
-<p class="h4"><code>.h4</code> Design Beta Gouv heading</p>
-<p class="h5"><code>.h5</code> Design Beta Gouv heading</p>
-<p class="h6"><code>.h6</code> Design Beta Gouv heading</p>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;&lt;code&gt;</span>.h1<span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;&lt;code&gt;</span>.h2<span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;&lt;code&gt;</span>.h3<span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;&lt;code&gt;</span>.h4<span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;&lt;code&gt;</span>.h5<span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;&lt;code&gt;</span>.h6<span class="nt">&lt;/code&gt;</span> Design Beta Gouv heading<span class="nt">&lt;/p&gt;</span></code></pre></figure>
-
-<div class="dbg-docs-example">
-<h3>
-  Fancy display heading<br />
-  <small class="text-muted">With faded secondary text</small>
-</h3>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h3&gt;</span>
-  Fancy display heading<span class="nt">&lt;br&gt;</span>
-  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>With faded secondary text<span class="nt">&lt;/small&gt;</span>
-<span class="nt">&lt;/h3&gt;</span></code></pre></figure>
-
-<h2 id="display-headings">Display headings</h2>
-
-<div class="dbg-docs-example"><h1 class="display-1">Display 1</h1>
-<h1 class="display-2">Display 2</h1>
-<h1 class="display-3">Display 3</h1>
-<h1 class="display-4">Display 4</h1>
-
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-1"</span><span class="nt">&gt;</span>Display 1<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-2"</span><span class="nt">&gt;</span>Display 2<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-3"</span><span class="nt">&gt;</span>Display 3<span class="nt">&lt;/h1&gt;</span>
-<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-4"</span><span class="nt">&gt;</span>Display 4<span class="nt">&lt;/h1&gt;</span></code></pre></figure>
-
-<h2 id="lead">Lead</h2>
-
-<div class="dbg-docs-example">
-<p class="lead">
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-</p>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-<span class="nt">&lt;/p&gt;</span></code></pre></figure>
-
-<h2 id="inline-text-elements">Inline text elements</h2>
-
-<div class="dbg-docs-example">
-<p>You can use the mark tag to <mark>highlight</mark> text.</p>
-<p>You can use the mark tag to <span class="mark">highlight</span> text.</p>
-<p><del>This line of text is meant to be treated as deleted text.</del></p>
-<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-<p><ins>This line of text is meant to be treated as an addition to the doc.</ins></p>
-<p><u>This line of text will render as underlined</u></p>
-<p><small>This line of text is meant to be treated as fine print.</small></p>
-<p class="small">his line of text is meant to be treated as fine print.</p>
-<p><strong>This line rendered as bold text.</strong></p>
-<p><em>This line rendered as italicized text.</em></p>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>You can use the mark tag to <span class="nt">&lt;mark&gt;</span>highlight<span class="nt">&lt;/mark&gt;</span> text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;</span>You can use the mark tag to <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"mark"</span><span class="nt">&gt;</span>highlight<span class="nt">&lt;/span&gt;</span> text.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;del&gt;</span>This line of text is meant to be treated as deleted text.<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;s&gt;</span>This line of text is meant to be treated as no longer accurate.<span class="nt">&lt;/s&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;ins&gt;</span>This line of text is meant to be treated as an addition to the doc.<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;u&gt;</span>This line of text will render as underlined<span class="nt">&lt;/u&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;small&gt;</span>This line of text is meant to be treated as fine print.<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"small"</span><span class="nt">&gt;</span>his line of text is meant to be treated as fine print.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;strong&gt;</span>This line rendered as bold text.<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;em&gt;</span>This line rendered as italicized text.<span class="nt">&lt;/em&gt;&lt;/p&gt;</span></code></pre></figure>
-
-<h2 id="text-utilities">Text utilities</h2>
-
-<p>Change text alignment, transform, style, weight, and color with our <a href="/design/master/docs/docs//utilities/text/">text utilities</a> and <a href="/design/master/docs/docs//utilities/colors/">color utilities</a>.</p>
-
-<h2 id="abbreviations">Abbreviations</h2>
-
-<div class="dbg-docs-example">
-<p><abbr title="attribute">attr</abbr></p>
-<p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"attribute"</span><span class="nt">&gt;</span>attr<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
-<span class="nt">&lt;p&gt;&lt;abbr</span> <span class="na">title=</span><span class="s">"HyperText Markup Language"</span> <span class="na">class=</span><span class="s">"initialism"</span><span class="nt">&gt;</span>HTML<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span></code></pre></figure>
-
-<h2 id="blockquotes">Blockquotes</h2>
-
-<div class="dbg-docs-example">
-<blockquote class="blockquote">
-  <p class="mb-0">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  </p>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
-
-<h4 id="naming-a-source">Naming a source</h4>
-
-<div class="dbg-docs-example">
-<blockquote class="blockquote">
-  <p class="mb-0">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  </p>
-  <footer class="blockquote-footer">
-    Someone famous in <cite title="Source Title">Source Title</cite>
-  </footer>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
-    Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;</span>
-  <span class="nt">&lt;/footer&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
-
-<h4 id="alignment">Alignment</h4>
-
-<div class="dbg-docs-example">
-<blockquote class="blockquote text-center">
-  <p class="mb-0">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  </p>
-  <footer class="blockquote-footer">
-    Someone famous in <cite title="Source Title">Source Title</cite>
-  </footer>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote text-center"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
-    Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;</span>
-  <span class="nt">&lt;/footer&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
-
-<div class="dbg-docs-example">
-<blockquote class="blockquote text-right">
-  <p class="mb-0">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  </p>
-  <footer class="blockquote-footer">
-    Someone famous in <cite title="Source Title">Source Title</cite>
-  </footer>
-</blockquote>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;blockquote</span> <span class="na">class=</span><span class="s">"blockquote text-right"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-0"</span><span class="nt">&gt;</span>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Integer posuere erat a ante.
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"blockquote-footer"</span><span class="nt">&gt;</span>
-    Someone famous in <span class="nt">&lt;cite</span> <span class="na">title=</span><span class="s">"Source Title"</span><span class="nt">&gt;</span>Source Title<span class="nt">&lt;/cite&gt;</span>
-  <span class="nt">&lt;/footer&gt;</span>
-<span class="nt">&lt;/blockquote&gt;</span></code></pre></figure>
-
-<h2 id="lists">Lists</h2>
-
-<h4 id="unstyled">Unstyled</h4>
-
-<div class="dbg-docs-example">
-<ul class="list-unstyled">
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Integer molestie lorem at massa</li>
-  <li>Facilisis in pretium nisl aliquet</li>
-  <li>Nulla volutpat aliquam velit
-    <ul>
-      <li>Phasellus iaculis neque</li>
-      <li>Purus sodales ultricies</li>
-      <li>Vestibulum laoreet porttitor sem</li>
-      <li>Ac tristique libero volutpat at</li>
-    </ul>
+<ul class="list-unstyled row">
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color primary</title><rect fill="#0053b3" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Primary</h5>
+      #0053b3<br />
+      <code>$primary</code>
+    </div> 
   </li>
-  <li>Faucibus porta lacus fringilla vel</li>
-  <li>Aenean sit amet erat nunc</li>
-  <li>Eget porttitor lorem</li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color secondary</title><rect fill="#6c757d" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Secondary</h5>
+      #6c757d<br />
+      <code>$secondary</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color success</title><rect fill="#03bd5b" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Success</h5>
+      #03bd5b<br />
+      <code>$success</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color danger</title><rect fill="#dc3545" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Danger</h5>
+      #dc3545<br />
+      <code>$danger</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color warning</title><rect fill="#ffc107" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Warning</h5>
+      #ffc107<br />
+      <code>$warning</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color info</title><rect fill="#17a2b8" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Info</h5>
+      #17a2b8<br />
+      <code>$info</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color light</title><rect fill="#f8f9fa" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Light</h5>
+      #f8f9fa<br />
+      <code>$light</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color dark</title><rect fill="#343a40" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Dark</h5>
+      #343a40<br />
+      <code>$dark</code>
+    </div> 
+  </li>
+  
 </ul>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-unstyled"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Lorem ipsum dolor sit amet<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Consectetur adipiscing elit<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Integer molestie lorem at massa<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Facilisis in pretium nisl aliquet<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Nulla volutpat aliquam velit
-    <span class="nt">&lt;ul&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Phasellus iaculis neque<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Purus sodales ultricies<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Vestibulum laoreet porttitor sem<span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li&gt;</span>Ac tristique libero volutpat at<span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Faucibus porta lacus fringilla vel<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Aenean sit amet erat nunc<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li&gt;</span>Eget porttitor lorem<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
-<h4 id="inline">Inline</h4>
+<h2 id="theme-colors">Theme colors</h2>
 
-<div class="dbg-docs-example">
-<ul class="list-inline">
-  <li class="list-inline-item">Lorem ipsum</li>
-  <li class="list-inline-item">Phasellus iaculis</li>
-  <li class="list-inline-item">Nulla volutpat</li>
+<p>Generic color names.</p>
+
+<ul class="list-unstyled row">
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color blue</title><rect fill="#0053b3" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Blue</h5>
+      #0053b3<br />
+      <code>$blue</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color cyan</title><rect fill="#17a2b8" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Cyan</h5>
+      #17a2b8<br />
+      <code>$cyan</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color green</title><rect fill="#03bd5b" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Green</h5>
+      #03bd5b<br />
+      <code>$green</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color indigo</title><rect fill="#6610f2" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Indigo</h5>
+      #6610f2<br />
+      <code>$indigo</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color orange</title><rect fill="#ff9947" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Orange</h5>
+      #ff9947<br />
+      <code>$orange</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color pink</title><rect fill="#e83e8c" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Pink</h5>
+      #e83e8c<br />
+      <code>$pink</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color purple</title><rect fill="#6f42c1" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Purple</h5>
+      #6f42c1<br />
+      <code>$purple</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color red</title><rect fill="#dc3545" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Red</h5>
+      #dc3545<br />
+      <code>$red</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color teal</title><rect fill="#20c997" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Teal</h5>
+      #20c997<br />
+      <code>$teal</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color yellow</title><rect fill="#ffc107" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Yellow</h5>
+      #ffc107<br />
+      <code>$yellow</code>
+    </div> 
+  </li>
+  
 </ul>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-inline"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Phasellus iaculis<span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-inline-item"</span><span class="nt">&gt;</span>Nulla volutpat<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
 
-<h4 id="description-list-alignment">Description list alignment</h4>
+<h2 id="raw-colors">Raw colors</h2>
 
-<div class="dbg-docs-example">
-<dl class="row">
-  <dt class="col-sm-3">Description lists</dt>
-  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+<p>Approximate color names generated by <a href="http://chir.ag/projects/name-that-color/">Name that Color - Chirag Mehta : chir.ag</a>.</p>
 
-  <dt class="col-sm-3">Euismod</dt>
-  <dd class="col-sm-9">
-    <p>Etiam porta sem malesuada magna mollis euismod.</p>
-    <p>Donec id elit non mi porta gravida at eget metus.</p>
-  </dd>
+<ul class="list-unstyled row">
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color amber</title><rect fill="#ffc107" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Amber</h5>
+      #ffc107<br />
+      <code>$amber</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color cerise</title><rect fill="#e83e8c" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Cerise</h5>
+      #e83e8c<br />
+      <code>$cerise</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color eastern_blue</title><rect fill="#17a2b8" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Eastern blue</h5>
+      #17a2b8<br />
+      <code>$eastern_blue</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color electric_violet</title><rect fill="#6610f2" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Electric violet</h5>
+      #6610f2<br />
+      <code>$electric_violet</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color endeavour</title><rect fill="#0053b3" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Endeavour</h5>
+      #0053b3<br />
+      <code>$endeavour</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color fuchsia_blue</title><rect fill="#6f42c1" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Fuchsia blue</h5>
+      #6f42c1<br />
+      <code>$fuchsia_blue</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color jade</title><rect fill="#03bd5b" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Jade</h5>
+      #03bd5b<br />
+      <code>$jade</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color mountain_meadow</title><rect fill="#20c997" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Mountain meadow</h5>
+      #20c997<br />
+      <code>$mountain_meadow</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color punch</title><rect fill="#dc3545" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Punch</h5>
+      #dc3545<br />
+      <code>$punch</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color yellow_orange</title><rect fill="#ff9947" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Yellow orange</h5>
+      #ff9947<br />
+      <code>$yellow_orange</code>
+    </div> 
+  </li>
+  
+</ul>
 
-  <dt class="col-sm-3">Malesuada porta</dt>
-  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+<h2 id="gray-scale">Gray scale</h2>
 
-  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-  <dd class="col-sm-9">
-    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
-    ut fermentum massa justo sit amet risus.
-  </dd>
-
-  <dt class="col-sm-3">Nesting</dt>
-  <dd class="col-sm-9">
-    <dl class="row">
-      <dt class="col-sm-4">Nested definition list</dt>
-      <dd class="col-sm-8">
-        Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
-      </dd>
-      <dt class="col-sm-4">Nested definition list</dt>
-      <dd class="col-sm-8">
-        Etiam porta sem malesuada magna mollis euismod.
-      </dd>
-    </dl>
-  </dd>
-</dl>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Description lists<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>A description list is perfect for defining terms.<span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Euismod<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Etiam porta sem malesuada magna mollis euismod.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Donec id elit non mi porta gravida at eget metus.<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Malesuada porta<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>Etiam porta sem malesuada magna mollis euismod.<span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3 text-truncate"</span><span class="nt">&gt;</span>Truncated term is truncated<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
-    ut fermentum massa justo sit amet risus.
-  <span class="nt">&lt;/dd&gt;</span>
-
-  <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-3"</span><span class="nt">&gt;</span>Nesting<span class="nt">&lt;/dt&gt;</span>
-  <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-9"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>Nested definition list<span class="nt">&lt;/dt&gt;</span>
-      <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;</span>
-        Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.
-      <span class="nt">&lt;/dd&gt;</span>
-      <span class="nt">&lt;dt</span> <span class="na">class=</span><span class="s">"col-sm-4"</span><span class="nt">&gt;</span>Nested definition list<span class="nt">&lt;/dt&gt;</span>
-      <span class="nt">&lt;dd</span> <span class="na">class=</span><span class="s">"col-sm-8"</span><span class="nt">&gt;</span>
-        Etiam porta sem malesuada magna mollis euismod.
-      <span class="nt">&lt;/dd&gt;</span>
-    <span class="nt">&lt;/dl&gt;</span>
-  <span class="nt">&lt;/dd&gt;</span>
-<span class="nt">&lt;/dl&gt;</span></code></pre></figure>
-
+<ul class="list-unstyled row">
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color white</title><rect fill="#fff" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">White</h5>
+      #fff<br />
+      <code>$white</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-100</title><rect fill="#f8f9fa" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-100</h5>
+      #f8f9fa<br />
+      <code>$gray-100</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-200</title><rect fill="#e9ecef" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-200</h5>
+      #e9ecef<br />
+      <code>$gray-200</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-300</title><rect fill="#dee2e6" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-300</h5>
+      #dee2e6<br />
+      <code>$gray-300</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-400</title><rect fill="#ced4da" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-400</h5>
+      #ced4da<br />
+      <code>$gray-400</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-500</title><rect fill="#adb5bd" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-500</h5>
+      #adb5bd<br />
+      <code>$gray-500</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-600</title><rect fill="#6c757d" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-600</h5>
+      #6c757d<br />
+      <code>$gray-600</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-700</title><rect fill="#495057" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-700</h5>
+      #495057<br />
+      <code>$gray-700</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-800</title><rect fill="#343a40" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-800</h5>
+      #343a40<br />
+      <code>$gray-800</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color gray-900</title><rect fill="#212529" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Gray-900</h5>
+      #212529<br />
+      <code>$gray-900</code>
+    </div> 
+  </li>
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="bd-placeholder-img mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color "><title>Square color black</title><rect fill="#000" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Black</h5>
+      #000<br />
+      <code>$black</code>
+    </div> 
+  </li>
+  
+</ul>
 
           </main>
         </div>
