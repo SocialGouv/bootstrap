@@ -3,6 +3,10 @@
     - title: Introduction
     - title: Download
 
+- title: Content
+  pages:
+    - title: Typography
+
 - title: Components
   pages:
     - title: Alerts

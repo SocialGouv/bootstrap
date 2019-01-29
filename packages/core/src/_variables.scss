@@ -75,11 +75,8 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-// Typography
-// Linked to https://github.com/twbs/bootstrap/blob/v4.2.1/scss/_variables.scss#L266
-
 // Fonts
-//
+// Linked to https://github.com/twbs/bootstrap/blob/v4.2.1/scss/_variables.scss#L273
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
@@ -88,7 +85,12 @@ $font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 $headings-font-family: "Evolventa", "Trebuchet MS", sans-serif !default;
+$headings-font-weight: bold !default;
 
+$display1-weight: bold !default;
+$display2-weight: bold !default;
+$display3-weight: bold !default;
+$display4-weight: bold !default;
 //
 //
 //
