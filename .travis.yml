@@ -17,7 +17,7 @@ cache:
     - $HOME/.cache/yarn
     - $HOME/.bundle
     - $HOME/.gem
-    - $TRAVIS_BUILD_DIR/vendor
+    - $TRAVIS_BUILD_DIR/docs/vendor
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
