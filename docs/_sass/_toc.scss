@@ -18,20 +18,25 @@
 
   .section-nav {
     padding-left: 0;
-    border-left: 1px solid #eee;
+    border-left: 1px solid $gray-200;
   }
+
   .toc-entry {
     display: block;
 
-    a {
+    > a {
       display: block;
       padding: 0.125rem 1.5rem;
-      color: #99979c;
+      color: $gray-600;
 
       &:hover {
         color: $blue;
         text-decoration: none;
       }
+    }
+
+    > ul {
+      padding-left: map-get($spacers, 3);
     }
   }
 }

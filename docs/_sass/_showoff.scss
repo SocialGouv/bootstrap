@@ -1,0 +1,49 @@
+//
+
+//
+// Inspired by https://codepen.io/pieter-biesemans/pen/OQgBqV
+//
+
+.dbg-docs-jumbotron {
+  background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      ellipse at 70% 60%,
+      rgba(195, 224, 96, 1) 0%,
+      rgba(195, 224, 96, 0) 30%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      rgba(0, 163, 203, 1) 0%,
+      rgba(0, 163, 203, 0) 70%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(18, 46, 119, 0) 0%,
+      rgba(18, 46, 119, 0) 75%,
+      rgba(18, 46, 119, 1) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgba(98, 87, 147, 1) 0%,
+      rgba(213, 93, 100, 1) 17%,
+      rgba(228, 145, 41, 1) 74%,
+      rgba(192, 103, 28, 1) 100%
+    );
+  background-blend-mode: screen, hue, color, overlay, normal;
+  animation: dbg_docs_jumbotron_hue 45s infinite linear;
+  will-change: filter;
+}
+
+@keyframes dbg_docs_jumbotron_hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
