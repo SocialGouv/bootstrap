@@ -4,7 +4,7 @@
 
   args can be one of the following:
     id - null (default)
-    class - "dbg-example" (default)
+    class - "dbg-docs-example" (default)
     optional: hide_preview - disabled (default)
     optional: hide_markup - disabled (default)
 {%- endcomment -%}
@@ -13,7 +13,7 @@
 {%- assign class = include.class -%}
 
 {%- if include.hide_preview == null -%}
-<div{% if id %} id="{{ id }}"{% endif %} class="dbg-example{% if class %} {{ class }}{% endif %}">
+<div{% if id %} id="{{ id }}"{% endif %} class="dbg-docs-example{% if class %} {{ class }}{% endif %}">
   {{- include.content -}}
 </div>
 {%- endif -%}
