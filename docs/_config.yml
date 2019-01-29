@@ -7,10 +7,6 @@ baseurl:
 twitter_username: betagouv
 github_username: betagouv
 
-collections:
-  developer:
-    output: true
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
