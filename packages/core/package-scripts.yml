@@ -6,9 +6,9 @@ scripts:
     main: >-
       node-sass
       --importer ../../node_modules/node-sass-yaml-importer/dist/node-sass-yaml-importer.js
-      --include-path ../../node_modules
-      --include-path node_modules
       --include-path src
+      --include-path node_modules
+      --include-path ../../node_modules
       --output ./dist
       --output-style expanded
       --precision 5
