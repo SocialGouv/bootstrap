@@ -10,11 +10,27 @@ toc: true
 
 <hr class="my-5">
 
+## Overview
+
+We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for body text and [Evolventa](https://github.com/evolventa/evolventa) for heading.
+
+{% capture example %}
+<h3>
+  Titre chili sin carne<br>
+  <small class="text-muted">Tagline libérer les données sans effort et sur data.gouv.fr</small>
+</h3>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</p>
+{% endcapture %}
+{% include example.html content=example %}
+
 ## Headings
 
 {% capture example %}
 {%- for level in (1..6) -%}
-<h{{ level }}><code>&lt;h{{ level }}&gt;</code> Design heading</h{{ level }}>
+<h{{ level }}><code>&lt;h{{ level }}&gt;</code> Design Beta Gouv heading</h{{ level }}>
 {% endfor %}
 {% endcapture %}
 {% include example.html content=example %}
@@ -22,13 +38,12 @@ toc: true
 {% capture example %}
 {%- for level in (1..6) -%}
 
-<p class="h{{ level }}"><code>.h{{ level }}</code> Design heading</p>
+<p class="h{{ level }}"><code>.h{{ level }}</code> Design Beta Gouv heading</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html content=example %}
 
 {% capture example %}
-
 <h3>
   Fancy display heading<br>
   <small class="text-muted">With faded secondary text</small>
@@ -112,7 +127,6 @@ Change text alignment, transform, style, weight, and color with our [text utilit
 #### Alignment
 
 {% capture example %}
-
 <blockquote class="blockquote text-center">
   <p class="mb-0">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -126,7 +140,6 @@ Change text alignment, transform, style, weight, and color with our [text utilit
 {% include example.html content=example %}
 
 {% capture example %}
-
 <blockquote class="blockquote text-right">
   <p class="mb-0">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
