@@ -33,7 +33,7 @@ script:
   - yarn lint
   - yarn build --ignore docs
   - cd docs
-  - bundle exec jekyll build -b /design/master/docs
+  - yarn nps build.rollup "build.jekyll --baseurl /design/master/docs"
   - cd ..
 
 before_deploy:
