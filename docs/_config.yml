@@ -41,8 +41,8 @@ toc:
   min_level: 2
   max_level: 4
   no_toc_section_class:
-    - "dbg-callout"
-    - "dbg-example"
+    - "dbg-docs-callout"
+    - "dbg-docs-example"
 
 #
 # Custom variables
