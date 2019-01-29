@@ -6,25 +6,16 @@ group: components
 toc: true
 ---
 
-<div class="dbg-callout alert alert-info">
-  <h4 class="alert-heading">Bootstrap component </h4> 
-  This component is the as the {{ page.title }} Bootstrap component.<br>
-  <a href="{{ site.bootstrap_doc_baseurl }}/{{page.group}}/{{ page.title | downcase }}">
-  Refer to the original documentation for more information on how to use it.
-  </a>
-</div>
+{% include callout.html %}
 
 <hr class="my-5">
 
 ## Overview
 
 {% capture example %}
-<h1>Example heading <span class="badge badge-secondary">New</span></h1>
-<h2>Example heading <span class="badge badge-secondary">New</span></h2>
-<h3>Example heading <span class="badge badge-secondary">New</span></h3>
-<h4>Example heading <span class="badge badge-secondary">New</span></h4>
-<h5>Example heading <span class="badge badge-secondary">New</span></h5>
-<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+{%- for level in (1..6) -%}
+<h{{ level }}>Example heading <span class="badge badge-secondary">New</span></h{{ level }}>
+{% endfor %}
 {% endcapture %}
 {% include example.html content=example %}
 

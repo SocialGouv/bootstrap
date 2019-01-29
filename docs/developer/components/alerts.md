@@ -6,13 +6,7 @@ group: components
 toc: true
 ---
 
-<div class="dbg-callout alert alert-info">
-  <h4 class="alert-heading">Bootstrap component </h4> 
-  This component is the as the {{ page.title }} Bootstrap component.<br>
-  <a href="{{ site.bootstrap_doc_baseurl }}/{{page.group}}/{{ page.title | downcase }}">
-  Refer to the original documentation for more information on how to use it.
-  </a>
-</div>
+{% include callout.html %}
 
 <hr class="my-5">
 
