@@ -14,8 +14,10 @@ addons:
       channel: 2.5/stable
 
 cache:
-  yarn: true
-  bundler: true
+  directories:
+    - $HOME/.cache/yarn
+    - $HOME/.bundle
+    - $HOME/.gem
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
