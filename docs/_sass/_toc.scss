@@ -31,6 +31,7 @@
 
       &:hover {
         color: $blue;
+        color: var(--primary);
         text-decoration: none;
       }
     }

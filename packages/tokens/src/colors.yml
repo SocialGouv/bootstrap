@@ -1,0 +1,48 @@
+#
+
+token-raw-colors:
+  amber: &amber "#ffc107"
+  cerise: &cerise "#e83e8c"
+  eastern_blue: &eastern_blue "#17a2b8"
+  electric_violet: &electric_violet "#6610f2"
+  endeavour: &endeavour "#0053b3"
+  fuchsia_blue: &fuchsia_blue "#6f42c1"
+  jade: &jade "#03bd5b"
+  mountain_meadow: &mountain_meadow "#20c997"
+  punch: &punch "#dc3545"
+  yellow_orange: &yellow_orange "#ff9947"
+
+token-gray-scale:
+  white: &white "#fff"
+  gray-100: &gray-100 "#f8f9fa"
+  gray-200: &gray-200 "#e9ecef"
+  gray-300: &gray-300 "#dee2e6"
+  gray-400: &gray-400 "#ced4da"
+  gray-500: &gray-500 "#adb5bd"
+  gray-600: &gray-600 "#6c757d"
+  gray-700: &gray-700 "#495057"
+  gray-800: &gray-800 "#343a40"
+  gray-900: &gray-900 "#212529"
+  black: &black "#000"
+
+token-theme-colors:
+  blue: *endeavour
+  cyan: *eastern_blue
+  green: *jade
+  indigo: *electric_violet
+  orange: *yellow_orange
+  pink: *cerise
+  purple: *fuchsia_blue
+  red: *punch
+  teal: *mountain_meadow
+  yellow: *amber
+
+token-bootstrap-colors:
+  primary: *endeavour
+  secondary: *gray-600
+  success: *jade
+  danger: *punch
+  warning: *amber
+  info: *eastern_blue
+  light: *gray-100
+  dark: *gray-800

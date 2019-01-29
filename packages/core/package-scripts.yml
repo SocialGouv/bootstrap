@@ -25,4 +25,4 @@ scripts:
       --source-map-inline-sources
       --output dist/design-beta-gouv.min.css dist/design-beta-gouv.css
 
-  serve: chokidar src/**/* --initial -c "nps build"
+  serve: chokidar src/**/* ../tokens/src/**/* --initial -c "nps build"
