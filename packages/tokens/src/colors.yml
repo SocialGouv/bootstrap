@@ -2,18 +2,25 @@
 
 token-raw-colors:
   amber: &amber "#ffc107"
-  cerise: &cerise "#e83e8c"
-  eastern_blue: &eastern_blue "#17a2b8"
+  blue_ribbon: &blue_ribbon "#006be6"
+  congress_blue: &congress_blue "#003b80"
   electric_violet: &electric_violet "#6610f2"
   endeavour: &endeavour "#0053b3"
   fuchsia_blue: &fuchsia_blue "#6f42c1"
   jade: &jade "#03bd5b"
   mountain_meadow: &mountain_meadow "#20c997"
-  punch: &punch "#dc3545"
+  punch: &punch "#d63626"
+  sail: &sail "#b4e1fa"
+  sea_pink: &sea_pink "#efaca6"
+  serenade: &serenade "#fff0e4"
+  tara: &tara "#daf5e7"
   yellow_orange: &yellow_orange "#ff9947"
 
 token-gray-scale:
-  white: &white "#fff"
+  almost_black: &almost_black "#26353f"
+  black: &black "#1c1c1c"
+  dark_grey: &dark_grey "#8393a7"
+  darker_grey: &darker_grey "#53657d"
   gray-100: &gray-100 "#f8f9fa"
   gray-200: &gray-200 "#e9ecef"
   gray-300: &gray-300 "#dee2e6"
@@ -23,26 +30,36 @@ token-gray-scale:
   gray-700: &gray-700 "#495057"
   gray-800: &gray-800 "#343a40"
   gray-900: &gray-900 "#212529"
-  black: &black "#000"
+  grey: &grey "#adb9c9"
+  light_grey: &light_grey "#c9d3df"
+  lighter_grey: &lighter_grey "#ebeff3"
+  white: &white "#fff"
 
 token-theme-colors:
   blue: *endeavour
-  cyan: *eastern_blue
+  cyan: *sail
   green: *jade
   indigo: *electric_violet
+  light_blue: *blue_ribbon
+  light_green: *tara
+  light_orange: *serenade
+  light_red: *sea_pink
+  lighter-blue: *sail
   orange: *yellow_orange
-  pink: *cerise
+  pink: *sea_pink
   purple: *fuchsia_blue
   red: *punch
   teal: *mountain_meadow
   yellow: *amber
 
 token-bootstrap-colors:
+  danger: *punch
+  dark: *gray-800
+  info: *blue_ribbon
+  light: *gray-100
+  primary_dark: *congress_blue
+  primary_light: *blue_ribbon
   primary: *endeavour
   secondary: *gray-600
   success: *jade
-  danger: *punch
-  warning: *amber
-  info: *eastern_blue
-  light: *gray-100
-  dark: *gray-800
+  warning: *yellow_orange
