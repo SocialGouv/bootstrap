@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Badges
+title: Badge
 description: Documentation and examples for badges, our small count and labeling component.
 group: components
 toc: true
