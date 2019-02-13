@@ -23,7 +23,7 @@
   "homepage": "https://github.com/douglasduteil/design#readme",
   "dependencies": {
     "@design.beta.gouv/tokens": "^0.0.0",
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.7",
