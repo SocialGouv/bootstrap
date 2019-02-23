@@ -18,6 +18,6 @@
     "rollup": "^1.2.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.0.1",
-    "nps": "^5.9.3"
+    "nps": "^5.9.4"
   }
 }
