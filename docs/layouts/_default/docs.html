@@ -23,7 +23,6 @@
         <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">{{ .Title | markdownify }}</h1>
           <p class="bd-lead">{{ .Page.Params.Description | markdownify }}</p>
-          {{ partial "ads" . }}
           {{ .Content }}
         </main>
       </div>
