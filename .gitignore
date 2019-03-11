@@ -1,2 +1,5 @@
 node_modules
 dist
+docs/public
+docs/resources
+_gh_pages
