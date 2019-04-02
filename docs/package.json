@@ -10,8 +10,8 @@
     "@design.beta.gouv/core": "^0.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
     "chokidar-cli": "^1.2.2",
     "concurrently": "^4.1.0",
     "live-server": "^1.2.1",
