@@ -36,7 +36,7 @@ script:
   - yarn lint
   - yarn test
   - cd docs
-  - yarn nps build.rollup "build.jekyll --baseurl /design/master/docs"
+  - yarn nps build.rollup "build.jekyll --baseurl /bootstrap/master/docs"
   - cd ..
 
 before_deploy:
