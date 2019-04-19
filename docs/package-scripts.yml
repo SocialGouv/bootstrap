@@ -9,7 +9,7 @@ scripts:
     rollup: nps "build.rollup --watch"
     web: >-
       live-server
-      --mount=/@design.beta.gouv/core:../packages/core
+      --mount=/@socialgouv/bootstrap.core:../packages/core
       --no-browser
       --quiet
       _site

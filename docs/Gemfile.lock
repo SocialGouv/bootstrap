@@ -1,7 +1,7 @@
 PATH
   remote: themes
   specs:
-    design.beta.gouv (0.1.0)
+    socialgouv.bootstrap (0.1.0)
       jekyll (~> 3.8)
 
 GEM
@@ -77,7 +77,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  design.beta.gouv!
+  socialgouv.bootstrap!
   jekyll (~> 3.8.5)
   jekyll-autoprefixer (~> 1.0.1)
   jekyll-redirect-from (~> 0.14.0)

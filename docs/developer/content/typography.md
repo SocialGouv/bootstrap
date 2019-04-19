@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Typography
-description: Documentation and examples for Design Beta Gouv typography, including global settings, headings, body text, lists, and more.
+description: Documentation and examples for SocialGouv Bootstrap typography, including global settings, headings, body text, lists, and more.
 group: content
 toc: true
 ---
@@ -30,7 +30,7 @@ We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for bod
 
 {% capture example %}
 {%- for level in (1..6) -%}
-<h{{ level }}><code>&lt;h{{ level }}&gt;</code> Design Beta Gouv heading</h{{ level }}>
+<h{{ level }}><code>&lt;h{{ level }}&gt;</code> SocialGouv Bootstrap heading</h{{ level }}>
 {% endfor %}
 {% endcapture %}
 {% include example.html content=example %}
@@ -38,7 +38,7 @@ We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for bod
 {% capture example %}
 {%- for level in (1..6) -%}
 
-<p class="h{{ level }}"><code>.h{{ level }}</code> Design Beta Gouv heading</p>
+<p class="h{{ level }}"><code>.h{{ level }}</code> SocialGouv Bootstrap heading</p>
 {% endfor %}
 {% endcapture %}
 {% include example.html content=example %}

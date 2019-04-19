@@ -1,6 +1,6 @@
 # design
 
-The Design Gouv monorepo
+The Social Gouv Bootstrap monorepo
 
 yarn workspace docs nps serve
-yarn workspace @design.beta.gouv/core serve
+yarn workspace @socialgouv/bootstrap.core serve

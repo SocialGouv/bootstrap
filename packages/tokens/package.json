@@ -1,7 +1,7 @@
 {
-  "name": "@design.beta.gouv/tokens",
+  "name": "@socialgouv/bootstrap.tokens",
   "version": "0.0.0",
-  "description": "Beta Gouv Design Tokens",
+  "description": "Social Gouv Bootstrap Tokens",
   "main": "index.js",
   "scripts": {
     "lint": "yamllint src/**/*"

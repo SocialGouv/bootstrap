@@ -29,7 +29,7 @@ const importContext = defaultFiles.reduce(
   (memo, file) => `${memo}\n@import "${file}";`,
   ""
 );
-const mainFile = join(cwd, "src/design-beta-gouv.scss");
+const mainFile = join(cwd, "src/socialgouv-bootstrap.scss");
 const importedFiles = readFileSync(mainFile, { encoding: "utf8" })
   .match(/@import\s+"([^"]+)";/g)
   .map(importLine => {

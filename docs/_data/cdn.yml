@@ -1,11 +1,11 @@
 url: https://socialgouv.github.io/bootstrap
-baseURL: "@design.beta.gouv/core"
+baseURL: "@socialgouv/bootstrap.core"
 
 core:
   css:
-    name: "@design.beta.gouv/core"
+    name: "@socialgouv/bootstrap.core"
     integrity: "sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    path: "dist/design-beta-gouv.css"
+    path: "dist/socialgouv-bootstrap.css"
 
   js:
     url: https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js

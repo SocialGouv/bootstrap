@@ -12,7 +12,7 @@ scripts:
       --output ./dist
       --output-style expanded
       --precision 5
-      ./src/design-beta-gouv.scss
+      ./src/socialgouv-bootstrap.scss
     prefix: >-
       postcss
       --config postcss.config.js
@@ -23,6 +23,6 @@ scripts:
       --format breaksWith=lf
       --source-map
       --source-map-inline-sources
-      --output dist/design-beta-gouv.min.css dist/design-beta-gouv.css
+      --output dist/socialgouv-bootstrap.min.css dist/socialgouv-bootstrap.css
 
   serve: chokidar src/**/* ../tokens/src/**/* --initial -c "nps build"

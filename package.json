@@ -1,6 +1,6 @@
 {
   "private": true,
-  "description": "The Design Gouv monorepo",
+  "description": "The Social Gouv Bootstrap monorepo",
   "scripts": {
     "serve": "lerna run serve --parallel",
     "build": "lerna run build",

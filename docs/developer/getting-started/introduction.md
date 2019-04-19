@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Introduction
-description: Get started with Design Beta Gouv, the world's most popular framework for building responsive, mobile-first sites, with Design Beta Gouv CDN and a template starter page.
+description: Get started with SocialGouv Bootstrap, the world's most popular framework for building responsive, mobile-first sites, with SocialGouv Bootstrap CDN and a template starter page.
 group: getting-started
 redirect_from: 
   - /developer/
@@ -11,7 +11,7 @@ toc: true
 
 ## Quick start
 
-Looking to quickly add {{ site.title }} to your project ? Use Design Beta Gouv CDN, use our Github pages as CDN. Using a package manager or need to download the source files? [Head to the downloads page]({{ site.baseurl }}/developer/getting-started/download/).
+Looking to quickly add {{ site.title }} to your project ? Use SocialGouv Bootstrap CDN, use our Github pages as CDN. Using a package manager or need to download the source files? [Head to the downloads page]({{ site.baseurl }}/developer/getting-started/download/).
 
 ### CSS
 

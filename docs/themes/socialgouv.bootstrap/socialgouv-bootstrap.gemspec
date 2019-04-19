@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "design.beta.gouv"
+  spec.name          = "socialgouv.bootstrap"
   spec.version       = "0.1.0"
   spec.authors       = ["Douglas Duteil"]
   spec.email         = ["douglasduteil@gmail.com"]
 
-  spec.summary       = "Design Beta Gouv Jekyll Theme"
+  spec.summary       = "SocialGouv Bootstrap Jekyll Theme"
   spec.homepage      = "https://socialgouv.github.io/bootstrap/design"
   spec.license       = "APACHE-2"
 

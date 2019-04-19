@@ -45,11 +45,11 @@ before_deploy:
     git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
     mkdir -p out/$TRAVIS_BRANCH/docs &&
     mv docs/_site/* out/$TRAVIS_BRANCH/docs &&
-    mkdir -p out/$TRAVIS_BRANCH/@design.beta.gouv/core &&
-    mv packages/core/dist out/$TRAVIS_BRANCH/@design.beta.gouv/core/dist &&
-    mv packages/core/fonts out/$TRAVIS_BRANCH/@design.beta.gouv/core/fonts &&
-    mv packages/core/LICENSE out/$TRAVIS_BRANCH/@design.beta.gouv/core/LICENSE &&
-    mv packages/core/package.json out/$TRAVIS_BRANCH/@design.beta.gouv/core/package.json
+    mkdir -p out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core &&
+    mv packages/core/dist out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/dist &&
+    mv packages/core/fonts out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/fonts &&
+    mv packages/core/LICENSE out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/LICENSE &&
+    mv packages/core/package.json out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/package.json
 
 deploy:
   github-token: "$GITHUB_TOKEN"

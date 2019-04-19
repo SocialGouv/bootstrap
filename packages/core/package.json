@@ -1,7 +1,7 @@
 {
-  "name": "@design.beta.gouv/core",
+  "name": "@socialgouv/bootstrap.core",
   "version": "0.0.0",
-  "description": "Beta Gouv Core Design",
+  "description": "Social Gouv Bootstrap Core Design",
   "main": "index.js",
   "scripts": {
     "build": "nps build",
@@ -12,17 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/douglasduteil/design.git"
+    "url": "git+https://github.com/SocialGouv/bootstrap.git"
   },
   "keywords": [],
   "author": "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
   "license": "APACHE-2.0",
   "bugs": {
-    "url": "https://github.com/douglasduteil/design/issues"
+    "url": "https://github.com/SocialGouv/bootstrap/issues"
   },
-  "homepage": "https://github.com/douglasduteil/design#readme",
+  "homepage": "https://github.com/SocialGouv/bootstrap#readme",
   "dependencies": {
-    "@design.beta.gouv/tokens": "^0.0.0",
+    "@socialgouv/bootstrap.tokens": "^0.0.0",
     "bootstrap": "^4.2.1"
   },
   "devDependencies": {

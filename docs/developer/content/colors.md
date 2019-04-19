@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Colors
-description: List of Design Beta Gouv main colors.
+description: List of SocialGouv Bootstrap main colors.
 group: content
 toc: true
 ---
 
 ## Bootstrap theme
 
-Colors used by the Bootstrap Design Beta Gouv theme.
+Colors used by the SocialGouv Bootstrap theme.
 
 <ul class="list-unstyled row">
   {% for color in site.data.tokens-colors.token-bootstrap-colors %}
