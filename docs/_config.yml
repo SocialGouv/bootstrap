@@ -10,7 +10,7 @@ github_username: socialgouv
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: social.gouv.bootstrap
+theme: socialgouv.bootstrap
 permalink: /:categories/:title/
 plugins:
   - jekyll-autoprefixer
