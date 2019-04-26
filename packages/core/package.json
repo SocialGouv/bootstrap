@@ -36,6 +36,6 @@
     "nps": "^5.9.5",
     "popper.js": "^1.15.0",
     "postcss-cli": "^6.1.2",
-    "sass-lint": "^1.13.0"
+    "sass-lint": "^1.13.1"
   }
 }
