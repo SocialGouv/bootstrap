@@ -21,6 +21,10 @@ script:
   - yarn build --ignore docs
   - yarn lint
   - yarn test
+  #
+  - export SOCIALGOUV_BOOTSTRAP_VERSION=${TRAVIS_BRANCH}
+  - envsubst < ./docs/config.toml > ./docs/config.toml
+  #
   - yarn workspace docs nps "build.hugo --baseURL /bootstrap/$TRAVIS_BRANCH/docs"
 
 before_deploy:

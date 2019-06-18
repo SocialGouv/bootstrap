@@ -11,5 +11,13 @@ toc: true
 
 ## Quick start
 
-Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the folks at StackPath. Using a package manager or need to download the source files? [Head to the downloads page]({{< ref "developer/getting-started/download.md" >}}).
- 
+Looking to quickly add Social Gouv Bootstrap to your project ? Use SocialGouv Bootstrap CDN, use our Github pages as CDN. Using a package manager or need to download the source files? [Head to the downloads page]({{< ref "/developer/getting-started/download.md" >}}).
+
+### CSS
+
+Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
+
+{{< highlight html >}}
+
+<link rel="stylesheet" href="{{< param "cdn.url" >}}/{{< param "version" >}}/{{< param "cdn.baseURL" >}}/{{< param "cdn.core.css.path" >}}"  crossorigin="anonymous">
+{{< /highlight >}}

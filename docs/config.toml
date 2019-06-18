@@ -7,4 +7,23 @@ description = "The Social Gouv Bootstrap Website"
 theme = "socialgouv.bootstrap"
 
 [params]
-  version = "%%VERSION%%"
+  version = "${SOCIALGOUV_BOOTSTRAP_VERSION}"
+  [params.cdn]
+    url ="https://socialgouv.github.io/bootstrap"
+    baseURL ="@socialgouv/bootstrap.core"
+
+    [params.cdn.core.css]
+      name ="@socialgouv/bootstrap.core"
+      integrity ="${SOCIALGOUV_BOOTSTRAP_CORE_INTEGRITY}"
+      path ="dist/socialgouv-bootstrap.min.css"
+
+    [params.cdn.core.js]
+      url ="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      hash = "sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+
+    [params.cdn.jquery]
+      url ="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      hash ="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    [params.cdn.popper]
+      url ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      hash ="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"

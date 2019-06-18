@@ -17,19 +17,20 @@
 #     - title: Grid
 #     - title: Utilities for layout
 
-# - title: Content
-#   pages:
+- title: Content
+  pages:
 #     - title: Reboot
-#     - title: Typography
+    - title: Typography
+    - title: Color
 #     - title: Code
 #     - title: Images
 #     - title: Tables
 #     - title: Figures
 
-# - title: Components
-#   pages:
-#     - title: Alerts
-#     - title: Badge
+- title: Components
+  pages:
+    - title: Alerts
+    - title: Badge
 #     - title: Breadcrumb
 #     - title: Buttons
 #     - title: Button group
