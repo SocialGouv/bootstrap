@@ -30,7 +30,7 @@ before_deploy:
     git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
 
     mkdir -p out/$TRAVIS_BRANCH/docs &&
-    mv docs/_site/* out/$TRAVIS_BRANCH/docs &&
+    mv docs/public/* out/$TRAVIS_BRANCH/docs &&
     mkdir -p out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core &&
     mv packages/core/dist out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/dist &&
     mv packages/core/fonts out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/fonts &&
