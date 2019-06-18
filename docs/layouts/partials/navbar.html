@@ -1,0 +1,15 @@
+{{ "<!-- Navbar -->" | safeHTML }}
+<nav class="dbg-docs-navbar bg-white navbar navbar-expand navbar-light flex-column flex-md-row">
+  <a class="navbar-brand mr-0 mr-md-2" href="{{ .Site.BaseURL }}/" aria-label="Bootstrap">
+    {{ partial "icons/french-republic.svg" (dict "class" "d-block" "width" "90" "height" "53") }}
+  </a>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-self-start align-self-md-center">
+    <li class="nav-item">
+      <a class="nav-link{{ if .IsHome }} active{{ end }}" href="{{ .Site.BaseURL }}/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link{{ if eq .Page.Layout "docs" }} active{{ end }}" href="{{ .Site.BaseURL }}/developer">Developer</a>
+    </li>
+  </ul>
+</nav>

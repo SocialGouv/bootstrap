@@ -1,0 +1,10 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Social Gouv Bootstrap"
+email = "dsi-incubateur@sg.social.gouv.fr"
+description = "The Social Gouv Bootstrap Website"
+
+theme = "socialgouv.bootstrap"
+
+[params]
+  version = "%%VERSION%%"

@@ -1,0 +1,10 @@
+<!-- prettier-ignore -->
+
+<link
+  rel="stylesheet"
+  href="{{ .Site.BaseURL }}/../{{ .Site.Data.cdn.core.css.name }}/{{ .Site.Data.cdn.core.css.path }}"
+/>
+
+{{ $css := resources.Get "css/main.css" }}
+{{ $secureCss := $css | resources.Fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $secureCss.Permalink }}" integrity="{{ $secureCss.Data.Integrity }}" />

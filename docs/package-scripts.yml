@@ -1,15 +1,27 @@
 scripts:
   build:
-    default: nps build.rollup build.jekyll
-    jekyll: bundle exec jekyll build
+    default: nps build.scss build.hugo
+    hugo: hugo --cleanDestinationDir
     rollup: rollup --config
+    scss: >-
+      node-sass
+      --include-path node_modules
+      --include-path ../packages
+      --include-path ../node_modules
+      --output ./assets/css
+      --output-style expanded
+      --precision 5
+      ./assets/_scss/main.scss
   serve:
-    default: concurrently "nps serve.docs" "nps serve.web" "nps serve.rollup"
-    docs: nps "build.jekyll --watch"
-    rollup: nps "build.rollup --watch"
+    default: >-
+      concurrently
+      "nps serve.docs"
+      "nps serve.scss"
+      "nps serve.web"
+    docs: nps "build.hugo --watch"
+    scss: nps "build.scss --watch"
     web: >-
       live-server
       --mount=/@socialgouv/bootstrap.core:../packages/core
       --no-browser
-      --quiet
-      _site
+      public
