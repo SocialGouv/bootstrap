@@ -1,0 +1,18 @@
+//
+
+@import "bootstrap/scss/functions";
+@import "core/src/_variables.scss";
+@import "bootstrap/scss/mixins";
+@import "variables";
+
+//
+
+.sgb-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+.sgb-placeholder-img-lg {
+  font-size: 3.5rem;
+}

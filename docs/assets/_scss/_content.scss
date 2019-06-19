@@ -12,13 +12,13 @@ main {
 
   @for $i from 1 through 6 {
     h#{$i}[id] {
-      margin-top: $dbg-docs-navbar-height;
+      margin-top: $sgb-docs-navbar-height;
       margin-bottom: map-get($spacers, 4);
     }
   }
 
   @include media-breakpoint-up(md) {
-    $magic-top-space: $dbg-docs-navbar-height * 2;
+    $magic-top-space: $sgb-docs-navbar-height * 2;
 
     //
 

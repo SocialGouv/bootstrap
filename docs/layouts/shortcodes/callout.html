@@ -5,7 +5,7 @@
 
 {{- $css_class := .Get 0 | default "info" -}}
 
-<div class="dbg-docs-callout alert alert-{{ $css_class }}">
+<div class="sgb-docs-callout alert alert-{{ $css_class }}">
   <h4 class="alert-heading">Bootstrap component </h4>
   This component is the as the {{ .Site.Title  }} Bootstrap component.<br>
   <a href="{{- .Site.Params.bootstrap_doc_baseurl -}}/{{- $.Page.Params.group -}}/{{- .Page.Title | urlize -}}">

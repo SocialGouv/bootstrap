@@ -9,7 +9,7 @@
 
 .dgb-toc {
   @supports (position: sticky) {
-    $top: $dbg-docs-navbar-height + 3rem;
+    $top: $sgb-docs-navbar-height + 3rem;
     position: sticky;
     top: $top;
     height: calc(100vh - #{$top});
