@@ -77,7 +77,7 @@ toc: true
 ## Sizing
 
 
-<div class="bd-example">
+<div class="sgb-example">
   <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
     <button type="button" class="btn btn-secondary">Left</button>
     <button type="button" class="btn btn-secondary">Middle</button>
@@ -124,7 +124,7 @@ toc: true
 
 ## Vertical variation
 
-<div class="bd-example">
+<div class="sgb-example">
   <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
     <button type="button" class="btn btn-secondary">Button</button>
     <button type="button" class="btn btn-secondary">Button</button>
@@ -135,7 +135,7 @@ toc: true
   </div>
 </div>
 
-<div class="bd-example">
+<div class="sgb-example">
   <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
     <button type="button" class="btn btn-secondary">Button</button>
     <button type="button" class="btn btn-secondary">Button</button>
