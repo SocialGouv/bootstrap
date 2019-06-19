@@ -29,10 +29,12 @@
           our build system and readme.
         </p>
 
-        {{ highlight `npm install @socialgouv/bootstrap.core
-# or
-$ yarn add @socialgouv/bootstrap.core` "sh" "" }}
+        {{ highlight `npm install @socialgouv/bootstrap.core` "sh" "" }}
+        {{ highlight `yarn add @socialgouv/bootstrap.core` "sh" "" }}
+
         <hr class="half-rule" />
+
+        <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/developer/getting-started/download/">Read installation docs</a>
 
       </div>
 
@@ -52,6 +54,25 @@ $ yarn add @socialgouv/bootstrap.core` "sh" "" }}
   href="%s/%s/%s/%s"
   integrity="%s"
   crossorigin="anonymous">`) .Site.Params.cdn.url .Site.Params.version .Site.Params.cdn.core.css.name .Site.Params.cdn.core.css.path .Site.Params.cdn.core.css.integrity ) "html" "" }}
+
+        <h5>JS and Popper.js</h5>
+        {{ highlight (printf (`<script
+  src="%s"
+  integrity="%s"
+  crossorigin="anonymous"></script>
+
+  <script
+  src="%s"
+  integrity="%s"
+  crossorigin="anonymous"></script>
+
+<script
+  src="%s"
+  integrity="%s"
+  crossorigin="anonymous"></script>
+    `) .Site.Params.cdn.jquery.url .Site.Params.cdn.jquery.hash .Site.Params.cdn.popper.url .Site.Params.cdn.popper.hash .Site.Params.cdn.core.js.url .Site.Params.cdn.core.js.hash) "html" "" }}
+        <hr class="half-rule">
+        <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/developer/getting-started/introduction/">Explore the docs</a>
 
       </div>
 

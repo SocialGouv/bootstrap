@@ -1,0 +1,18 @@
+{{- /*
+  Usage: `callout "type"`,
+  where type is one of info (default), danger, warning
+*/ -}}
+
+{{- $css_class := .Get 0 | default "info" -}}
+
+<div class="dbg-docs-callout alert alert-{{ $css_class }}">
+  <h4 class="alert-heading">Bootstrap component </h4>
+  This component is the as the {{ .Site.Title  }} Bootstrap component.<br>
+  <a href="{{- .Site.Params.bootstrap_doc_baseurl -}}/{{- $.Page.Params.group -}}/{{- .Page.Title | urlize -}}">
+  Refer to the original documentation for more information on how to use it.
+  </a>
+</div>
+
+<div class="bd-callout bd-callout-{{ $css_class }}">
+{{ .Inner | markdownify }}
+</div>

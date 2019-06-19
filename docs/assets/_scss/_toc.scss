@@ -16,12 +16,18 @@
     overflow-y: auto;
   }
 
-  .section-nav {
+  > nav {
     padding-left: 0;
     border-left: 1px solid $gray-200;
+
+    ul{
+      padding: 0;
+    }
+
+
   }
 
-  .toc-entry {
+  li {
     display: block;
 
     > a {
