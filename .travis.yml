@@ -20,6 +20,7 @@ script:
   #
   - export SOCIALGOUV_BOOTSTRAP_VERSION=${TRAVIS_BRANCH}
   - npx envsub docs/config.toml docs/config.toml
+  - cat docs/config.toml
   #
   - yarn workspace docs nps "build.hugo --baseURL /bootstrap/$TRAVIS_BRANCH/docs"
 
