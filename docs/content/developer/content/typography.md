@@ -8,10 +8,6 @@ aliases:
   - "/developer/content/"
 ---
 
-{{< partial "callout-info-bootstrap-component.html" >}}
-
-<hr class="my-5">
-
 ## Overview
 
 We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for body text and [Evolventa](https://github.com/evolventa/evolventa) for heading.
@@ -33,6 +29,7 @@ We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for bod
 {{< example >}}
 {{< heading.inline >}}
 {{- range $level :=  (seq 6) }}
+
 <p class="h{{ $level }}"><code>.h{{ $level }}</code> SocialGouv Bootstrap heading</p>{{- end -}}
 {{< /heading.inline >}}
 {{< /example >}}
@@ -49,10 +46,10 @@ We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for bod
 
 ## Display headings
 
-
 {{< example >}}
 {{< display.inline >}}
 {{- range $level :=  (seq 6) }}
+
 <h1 class="display-{{ $level }}">Display {{ $level }}</h1>{{- end -}}
 {{< /display.inline >}}
 {{< /example >}}
