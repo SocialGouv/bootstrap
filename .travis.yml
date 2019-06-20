@@ -19,6 +19,7 @@ script:
   - yarn test
   #
   - export SOCIALGOUV_BOOTSTRAP_VERSION=${TRAVIS_BRANCH}
+  - export SOCIALGOUV_BOOTSTRAP_CORE_INTEGRITY=$(cat packages/core/dist/socialgouv-bootstrap.min.css | openssl dgst -sha384 -binary | openssl enc -base64 -A )
   - npx envsub --protect docs/config.toml docs/config.toml
   #
   - yarn workspace docs nps build

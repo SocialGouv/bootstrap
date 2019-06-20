@@ -17,6 +17,13 @@ Looking to quickly add Social Gouv Bootstrap to your project ? Use SocialGouv Bo
 
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
+{{< highlight html >}}
+<link
+  rel="stylesheet"
+  href="{{< param "cdn.url" >}}/{{< param "version" >}}/{{< param "cdn.baseURL" >}}/{{< param "cdn.core.css.path" >}}"
+  integrity="{{< param "cdn.core.css.integrity" >}}"
+  crossorigin="anonymous"/>
+{{< /highlight >}}
 
 ### JS
 
