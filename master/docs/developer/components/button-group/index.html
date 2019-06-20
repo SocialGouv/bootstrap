@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html><meta charset="utf-8">
+<!doctype html>
+<html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.55.6">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
-<title>Social Gouv Bootstrap · </title>
+<title>Button group · Social Gouv Bootstrap</title>
 
-<link rel="canonical" href="/bootstrap/master/docs/">
+<link rel="canonical" href="/bootstrap/master/docs/developer/components/button-group/">
 
 
 
@@ -28,17 +28,17 @@
 <!-- Favicons -->
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Button group">
+<meta name="twitter:description" content="Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.">
 <meta name="twitter:image" content="/bootstrap/master/docs">
 
 <!-- Facebook -->
-<meta property="og:url" content="/bootstrap/master/docs/">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
+<meta property="og:url" content="/bootstrap/master/docs/developer/components/button-group/">
+<meta property="og:title" content="Button group">
+<meta property="og:description" content="Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/bootstrap/master/docs">
 <meta property="og:image:secure_url" content="/bootstrap/master/docs">
@@ -76,89 +76,442 @@
 
   <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-self-start align-self-md-center">
     <li class="nav-item">
-      <a class="nav-link active" href="/bootstrap/master/docs/">Home</a>
+      <a class="nav-link" href="/bootstrap/master/docs/">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/bootstrap/master/docs/developer">Developer</a>
+      <a class="nav-link active" href="/bootstrap/master/docs/developer">Developer</a>
     </li>
   </ul>
 </nav>
 
 
-    <main class="pt-0" id="content" role="main">
-      <div class="sgb-docs-jumbotron jumbotron jumbotron-fluid mb-0">
-        <div class="align-items-center container d-flex flex-column">
-          <hr class="border-0 d-flex my-5" />
-          <h1 class="bg-white display-4 px-5 py-3">Social Gouv Bootstrap</h1>
-          <hr class="border-0 d-flex my-5" />
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2">
+          <aside class="sgb-docs-sidebar">
+
+  <nav class="sgb-docs-sidebar-nav" id="sgb-docs-nav" aria-label="Main navigation">
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/developer/getting-started/">Getting started</a>
+      </h6>
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/developer/content/">Content</a>
+      </h6>
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/developer/components/">Components</a>
+      </h6>
+      <ul class="nav flex-column">
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/alerts/">Alerts</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/badges/">Badges</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/breadcrumb/">Breadcrumb</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/buttons/">Buttons</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <span class="nav-link px-4">Button group</span>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/card/">Card</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/carousel/">Carousel</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/close-icon/">Close icon</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/collapse/">Collapse</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/dropdowns/">Dropdowns</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/forms/">Forms</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/input-group/">Input group</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/list-group/">List group</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/modal/">Modal</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/navs/">Navs</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/navbar/">Navbar</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/pagination/">Pagination</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/popovers/">Popovers</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/progress/">Progress</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/scrollspy/">Scrollspy</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/spinners/">Spinners</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/toasts/">Toasts</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/components/tooltips/">Tooltips</a>
+            
+          </li>
+      </ul>
+  </nav>
+
+</aside>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 order-2">
+            <aside class="dgb-toc mt-5" aria-label="Secondary navigation">
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#button-toolbar">Button toolbar</a></li>
+<li><a href="#sizing">Sizing</a></li>
+<li><a href="#nesting">Nesting</a></li>
+<li><a href="#vertical-variation">Vertical variation</a></li>
+</ul></li>
+</ul>
+</nav>
+            </aside>
+          </div>
+        
+
+        <div class="col-12 col-md-9 col-xl-8 px-0">
+
+          <div class="sgb-docs-jumbotron jumbotron jumbotron-fluid mb-0">
+            <div class="align-items-center container d-flex flex-column">
+              <hr class="border-0 d-flex my-5">
+              <h1 class="bg-white display-4 px-5 py-3">Button group</h1>
+              <hr class="border-0 d-flex my-5">
+            </div>
+          </div>
+
+          <main class="pb-5 px-4 px-md-5" role="main" id="content">
+
+            <p class="lead mb-5 text-justify text-muted">
+              Group a series of buttons together on a single line with the button group, and super-power them with JavaScript.
+            </p>
+
+            <hr class="my-5">
+
+          
+
+<div class="sgb-docs-callout alert alert-info">
+  <h4 class="alert-heading">Bootstrap component </h4>
+  This component is similar to the Button group Bootstrap component.<br>
+  <a href="https://getbootstrap.com/docs/4.3/components/button-group">
+  Refer to the original documentation for more information on how to use it.
+  </a>
+</div>
+
+
+
+<hr class="my-5">
+
+<div class="sgb-docs-example">
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">Left</button>
+  <button type="button" class="btn btn-secondary">Middle</button>
+  <button type="button" class="btn btn-secondary">Right</button>
+</div>
+</div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Basic example&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>Left<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>Middle<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>Right<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+<h2 id="button-toolbar">Button toolbar</h2>
+
+<div class="sgb-docs-example">
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-secondary">5</button>
+    <button type="button" class="btn btn-secondary">6</button>
+    <button type="button" class="btn btn-secondary">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary">8</button>
+  </div>
+</div>
+</div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-toolbar&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;toolbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Toolbar with button groups&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group mr-2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;First group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group mr-2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Second group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Third group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>8<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+<p><br></p>
+
+<div class="sgb-docs-example">
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon">@</div>
+    </div>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+</div>
+
+<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon2">@</div>
+    </div>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+  </div>
+</div>
+</div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-toolbar mb-3&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;toolbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Toolbar with button groups&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group mr-2&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;First group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-prepend&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;btnGroupAddon&#34;</span><span class="p">&gt;</span>@<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Input group example&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Input group example&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;btnGroupAddon&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-toolbar justify-content-between&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;toolbar&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Toolbar with button groups&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;First group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-prepend&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;input-group-text&#34;</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;btnGroupAddon2&#34;</span><span class="p">&gt;</span>@<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;form-control&#34;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&#34;Input group example&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Input group example&#34;</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&#34;btnGroupAddon2&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+<h2 id="sizing">Sizing</h2>
+
+<div class="sgb-example">
+  <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+  <br>
+  <div class="btn-group" role="group" aria-label="Default button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+  <br>
+  <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+  </div>
+</div>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group btn-group-lg&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group btn-group-sm&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+<h2 id="nesting">Nesting</h2>
+
+<div class="sgb-docs-example">
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-secondary">1</button>
+  <button type="button" class="btn btn-secondary">2</button>
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Dropdown link</a>
+      <a class="dropdown-item" href="#">Dropdown link</a>
+    </div>
+  </div>
+</div>
+</div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Button group with nested dropdown&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary&#34;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group&#34;</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;group&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;btnGroupDrop1&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn btn-secondary dropdown-toggle&#34;</span> <span class="na">data-toggle</span><span class="o">=</span><span class="s">&#34;dropdown&#34;</span> <span class="na">aria-expanded</span><span class="o">=</span><span class="s">&#34;false&#34;</span><span class="p">&gt;</span>
+      Dropdown
+    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-menu&#34;</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">&#34;btnGroupDrop1&#34;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Dropdown link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;dropdown-item&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span><span class="p">&gt;</span>Dropdown link<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+<h2 id="vertical-variation">Vertical variation</h2>
+
+<div class="sgb-example">
+  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+  </div>
+</div>
+
+<div class="sgb-example">
+  <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <button type="button" class="btn btn-secondary">Button</button>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop2" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop3" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupVerticalDrop4" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+        <a class="dropdown-item" href="#">Dropdown link</a>
+        <a class="dropdown-item" href="#">Dropdown link</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;btn-group-vertical&#34;</span><span class="p">&gt;</span>
+  ...
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
+
+          </main>
+
         </div>
       </div>
-    </main>
-
-    <div class="row m-0 border border-white">
-      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
-        <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32"><title>Import</title><path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"/></svg>
-
-        <h3>Installation</h3>
-        <p>
-          Include Social Gouv Bootstrap’s source Sass and JavaScript files via npm.
-          Package managed installs don’t include documentation, but do include
-          our build system and readme.
-        </p>
-
-        <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">npm install @socialgouv/bootstrap.core</code></pre></div>
-        <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">yarn add @socialgouv/bootstrap.core</code></pre></div>
-
-        <hr class="half-rule" />
-
-        <a class="btn btn-outline-primary" href="/bootstrap/master/docs/developer/getting-started/download/">Read installation docs</a>
-
-      </div>
-
-      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
-
-        <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32"><title>Download</title><path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"/></svg>
-        <h3>BootstrapCDN</h3>
-        <p>
-          When you only need to include Bootstrap’s compiled CSS or JS, you can
-          use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.
-        </p>
-
-        <h5>CSS only</h5>
-        <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span>
-  <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
-  <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://socialgouv.github.io/bootstrap/master/@socialgouv/bootstrap.core/dist/socialgouv-bootstrap.min.css&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;${SOCIALGOUV_BOOTSTRAP_CORE_INTEGRITY}&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span></code></pre></div>
-
-        <h5>JS and Popper.js</h5>
-        <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-
-  <span class="p">&lt;</span><span class="nt">script</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">script</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    </code></pre></div>
-        <hr class="half-rule">
-        <a class="btn btn-outline-primary" href="/bootstrap/master/docs/developer/getting-started/introduction/">Explore the docs</a>
-
-      </div>
-
     </div>
 
-    
-
-    
     <!-- Scripts -->
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

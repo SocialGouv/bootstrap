@@ -1,1 +1,0 @@
-Sitemap: /bootstrap/master/docs/sitemap.xml

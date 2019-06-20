@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html><meta charset="utf-8">
+<!doctype html>
+<html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
+<meta name="description" content="Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.55.6">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
-<title>Social Gouv Bootstrap · </title>
+<title>JavaScript · Social Gouv Bootstrap</title>
 
-<link rel="canonical" href="/bootstrap/master/docs/">
+<link rel="canonical" href="/bootstrap/master/docs/developer/getting-started/javascript/">
 
 
 
@@ -28,17 +28,17 @@
 <!-- Favicons -->
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
-<meta name="twitter:title" content="">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="JavaScript">
+<meta name="twitter:description" content="Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
 <meta name="twitter:image" content="/bootstrap/master/docs">
 
 <!-- Facebook -->
-<meta property="og:url" content="/bootstrap/master/docs/">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
+<meta property="og:url" content="/bootstrap/master/docs/developer/getting-started/javascript/">
+<meta property="og:title" content="JavaScript">
+<meta property="og:description" content="Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/bootstrap/master/docs">
 <meta property="og:image:secure_url" content="/bootstrap/master/docs">
@@ -76,89 +76,341 @@
 
   <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-self-start align-self-md-center">
     <li class="nav-item">
-      <a class="nav-link active" href="/bootstrap/master/docs/">Home</a>
+      <a class="nav-link" href="/bootstrap/master/docs/">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/bootstrap/master/docs/developer">Developer</a>
+      <a class="nav-link active" href="/bootstrap/master/docs/developer">Developer</a>
     </li>
   </ul>
 </nav>
 
 
-    <main class="pt-0" id="content" role="main">
-      <div class="sgb-docs-jumbotron jumbotron jumbotron-fluid mb-0">
-        <div class="align-items-center container d-flex flex-column">
-          <hr class="border-0 d-flex my-5" />
-          <h1 class="bg-white display-4 px-5 py-3">Social Gouv Bootstrap</h1>
-          <hr class="border-0 d-flex my-5" />
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2">
+          <aside class="sgb-docs-sidebar">
+
+  <nav class="sgb-docs-sidebar-nav" id="sgb-docs-nav" aria-label="Main navigation">
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/developer/getting-started/">Getting started</a>
+      </h6>
+      <ul class="nav flex-column">
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/getting-started/introduction/">Introduction</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/getting-started/download/">Download</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/getting-started/contents/">Contents</a>
+            
+          </li>
+          <li class="nav-item">
+            
+            <span class="nav-link px-4">JavaScript</span>
+            
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link px-4" href="/developer/getting-started/build-tools/">Build tools</a>
+            
+          </li>
+      </ul>
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/developer/content/">Content</a>
+      </h6>
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/developer/components/">Components</a>
+      </h6>
+  </nav>
+
+</aside>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 order-2">
+            <aside class="dgb-toc mt-5" aria-label="Secondary navigation">
+              <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#individual-or-compiled">Individual or compiled</a></li>
+<li><a href="#using-bootstrap-as-a-module">Using Bootstrap as a module</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#data-attributes">Data attributes</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#programmatic-api">Programmatic API</a>
+<ul>
+<li><a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a></li>
+<li><a href="#default-settings">Default settings</a></li>
+</ul></li>
+<li><a href="#no-conflict-only-if-you-use-jquery">No conflict (only if you use jQuery)</a></li>
+<li><a href="#version-numbers">Version numbers</a></li>
+<li><a href="#no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</a></li>
+<li><a href="#sanitizer">Sanitizer</a></li>
+</ul></li>
+</ul>
+</nav>
+            </aside>
+          </div>
+        
+
+        <div class="col-12 col-md-9 col-xl-8 px-0">
+
+          <div class="sgb-docs-jumbotron jumbotron jumbotron-fluid mb-0">
+            <div class="align-items-center container d-flex flex-column">
+              <hr class="border-0 d-flex my-5">
+              <h1 class="bg-white display-4 px-5 py-3">JavaScript</h1>
+              <hr class="border-0 d-flex my-5">
+            </div>
+          </div>
+
+          <main class="pb-5 px-4 px-md-5" role="main" id="content">
+
+            <p class="lead mb-5 text-justify text-muted">
+              Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.
+            </p>
+
+            <hr class="my-5">
+
+          
+
+<h2 id="individual-or-compiled">Individual or compiled</h2>
+
+<p>Plugins can be included individually (using Bootstrap&rsquo;s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code> (don&rsquo;t include both).</p>
+
+<p>If you use a bundler (Webpack, Rollup&hellip;), you can use <code>/js/dist/*.js</code> files which are UMD ready.</p>
+
+<h2 id="using-bootstrap-as-a-module">Using Bootstrap as a module</h2>
+
+<p>We provide a version of Bootstrap built as <code>ESM</code> (<code>bootstrap.esm.js</code> and <code>bootstrap.esm.min.js</code>) which allows you to use Bootstrap as a module in your browser, if your <a href="https://caniuse.com/#feat=es6-module">targeted browsers support it</a>.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span><span class="p">&gt;</span>
+  <span class="k">import</span> <span class="p">{</span> <span class="nx">Toast</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;bootstrap.esm.min.js&#39;</span>
+
+  <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.toast&#39;</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">toastNode</span> <span class="p">=&gt;</span> <span class="k">new</span> <span class="nx">Toast</span><span class="p">(</span><span class="nx">toastNode</span><span class="p">))</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
+
+<div class="sgb-docs-callout alert alert-warning">
+  <h4 class="alert-heading">Bootstrap component </h4>
+  This component is the as the Social Gouv Bootstrap Bootstrap component.<br>
+  <a href="/getting-started/javascript">
+  Refer to the original documentation for more information on how to use it.
+  </a>
+</div>
+
+<div class="bd-callout bd-callout-warning">
+<h2 id="incompatible-plugins">Incompatible plugins</h2>
+
+<p>Due to browser limitations, some of our plugins, namely Dropdown, Tooltip and Popover plugins, cannot be used in a <code>&lt;script&gt;</code> tag with <code>module</code> type because they depend on Popper.js. For more information about the issue see <a href="https://developers.google.com/web/fundamentals/primers/modules#specifiers">here</a>.
+</div>
+
+
+<h2 id="dependencies">Dependencies</h2>
+
+<p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs.</p>
+
+<p>Our dropdowns, popovers and tooltips also depend on <a href="https://popper.js.org/">Popper.js</a>.</p>
+
+<h2 id="data-attributes">Data attributes</h2>
+
+<p>Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to <strong>only use one set of data attributes on a single element</strong> (e.g., you cannot trigger a tooltip and modal from the same button.)</p>
+
+<div class="sgb-docs-callout alert alert-warning">
+  <h4 class="alert-heading">Bootstrap component </h4>
+  This component is the as the Social Gouv Bootstrap Bootstrap component.<br>
+  <a href="/getting-started/javascript">
+  Refer to the original documentation for more information on how to use it.
+  </a>
+</div>
+
+<div class="bd-callout bd-callout-warning">
+<h2 id="selectors">Selectors</h2>
+
+<p>Currently to query DOM elements we use the native methods <code>querySelector</code> and <code>querySelectorAll</code> for performance reasons, so you have to use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>.
+If you use special selectors, for example: <code>collapse:Example</code> be sure to escape them.
+</div>
+
+
+<h2 id="events">Events</h2>
+
+<p>Bootstrap provides custom events for most plugins&rsquo; unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
+
+<p>All infinitive events provide <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a> functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call <code>preventDefault()</code>.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myModal</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myModal&#39;</span><span class="p">)</span>
+
+<span class="nx">myModal</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;show.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// stops modal from being shown
+</span><span class="c1"></span>  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div>
+
+<h2 id="programmatic-api">Programmatic API</h2>
+
+<p>All constructors accept an optional options object or nothing (which initiates a plugin with its default behavior):</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myModalEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myModal&#39;</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="nx">myModalEl</span><span class="p">)</span> <span class="c1">// initialized with defaults
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="nx">myModalEl</span><span class="p">,</span> <span class="p">{</span> <span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span> <span class="p">})</span> <span class="c1">// initialized with no keyboard
+</span></code></pre></div>
+
+<p>If you&rsquo;d like to get a particular plugin instance, each plugin exposes a <code>_getInstance</code> method. In order to retrieve it directly from an element, do this: <code>bootstrap.Popover._getInstance(myPopoverEl)</code>.</p>
+
+<h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions</h3>
+
+<p>All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started but <strong>before it ends</strong>.</p>
+
+<p>In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCollapseEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;#myCollapse&#39;</span><span class="p">)</span>
+
+<span class="nx">myCollapseEl</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;shown.bs.collapse&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Action to execute once the collapsible area is expanded
+</span><span class="c1"></span><span class="p">})</span>
+</code></pre></div>
+
+<p>In addition a method call on a <strong>transitioning component will be ignored</strong>.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCarouselEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myCarousel&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">carousel</span> <span class="o">=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Carousel</span><span class="p">.</span><span class="nx">_getInstance</span><span class="p">(</span><span class="nx">myCarouselEl</span><span class="p">)</span> <span class="c1">// Retrieve a Carousel instance
+</span><span class="c1"></span>
+<span class="nx">myCarouselEl</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;slid.bs.carousel&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// Will slide to the slide 2 as soon as the transition to slide 1 is finished
+</span><span class="c1"></span><span class="p">})</span>
+
+<span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span> <span class="c1">// Will start sliding to the slide 1 and returns to the caller
+</span><span class="c1"></span><span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// !! Will be ignored, as the transition to the slide 1 is not finished !!
+</span></code></pre></div>
+
+<h3 id="default-settings">Default settings</h3>
+
+<p>You can change the default settings for a plugin by modifying the plugin&rsquo;s <code>Constructor.Default</code> object:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// changes default for the modal plugin&#39;s `keyboard` option to false
+</span><span class="c1"></span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span>
+</code></pre></div>
+
+<h2 id="no-conflict-only-if-you-use-jquery">No conflict (only if you use jQuery)</h2>
+
+<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// return $.fn.button to previously assigned value
+</span><span class="c1"></span><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span> <span class="c1">// give $().bootstrapBtn the Bootstrap functionality
+</span></code></pre></div>
+
+<h2 id="version-numbers">Version numbers</h2>
+
+<p>The version of each of Bootstrap&rsquo;s plugins can be accessed via the <code>VERSION</code> property of the plugin&rsquo;s constructor. For example, for the tooltip plugin:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">.</span><span class="nx">VERSION</span> <span class="c1">// =&gt; &#34;master&#34;
+</span></code></pre></div>
+
+<h2 id="no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</h2>
+
+<p>Bootstrap&rsquo;s plugins don&rsquo;t fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
+
+<div class="sgb-docs-callout alert alert-warning">
+  <h4 class="alert-heading">Bootstrap component </h4>
+  This component is the as the Social Gouv Bootstrap Bootstrap component.<br>
+  <a href="/getting-started/javascript">
+  Refer to the original documentation for more information on how to use it.
+  </a>
+</div>
+
+<div class="bd-callout bd-callout-warning">
+<h5 id="third-party-libraries">Third-party libraries</h5>
+
+<p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code>.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.
+</div>
+
+
+<h2 id="sanitizer">Sanitizer</h2>
+
+<p>Tooltips and Popovers use our built-in sanitizer to sanitize options which accept HTML.</p>
+
+<p>The default <code>whiteList</code> value is the following:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span> <span class="o">=</span> <span class="sr">/^aria-[\w-]*$/i</span>
+<span class="kd">var</span> <span class="nx">DefaultWhitelist</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// Global attributes allowed on any supplied element below.
+</span><span class="c1"></span>  <span class="s1">&#39;*&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;lang&#39;</span><span class="p">,</span> <span class="s1">&#39;role&#39;</span><span class="p">,</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span><span class="p">],</span>
+  <span class="nx">a</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">,</span> <span class="s1">&#39;href&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;rel&#39;</span><span class="p">],</span>
+  <span class="nx">area</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">b</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">br</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">col</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">code</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">div</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">em</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">hr</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h1</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h2</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h3</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h4</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h5</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">h6</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">i</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">img</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;alt&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">],</span>
+  <span class="nx">li</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">ol</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">p</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">pre</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">s</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">small</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">span</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">sub</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">sup</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">strong</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">u</span><span class="o">:</span> <span class="p">[],</span>
+  <span class="nx">ul</span><span class="o">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>If you want to add new values to this default <code>whiteList</code> you can do the following:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myDefaultWhiteList</span> <span class="o">=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">whiteList</span>
+
+<span class="c1">// To allow table elements
+</span><span class="c1"></span><span class="nx">myDefaultWhiteList</span><span class="p">.</span><span class="nx">table</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1">// To allow td elements and data-option attributes on td elements
+</span><span class="c1"></span><span class="nx">myDefaultWhiteList</span><span class="p">.</span><span class="nx">td</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;data-option&#39;</span><span class="p">]</span>
+
+<span class="c1">// You can push your custom regex to validate your attributes.
+</span><span class="c1">// Be careful about your regular expressions being too lax
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">myCustomRegex</span> <span class="o">=</span> <span class="sr">/^data-my-app-[\w-]+/</span>
+<span class="nx">myDefaultWhiteList</span><span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">myCustomRegex</span><span class="p">)</span>
+</code></pre></div>
+
+<p>If you want to bypass our sanitizer because you prefer to use a dedicated library, for example <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>, you should do the following:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">yourTooltipEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;yourTooltip&#39;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">tooltip</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">(</span><span class="nx">yourTooltipEl</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">sanitizeFn</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">DOMPurify</span><span class="p">.</span><span class="nx">sanitize</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+</code></pre></div>
+
+          </main>
+
         </div>
       </div>
-    </main>
-
-    <div class="row m-0 border border-white">
-      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
-        <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32"><title>Import</title><path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"/></svg>
-
-        <h3>Installation</h3>
-        <p>
-          Include Social Gouv Bootstrap’s source Sass and JavaScript files via npm.
-          Package managed installs don’t include documentation, but do include
-          our build system and readme.
-        </p>
-
-        <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">npm install @socialgouv/bootstrap.core</code></pre></div>
-        <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">yarn add @socialgouv/bootstrap.core</code></pre></div>
-
-        <hr class="half-rule" />
-
-        <a class="btn btn-outline-primary" href="/bootstrap/master/docs/developer/getting-started/download/">Read installation docs</a>
-
-      </div>
-
-      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
-
-        <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32"><title>Download</title><path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"/></svg>
-        <h3>BootstrapCDN</h3>
-        <p>
-          When you only need to include Bootstrap’s compiled CSS or JS, you can
-          use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.
-        </p>
-
-        <h5>CSS only</h5>
-        <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span>
-  <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
-  <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://socialgouv.github.io/bootstrap/master/@socialgouv/bootstrap.core/dist/socialgouv-bootstrap.min.css&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;${SOCIALGOUV_BOOTSTRAP_CORE_INTEGRITY}&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span></code></pre></div>
-
-        <h5>JS and Popper.js</h5>
-        <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://code.jquery.com/jquery-3.3.1.slim.min.js&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-
-  <span class="p">&lt;</span><span class="nt">script</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">script</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&#34;</span>
-  <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM&#34;</span>
-  <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    </code></pre></div>
-        <hr class="half-rule">
-        <a class="btn btn-outline-primary" href="/bootstrap/master/docs/developer/getting-started/introduction/">Explore the docs</a>
-
-      </div>
-
     </div>
 
-    
-
-    
     <!-- Scripts -->
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
