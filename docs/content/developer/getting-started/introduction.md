@@ -17,12 +17,12 @@ Looking to quickly add Social Gouv Bootstrap to your project ? Use SocialGouv Bo
 
 Copy-paste the stylesheet `<link>` into your `<head>` before all other stylesheets to load our CSS.
 
+
 ### JS
 
 Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and [Popper.js](https://popper.js.org/). Place the following `<script>`s near the end of your pages, right before the closing `</body>` tag, to enable them. Popper.js must come first, and then our JavaScript plugins.
 
 {{< highlight html >}}
-
 <script
   src="{{< param "cdn.popper.url" >}}"
   integrity="{{< param "cdn.popper.hash" >}}"
@@ -31,7 +31,6 @@ Many of our components require the use of JavaScript to function. Specifically, 
   src="{{< param "cdn.core.js.url" >}}"
   integrity="{{< param "cdn.core.js.hash" >}}"
   crossorigin="anonymous"></script>
-
 {{< /highlight >}}
 
 If you use `<script type="module">`, please refer to our [using Bootstrap as a module]({{< ref "/developer/getting-started/javascript.md#using-bootstrap-as-a-module" >}}) section.
@@ -60,7 +59,6 @@ Our `bootstrap.bundle.js` and `bootstrap.bundle.min.js` include [Popper](https:/
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
 {{< highlight html >}}
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -72,11 +70,10 @@ Be sure to have your pages set up with the latest design and development standar
     <link
       rel="stylesheet"
       href="{{< param "cdn.url" >}}/{{< param "version" >}}/{{< param "cdn.baseURL" >}}/{{< param "cdn.core.css.path" >}}"
-
+      integrity="{{< param "cdn.core.css.integrity" >}}"
       crossorigin="anonymous"/>
 
     <title>Hello, world!</title>
-
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -91,7 +88,6 @@ Be sure to have your pages set up with the latest design and development standar
       src="{{< param "cdn.core.js.url" >}}"
       integrity="{{< param "cdn.core.js.hash" >}}"
       crossorigin="anonymous"></script>
-
   </body>
 </html>
 {{< /highlight >}}
@@ -100,14 +96,13 @@ That's all you need for overall page requirements. Visit the [Layout docs]({{< p
 
 ## Important globals
 
-Bootstrap employs a handful of important global styles and settings that you'll need to be aware of when using it, all of which are almost exclusively geared towards the _normalization_ of cross browser styles. Let's dive in.
+Bootstrap employs a handful of important global styles and settings that you'll need to be aware of when using it, all of which are almost exclusively geared towards the *normalization* of cross browser styles. Let's dive in.
 
 ### HTML5 doctype
 
 Bootstrap requires the use of the HTML5 doctype. Without it, you'll see some funky incomplete styling, but including it shouldn't cause any considerable hiccups.
 
 {{< highlight html >}}
-
 <!doctype html>
 <html lang="en">
   ...
@@ -116,10 +111,9 @@ Bootstrap requires the use of the HTML5 doctype. Without it, you'll see some fun
 
 ### Responsive meta tag
 
-Bootstrap is developed _mobile first_, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, **add the responsive viewport meta tag** to your `<head>`.
+Bootstrap is developed *mobile first*, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, **add the responsive viewport meta tag** to your `<head>`.
 
 {{< highlight html >}}
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{< /highlight >}}
 
@@ -133,7 +127,7 @@ On the rare occasion you need to override it, use something like the following:
 
 {{< highlight css >}}
 .selector-for-some-widget {
-box-sizing: content-box;
+  box-sizing: content-box;
 }
 {{< /highlight >}}
 
@@ -144,3 +138,4 @@ Learn more about [box model and sizing at CSS Tricks](https://css-tricks.com/box
 ### Reboot
 
 For improved cross-browser rendering, we use [Reboot]({{< param "bootstrapDocBaseurl" >}}/content/reboot/) to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.
+ 

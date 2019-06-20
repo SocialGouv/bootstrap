@@ -26,8 +26,9 @@ disableKinds = ["404", "taxonomy", "taxonomyTerm", "RSS"]
 
     [params.cdn.core.css]
       name ="@socialgouv/bootstrap.core"
-      integrity =""
       path ="dist/socialgouv-bootstrap.min.css"
+      integrity = "${SOCIALGOUV_BOOTSTRAP_CORE_INTEGRITY}"
+
     [params.cdn.core.js]
       url ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       hash = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
