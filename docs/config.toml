@@ -1,0 +1,41 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Social Gouv Bootstrap"
+email = "dsi-incubateur@sg.social.gouv.fr"
+description = "The Social Gouv Bootstrap Website"
+
+theme = "socialgouv.bootstrap"
+
+enableInlineShortcodes = true
+
+pygmentsUseClasses = true
+
+disableKinds = ["404", "taxonomy", "taxonomyTerm", "RSS"]
+
+[blackfriday]
+  fractions = false
+
+[params]
+  version = "${SOCIALGOUV_BOOTSTRAP_VERSION}"
+  repo = "https://github.com/SocialGouv/bootstrap"
+  bootstrapDocBaseurl = "https://getbootstrap.com/docs/4.3"
+
+  [params.cdn]
+    url ="https://socialgouv.github.io/bootstrap"
+    baseURL ="@socialgouv/bootstrap.core"
+
+    [params.cdn.core.css]
+      name ="@socialgouv/bootstrap.core"
+      path ="dist/socialgouv-bootstrap.min.css"
+      integrity = "${SOCIALGOUV_BOOTSTRAP_CORE_INTEGRITY}"
+
+    [params.cdn.core.js]
+      url ="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      hash = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+
+    [params.cdn.jquery]
+      url ="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      hash ="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    [params.cdn.popper]
+      url ="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      hash ="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

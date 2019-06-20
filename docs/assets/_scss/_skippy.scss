@@ -1,0 +1,20 @@
+//
+
+@import "bootstrap/scss/functions";
+@import "core/src/_variables.scss";
+@import "bootstrap/scss/mixins";
+@import "variables";
+
+//
+
+.skippy {
+  display: block;
+  padding: 1em;
+  text-align: center;
+  outline: 0;
+}
+
+.skippy-text {
+  padding: .5em;
+  outline: 1px dotted;
+}

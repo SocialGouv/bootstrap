@@ -1,0 +1,44 @@
+//
+
+@import "bootstrap/scss/functions";
+@import "core/src/_variables.scss";
+@import "bootstrap/scss/mixins";
+@import "variables";
+
+//
+
+.sgb-docs-sidebar {
+  order: 0;
+
+  @include media-breakpoint-up(md) {
+    @supports (position: sticky) {
+      position: sticky;
+      top: $sgb-docs-navbar-height;
+      z-index: 1000;
+      height: calc(100vh - $sgb-docs-navbar-height);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex: 0 1 320px;
+  }
+}
+
+.sgb-docs-sidebar-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @include media-breakpoint-up(md) {
+    @supports (position: sticky) {
+      max-height: calc(100vh - #{$sgb-docs-navbar-height});
+      overflow-y: auto;
+    }
+  }
+
+  // Override collapse behaviors
+  @include media-breakpoint-up(md) {
+    display: block !important;
+  }
+}

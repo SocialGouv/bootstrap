@@ -1,24 +1,10 @@
 dist: xenial
-language: minimal
+language: node_js
 git:
   depth: 5
 
-addons:
-  snaps:
-    - name: node
-      classic: true
-      channel: 10/stable
-    - name: ruby
-      classic: true
-      channel: 2.5/stable
-
-cache:
-  directories:
-    - $HOME/.cache/yarn
-    - $HOME/.bundle
-    - $HOME/.gem
-    - $TRAVIS_BUILD_DIR/docs/.bundle
-    - $TRAVIS_BUILD_DIR/docs/vendor
+node_js: "10"
+cache: yarn
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
@@ -26,25 +12,26 @@ before_install:
 
 install:
   - yarn install --frozen-lockfile
-  - cd docs
-  - gem install bundler
-  - BUNDLE_FROZEN=true bundle install --jobs=3 --retry=3
-  - cd ..
 
 script:
   - yarn build --ignore docs
   - yarn lint
   - yarn test
-  - cd docs
-  - yarn nps build.rollup "build.jekyll --baseurl /bootstrap/master/docs"
-  - cd ..
+  #
+  - export SOCIALGOUV_BOOTSTRAP_VERSION=${TRAVIS_BRANCH}
+  - npx envsub --protect docs/config.toml docs/config.toml
+  #
+  - yarn workspace docs nps build
+  - yarn workspace docs nps "build.hugo --baseURL /bootstrap/$TRAVIS_BRANCH/docs"
 
 before_deploy:
   - |
     git config user.name "Social Groovy Bot"
     git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
+    git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
+
     mkdir -p out/$TRAVIS_BRANCH/docs &&
-    mv docs/_site/* out/$TRAVIS_BRANCH/docs &&
+    mv docs/public/* out/$TRAVIS_BRANCH/docs &&
     mkdir -p out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core &&
     mv packages/core/dist out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/dist &&
     mv packages/core/fonts out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/fonts &&
@@ -52,14 +39,15 @@ before_deploy:
     mv packages/core/package.json out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/package.json
 
 deploy:
-  github-token: "$GITHUB_TOKEN"
-  keep-history: true
-  local_dir: out
-  provider: pages
-  skip_cleanup: true
-  target-branch: gh-pages
-  on:
-    branch: master
+  - provider: pages
+    github-token: "$GITHUB_TOKEN"
+    keep-history: true
+    local_dir: out
+    skip_cleanup: true
+    target-branch: gh-pages
+    on:
+      branch: master
+      tags: true
 
 env:
   secure: "C3JDVv+f5+UhfL7GdF7GjiCp74YPm8XtVUpYKiDqNd9HJORYCGUtiM/6fLicE+CVvbQPSDBk+GgQtYkYdZiBv9A9rVp7mOqGMJ/D+c7gx1GhFvL9/KFN/BPM+xAwlb6e0nSztmLFp6ugz/BwsshuoEok1VYXIi+5X7rqhnr/eWarX/v7cSPRBbWb58G74Azybc6XlHNHakpJGq2f5p6NNmveuIwXasRjsTzL7dh2HOkUGHB757p6Zqi5dqfXKxhwcSGIIlIwRutd9JaT2GJ05981pclh32Sx/FhbRBd2kbSZz5dj0Mbr9idvSVxHyWKjwCFCZudFSarEvgymgn5NvY9vnPq/kxSKePx4lHXrMhjsBi51fOxeZg8rnLcsuNKSrzjxp6zVU/TIjNhioe0EEcH2V7KhP3IGvkdKdoIGa520fWb/MXkRcQaKlJ42hVZChHNLZ7W/DpYyTJugDP+3QQR3fOlyUwzqAGyeBSjmUzghn/oWurTv4W6upR02ooS+fxbgMwfv1jJG4TEou5tM5l0WQxNQt9Jor6hmEtc9As1RYCBSbJfzaC6iD3gP6XJ25NFgXvcJx5AHwFoO6OYxVnd7VRlWZSsUbCAkgpVS6KVNIQk79ViCdcFBRt50iEeReWAW2WidnVfH+CMGp263VUE07+DTmGkdapUgB02iMmA="

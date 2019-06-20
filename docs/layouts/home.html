@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+
+  <body>
+    {{ partial "skippy" . }}
+
+    {{ partial "navbar" . }}
+
+    <main class="pt-0" id="content" role="main">
+      <div class="sgb-docs-jumbotron jumbotron jumbotron-fluid mb-0">
+        <div class="align-items-center container d-flex flex-column">
+          <hr class="border-0 d-flex my-5" />
+          <h1 class="bg-white display-4 px-5 py-3">{{ .Site.Title }}</h1>
+          <hr class="border-0 d-flex my-5" />
+        </div>
+      </div>
+    </main>
+
+    <div class="row m-0 border border-white">
+      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
+        {{ "<!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->" | safeHTML }}
+        {{ partial "icons/import.svg" (dict "class" "text-primary mb-2" "width" "32" "height" "32") }}
+
+        <h3>Installation</h3>
+        <p>
+          Include {{ .Site.Title }}’s source Sass and JavaScript files via npm.
+          Package managed installs don’t include documentation, but do include
+          our build system and readme.
+        </p>
+
+        {{ highlight `npm install @socialgouv/bootstrap.core` "sh" "" }}
+        {{ highlight `yarn add @socialgouv/bootstrap.core` "sh" "" }}
+
+        <hr class="half-rule" />
+
+        <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/developer/getting-started/download/">Read installation docs</a>
+
+      </div>
+
+      <div class="col-12 col-md-6 p-3 p-md-5 bg-light border border-white">
+
+        {{ "<!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->" | safeHTML }}
+        {{ partial "icons/download.svg" (dict "class" "text-primary mb-2" "width" "32" "height" "32") }}
+        <h3>BootstrapCDN</h3>
+        <p>
+          When you only need to include Bootstrap’s compiled CSS or JS, you can
+          use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.
+        </p>
+
+        <h5>CSS only</h5>
+        {{ highlight (printf (`<link
+  rel="stylesheet"
+  href="%s/%s/%s/%s"
+  integrity="%s"
+  crossorigin="anonymous">`) .Site.Params.cdn.url .Site.Params.version .Site.Params.cdn.core.css.name .Site.Params.cdn.core.css.path .Site.Params.cdn.core.css.integrity ) "html" "" }}
+
+        <h5>JS and Popper.js</h5>
+        {{ highlight (printf (`<script
+  src="%s"
+  integrity="%s"
+  crossorigin="anonymous"></script>
+
+  <script
+  src="%s"
+  integrity="%s"
+  crossorigin="anonymous"></script>
+
+<script
+  src="%s"
+  integrity="%s"
+  crossorigin="anonymous"></script>
+    `) .Site.Params.cdn.jquery.url .Site.Params.cdn.jquery.hash .Site.Params.cdn.popper.url .Site.Params.cdn.popper.hash .Site.Params.cdn.core.js.url .Site.Params.cdn.core.js.hash) "html" "" }}
+        <hr class="half-rule">
+        <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/developer/getting-started/introduction/">Explore the docs</a>
+
+      </div>
+
+    </div>
+
+    {{ .Content }}
+
+    {{ partial "footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>
