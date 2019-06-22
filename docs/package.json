@@ -20,6 +20,6 @@
     "nps": "^5.9.5",
     "rollup": "^1.16.1",
     "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-node-resolve": "^5.0.0"
+    "rollup-plugin-node-resolve": "^5.0.4"
   }
 }
