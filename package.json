@@ -15,6 +15,6 @@
   ],
   "devDependencies": {
     "hugo-bin": "^0.43.6",
-    "lerna": "^3.13.1"
+    "lerna": "^3.16.4"
   }
 }
