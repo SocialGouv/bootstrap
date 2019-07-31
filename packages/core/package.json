@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "chokidar-cli": "^1.2.2",
+    "chokidar-cli": "^1.2.3",
     "clean-css-cli": "^4.3.0",
     "jest": "^24.8.0",
     "jquery": "^3.4.1",
