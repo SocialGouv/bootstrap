@@ -1,14 +1,12 @@
 ---
 layout: docs
-title: Colors
-description: List of SocialGouv Bootstrap main colors.
-group: content
-toc: true
+title: Couleurs
+description: Les couleurs de référence utilisées dans @socialgouv/bootstrap
 ---
 
 ## Bootstrap theme
 
-Colors used by the SocialGouv Bootstrap theme.
+Couleurs utilisées
 
 <ul class="list-unstyled row">
   {{< themecolors.inline >}}
@@ -26,7 +24,7 @@ Colors used by the SocialGouv Bootstrap theme.
 
 ## Grays theme
 
-Colors used by the SocialGouv Bootstrap theme.
+Niveaux de gris utilisés
 
 <ul class="list-unstyled row">
   {{< grays.inline >}}

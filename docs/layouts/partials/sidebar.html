@@ -18,11 +18,10 @@
       {{- $active_group := eq $.Page.Params.group $group_slug }}
 
       <h6 class="mt-3 px-3">
-        <a class="text-body" href="{{ $.Site.BaseURL }}/developer/{{ $group_slug }}/">
+        <a class="text-body" href="{{- $group.url }}">
           {{- $group.title -}}
         </a>
       </h6>
-
 
       {{- if and $active_group $group.pages }}
       <ul class="nav flex-column">

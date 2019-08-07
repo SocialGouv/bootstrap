@@ -26,7 +26,7 @@ main {
 
     @for $i from 1 through 6 {
       h#{$i}[id] {
-        padding-top: $magic-top-space;
+        padding-top: $magic-top-space / 3;
         margin-top: $magic-top-space * -1 / 4;
       }
     }
