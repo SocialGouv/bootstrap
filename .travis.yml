@@ -51,6 +51,11 @@ jobs:
           git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
           git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
 
+          wget https://github.com/SocialGouv/bootstrap/archive/gh-pages.zip &&
+          unzip gh-pages.zip &&
+          mv bootstrap-gh-pages out &&
+          rm -rf out/$TRAVIS_BRANCH &&
+
           mkdir -p out/$TRAVIS_BRANCH/docs &&
           mv docs/public/* out/$TRAVIS_BRANCH/docs &&
           mkdir -p out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core &&
