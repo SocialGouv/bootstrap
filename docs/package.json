@@ -1,13 +1,13 @@
 {
   "name": "docs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "nps build",
     "serve": "nps serve"
   },
   "dependencies": {
-    "@socialgouv/bootstrap.core": "^0.0.0",
+    "@socialgouv/bootstrap.core": "^0.1.0",
     "hugo-bin": "^0.43.6"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "@socialgouv/bootstrap.tokens",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Social Gouv Bootstrap Tokens",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,6 @@
     "url": "https://github.com/douglasduteil/design/issues"
   },
   "homepage": "https://github.com/douglasduteil/design#readme",
-  "dependencies": {},
   "devDependencies": {
     "yaml-lint": "^1.2.4"
   }
