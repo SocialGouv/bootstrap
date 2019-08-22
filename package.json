@@ -14,7 +14,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "hugo-bin": "^0.43.6",
+    "hugo-bin": "^0.45.2",
     "lerna": "^3.16.4"
   }
 }
