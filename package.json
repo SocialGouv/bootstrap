@@ -5,16 +5,13 @@
     "serve": "lerna run serve --parallel",
     "build": "lerna run build",
     "lint": "lerna run lint --parallel",
-    "test": "lerna run test --parallel",
-    "docs-build": "hugo --config ./hugo.yml",
-    "docs-serve": "hugo --config ./hugo.yml --debug server  --port 9001 --disableFastRender"
+    "test": "lerna run test --parallel"
   },
   "workspaces": [
     "docs",
     "packages/*"
   ],
   "devDependencies": {
-    "hugo-bin": "^0.43.6",
     "lerna": "^3.16.4"
   }
 }
