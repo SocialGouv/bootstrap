@@ -26,7 +26,7 @@ $ yarn workspace @socialgouv/bootstrap.core serve
 
 ### Auto
 
-Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/emjpm) (in the "More options" right menu) on the `master` branch with a custom config:
+Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/bootstrap) (in the "More options" right menu) on the `master` branch with a custom config:
 
 ```yml
 env:
