@@ -30,6 +30,7 @@ install:
 jobs:
   include:
     - stage: Build
+      if: NOT env(RELEASE)
       env:
         - *github_keys
       script:
