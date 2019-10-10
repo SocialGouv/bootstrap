@@ -1,16 +1,12 @@
 ---
 layout: docs
-title: Typography
-description: Documentation and examples for SocialGouv Bootstrap typography, including global settings, headings, body text, lists, and more.
-group: content
-toc: true
-aliases:
-  - "/developer/content/"
+title: Typographie
+description: Les fontes @socialgouv/bootstrap
 ---
 
-## Overview
+## Fontes utilisées
 
-We use [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) for body text and [Evolventa](https://github.com/evolventa/evolventa) for heading.
+Nous utilisons les fontes [Source Sans Pro](https://github.com/adobe-fonts/source-sans-pro) pour le texte du `body` et [Evolventa](https://github.com/evolventa/evolventa) pour les `en-têtes`.
 
 {{< example >}}
 

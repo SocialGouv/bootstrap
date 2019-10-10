@@ -1,0 +1,24 @@
+.sgb-marianne {
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  height: 65px;
+  background-color: white;
+  background-image: url($sgb-images-path+"/marianne.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.navbar.sgb-navbar-marianne {
+  padding: 0;
+}
+
+.navbar.sgb-navbar-marianne .navbar-brand {
+  font-size: 1.6em;
+  margin-left: 0.3em;
+}
+
+.navbar.sgb-navbar-marianne .navbar-baseline {
+  font-size: 0.6em;
+}
