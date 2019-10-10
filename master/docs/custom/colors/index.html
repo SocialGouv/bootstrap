@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
+<meta name="description" content="Les couleurs de référence utilisées dans @socialgouv/bootstrap">
 <meta name="author" content="">
 <meta name="generator" content="Hugo 0.58.3">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="">
 
-<title>JavaScript · Social Gouv Bootstrap</title>
+<title>Couleurs · Social Gouv Bootstrap</title>
 
-<link rel="canonical" href="/bootstrap/master/docs/developer/getting-started/javascript/">
+<link rel="canonical" href="/bootstrap/master/docs/custom/colors/">
 
 
 
@@ -23,7 +23,7 @@
 
 
 
-<link rel="stylesheet" href="/bootstrap/master/docs/css/main.c1cb0f2575b0190a155376f300dd3b9b82be471823f44d2ddfad33684c87367ca0c6c09cb43754b51079ff675ecd00f6d0316eabed09fd026c4c2012fef72eed.css" integrity="sha512-wcsPJXWwGQoVU3bzAN07m4K&#43;Rxgj9E0t360zaEyHNnygxsCctDdUtRB5/2dezQD20DFuq&#43;0J/QJsTCAS/vcu7Q==" />
+<link rel="stylesheet" href="/bootstrap/master/docs/css/main.8c7428de38f2ab2948f5cb0205c5f26cf16fc657689f14e1b9a618f5d8a619ea0ec0c2334adda62f70c816a91a8318740d768cff5d2f56aed42659ca9b1687dc.css" integrity="sha512-jHQo3jjyqylI9csCBcXybPFvxldonxThuaYY9dimGeoOwMIzSt2mL3DIFqkagxh0DXaM/10vVq7UJlnKmxaH3A==" />
 
 <!-- Favicons -->
 
@@ -31,14 +31,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@">
 <meta name="twitter:creator" content="@">
-<meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description" content="Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
+<meta name="twitter:title" content="Couleurs">
+<meta name="twitter:description" content="Les couleurs de référence utilisées dans @socialgouv/bootstrap">
 <meta name="twitter:image" content="/bootstrap/master/docs">
 
 <!-- Facebook -->
-<meta property="og:url" content="/bootstrap/master/docs/developer/getting-started/javascript/">
-<meta property="og:title" content="JavaScript">
-<meta property="og:description" content="Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.">
+<meta property="og:url" content="/bootstrap/master/docs/custom/colors/">
+<meta property="og:title" content="Couleurs">
+<meta property="og:description" content="Les couleurs de référence utilisées dans @socialgouv/bootstrap">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/bootstrap/master/docs">
 <meta property="og:image:secure_url" content="/bootstrap/master/docs">
@@ -93,42 +93,19 @@
   <nav class="sgb-docs-sidebar-nav" id="sgb-docs-nav" aria-label="Main navigation">
 
       <h6 class="mt-3 px-3">
-        <a class="text-body" href="/bootstrap/master/docs/developer/getting-started/">Getting started</a>
-      </h6>
-      <ul class="nav flex-column">
-          <li class="nav-item">
-            
-            <a class="nav-link px-4" href="/bootstrap/master/docs/developer/getting-started/introduction/">Introduction</a>
-            
-          </li>
-          <li class="nav-item">
-            
-            <a class="nav-link px-4" href="/bootstrap/master/docs/developer/getting-started/download/">Download</a>
-            
-          </li>
-          <li class="nav-item">
-            
-            <a class="nav-link px-4" href="/bootstrap/master/docs/developer/getting-started/contents/">Contents</a>
-            
-          </li>
-          <li class="nav-item">
-            
-            <span class="nav-link px-4">JavaScript</span>
-            
-          </li>
-          <li class="nav-item">
-            
-            <a class="nav-link px-4" href="/bootstrap/master/docs/developer/getting-started/build-tools/">Build tools</a>
-            
-          </li>
-      </ul>
-
-      <h6 class="mt-3 px-3">
-        <a class="text-body" href="/bootstrap/master/docs/developer/content/">Content</a>
+        <a class="text-body" href="/">Accueil</a>
       </h6>
 
       <h6 class="mt-3 px-3">
-        <a class="text-body" href="/bootstrap/master/docs/developer/components/">Components</a>
+        <a class="text-body" href="/custom/typography/">Typographie</a>
+      </h6>
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/custom/colors/">Colors</a>
+      </h6>
+
+      <h6 class="mt-3 px-3">
+        <a class="text-body" href="/custom/navbar/">NavBar</a>
       </h6>
   </nav>
 
@@ -137,273 +114,178 @@
         </div>
 
         
-          <div class="d-none d-xl-block col-xl-2 order-2">
-            <aside class="dgb-toc mt-5" aria-label="Secondary navigation">
-              <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#individual-or-compiled">Individual or compiled</a></li>
-<li><a href="#using-bootstrap-as-a-module">Using Bootstrap as a module</a></li>
-<li><a href="#dependencies">Dependencies</a></li>
-<li><a href="#data-attributes">Data attributes</a></li>
-<li><a href="#events">Events</a></li>
-<li><a href="#programmatic-api">Programmatic API</a>
-<ul>
-<li><a href="#asynchronous-functions-and-transitions">Asynchronous functions and transitions</a></li>
-<li><a href="#default-settings">Default settings</a></li>
-</ul></li>
-<li><a href="#no-conflict-only-if-you-use-jquery">No conflict (only if you use jQuery)</a></li>
-<li><a href="#version-numbers">Version numbers</a></li>
-<li><a href="#no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</a></li>
-<li><a href="#sanitizer">Sanitizer</a></li>
-</ul></li>
-</ul>
-</nav>
-            </aside>
-          </div>
-        
 
         <div class="col-12 col-md-9 col-xl-8 px-0">
 
           <div class="sgb-docs-jumbotron jumbotron jumbotron-fluid mb-0">
             <div class="align-items-center container d-flex flex-column">
               <hr class="border-0 d-flex my-5">
-              <h1 class="bg-white display-4 px-5 py-3">JavaScript</h1>
+              <h1 class="bg-white display-4 px-5 py-3">Couleurs</h1>
               <hr class="border-0 d-flex my-5">
             </div>
           </div>
 
-          <main class="pb-5 px-4 px-md-5" role="main" id="content">
+          <main class="pb-5 px-4 px-md-5 pt-5" role="main" id="content">
 
             <p class="lead mb-5 text-justify text-muted">
-              Bring Social Gouv Bootstrap to life with our optional JavaScript plugins. Learn about each plugin, our data and programmatic API options, and more.
+              Les couleurs de référence utilisées dans @socialgouv/bootstrap
             </p>
 
             <hr class="my-5">
 
           
 
-<h2 id="individual-or-compiled">Individual or compiled</h2>
+<h2 id="bootstrap-theme">Bootstrap theme</h2>
 
-<p>Plugins can be included individually (using Bootstrap&rsquo;s individual <code>js/dist/*.js</code>), or all at once using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code> (don&rsquo;t include both).</p>
+<p>Couleurs utilisées</p>
 
-<p>If you use a bundler (Webpack, Rollup&hellip;), you can use <code>/js/dist/*.js</code> files which are UMD ready.</p>
+<ul class="list-unstyled row">
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #007bff"><title>Square color primary</title><rect fill="#007bff" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Primary</h5>
+      #007bff<br/>
+      <code>$primary</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #868e96"><title>Square color secondary</title><rect fill="#868e96" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Secondary</h5>
+      #868e96<br/>
+      <code>$secondary</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #28a745"><title>Square color success</title><rect fill="#28a745" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Success</h5>
+      #28a745<br/>
+      <code>$success</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #dc3545"><title>Square color danger</title><rect fill="#dc3545" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Danger</h5>
+      #dc3545<br/>
+      <code>$danger</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #ffc107"><title>Square color warning</title><rect fill="#ffc107" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Warning</h5>
+      #ffc107<br/>
+      <code>$warning</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #17a2b8"><title>Square color info</title><rect fill="#17a2b8" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Info</h5>
+      #17a2b8<br/>
+      <code>$info</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #f8f9fa"><title>Square color light</title><rect fill="#f8f9fa" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Light</h5>
+      #f8f9fa<br/>
+      <code>$light</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #343a40"><title>Square color dark</title><rect fill="#343a40" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Dark</h5>
+      #343a40<br/>
+      <code>$dark</code>
+    </div> 
+  </li>
+</ul>
 
-<h2 id="using-bootstrap-as-a-module">Using Bootstrap as a module</h2>
+<h2 id="grays-theme">Grays theme</h2>
 
-<p>We provide a version of Bootstrap built as <code>ESM</code> (<code>bootstrap.esm.js</code> and <code>bootstrap.esm.min.js</code>) which allows you to use Bootstrap as a module in your browser, if your <a href="https://caniuse.com/#feat=es6-module">targeted browsers support it</a>.</p>
+<p>Niveaux de gris utilisés</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span><span class="p">&gt;</span>
-  <span class="k">import</span> <span class="p">{</span> <span class="nx">Toast</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;bootstrap.esm.min.js&#39;</span>
-
-  <span class="nb">Array</span><span class="p">.</span><span class="nx">from</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.toast&#39;</span><span class="p">))</span>
-    <span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">toastNode</span> <span class="p">=&gt;</span> <span class="k">new</span> <span class="nx">Toast</span><span class="p">(</span><span class="nx">toastNode</span><span class="p">))</span>
-<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
-
-<div class="sgb-docs-callout alert alert-warning">
-  <h4 class="alert-heading">Bootstrap component </h4>
-  This component is the as the Social Gouv Bootstrap Bootstrap component.<br>
-  <a href="/getting-started/javascript">
-  Refer to the original documentation for more information on how to use it.
-  </a>
-</div>
-
-<div class="bd-callout bd-callout-warning">
-<h2 id="incompatible-plugins">Incompatible plugins</h2>
-
-<p>Due to browser limitations, some of our plugins, namely Dropdown, Tooltip and Popover plugins, cannot be used in a <code>&lt;script&gt;</code> tag with <code>module</code> type because they depend on Popper.js. For more information about the issue see <a href="https://developers.google.com/web/fundamentals/primers/modules#specifiers">here</a>.
-</div>
-
-
-<h2 id="dependencies">Dependencies</h2>
-
-<p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs.</p>
-
-<p>Our dropdowns, popovers and tooltips also depend on <a href="https://popper.js.org/">Popper.js</a>.</p>
-
-<h2 id="data-attributes">Data attributes</h2>
-
-<p>Nearly all Bootstrap plugins can be enabled and configured through HTML alone with data attributes (our preferred way of using JavaScript functionality). Be sure to <strong>only use one set of data attributes on a single element</strong> (e.g., you cannot trigger a tooltip and modal from the same button.)</p>
-
-<div class="sgb-docs-callout alert alert-warning">
-  <h4 class="alert-heading">Bootstrap component </h4>
-  This component is the as the Social Gouv Bootstrap Bootstrap component.<br>
-  <a href="/getting-started/javascript">
-  Refer to the original documentation for more information on how to use it.
-  </a>
-</div>
-
-<div class="bd-callout bd-callout-warning">
-<h2 id="selectors">Selectors</h2>
-
-<p>Currently to query DOM elements we use the native methods <code>querySelector</code> and <code>querySelectorAll</code> for performance reasons, so you have to use <a href="https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier">valid selectors</a>.
-If you use special selectors, for example: <code>collapse:Example</code> be sure to escape them.
-</div>
-
-
-<h2 id="events">Events</h2>
-
-<p>Bootstrap provides custom events for most plugins&rsquo; unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is triggered on the completion of an action.</p>
-
-<p>All infinitive events provide <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"><code>preventDefault()</code></a> functionality. This provides the ability to stop the execution of an action before it starts. Returning false from an event handler will also automatically call <code>preventDefault()</code>.</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myModal</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myModal&#39;</span><span class="p">)</span>
-
-<span class="nx">myModal</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;show.bs.modal&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span> <span class="c1">// stops modal from being shown
-</span><span class="c1"></span>  <span class="p">}</span>
-<span class="p">})</span>
-</code></pre></div>
-
-<h2 id="programmatic-api">Programmatic API</h2>
-
-<p>All constructors accept an optional options object or nothing (which initiates a plugin with its default behavior):</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myModalEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myModal&#39;</span><span class="p">)</span>
-
-<span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="nx">myModalEl</span><span class="p">)</span> <span class="c1">// initialized with defaults
-</span><span class="c1"></span><span class="kd">var</span> <span class="nx">modal</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">(</span><span class="nx">myModalEl</span><span class="p">,</span> <span class="p">{</span> <span class="nx">keyboard</span><span class="o">:</span> <span class="kc">false</span> <span class="p">})</span> <span class="c1">// initialized with no keyboard
-</span></code></pre></div>
-
-<p>If you&rsquo;d like to get a particular plugin instance, each plugin exposes a <code>_getInstance</code> method. In order to retrieve it directly from an element, do this: <code>bootstrap.Popover._getInstance(myPopoverEl)</code>.</p>
-
-<h3 id="asynchronous-functions-and-transitions">Asynchronous functions and transitions</h3>
-
-<p>All programmatic API methods are <strong>asynchronous</strong> and return to the caller once the transition is started but <strong>before it ends</strong>.</p>
-
-<p>In order to execute an action once the transition is complete, you can listen to the corresponding event.</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCollapseEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;#myCollapse&#39;</span><span class="p">)</span>
-
-<span class="nx">myCollapseEl</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;shown.bs.collapse&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Action to execute once the collapsible area is expanded
-</span><span class="c1"></span><span class="p">})</span>
-</code></pre></div>
-
-<p>In addition a method call on a <strong>transitioning component will be ignored</strong>.</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myCarouselEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;myCarousel&#39;</span><span class="p">)</span>
-<span class="kd">var</span> <span class="nx">carousel</span> <span class="o">=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Carousel</span><span class="p">.</span><span class="nx">_getInstance</span><span class="p">(</span><span class="nx">myCarouselEl</span><span class="p">)</span> <span class="c1">// Retrieve a Carousel instance
-</span><span class="c1"></span>
-<span class="nx">myCarouselEl</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;slid.bs.carousel&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// Will slide to the slide 2 as soon as the transition to slide 1 is finished
-</span><span class="c1"></span><span class="p">})</span>
-
-<span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span> <span class="c1">// Will start sliding to the slide 1 and returns to the caller
-</span><span class="c1"></span><span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// !! Will be ignored, as the transition to the slide 1 is not finished !!
-</span></code></pre></div>
-
-<h3 id="default-settings">Default settings</h3>
-
-<p>You can change the default settings for a plugin by modifying the plugin&rsquo;s <code>Constructor.Default</code> object:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// changes default for the modal plugin&#39;s `keyboard` option to false
-</span><span class="c1"></span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span>
-</code></pre></div>
-
-<h2 id="no-conflict-only-if-you-use-jquery">No conflict (only if you use jQuery)</h2>
-
-<p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">bootstrapButton</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">button</span><span class="p">.</span><span class="nx">noConflict</span><span class="p">()</span> <span class="c1">// return $.fn.button to previously assigned value
-</span><span class="c1"></span><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">bootstrapBtn</span> <span class="o">=</span> <span class="nx">bootstrapButton</span> <span class="c1">// give $().bootstrapBtn the Bootstrap functionality
-</span></code></pre></div>
-
-<h2 id="version-numbers">Version numbers</h2>
-
-<p>The version of each of Bootstrap&rsquo;s plugins can be accessed via the <code>VERSION</code> property of the plugin&rsquo;s constructor. For example, for the tooltip plugin:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">.</span><span class="nx">VERSION</span> <span class="c1">// =&gt; &#34;master&#34;
-</span></code></pre></div>
-
-<h2 id="no-special-fallbacks-when-javascript-is-disabled">No special fallbacks when JavaScript is disabled</h2>
-
-<p>Bootstrap&rsquo;s plugins don&rsquo;t fall back particularly gracefully when JavaScript is disabled. If you care about the user experience in this case, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> to explain the situation (and how to re-enable JavaScript) to your users, and/or add your own custom fallbacks.</p>
-
-<div class="sgb-docs-callout alert alert-warning">
-  <h4 class="alert-heading">Bootstrap component </h4>
-  This component is the as the Social Gouv Bootstrap Bootstrap component.<br>
-  <a href="/getting-started/javascript">
-  Refer to the original documentation for more information on how to use it.
-  </a>
-</div>
-
-<div class="bd-callout bd-callout-warning">
-<h5 id="third-party-libraries">Third-party libraries</h5>
-
-<p><strong>Bootstrap does not officially support third-party JavaScript libraries</strong> like Prototype or jQuery UI. Despite <code>.noConflict</code> and namespaced events, there may be compatibility problems that you need to fix on your own.
-</div>
-
-
-<h2 id="sanitizer">Sanitizer</h2>
-
-<p>Tooltips and Popovers use our built-in sanitizer to sanitize options which accept HTML.</p>
-
-<p>The default <code>whiteList</code> value is the following:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span> <span class="o">=</span> <span class="sr">/^aria-[\w-]*$/i</span>
-<span class="kd">var</span> <span class="nx">DefaultWhitelist</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="c1">// Global attributes allowed on any supplied element below.
-</span><span class="c1"></span>  <span class="s1">&#39;*&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">,</span> <span class="s1">&#39;dir&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;lang&#39;</span><span class="p">,</span> <span class="s1">&#39;role&#39;</span><span class="p">,</span> <span class="nx">ARIA_ATTRIBUTE_PATTERN</span><span class="p">],</span>
-  <span class="nx">a</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">,</span> <span class="s1">&#39;href&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;rel&#39;</span><span class="p">],</span>
-  <span class="nx">area</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">b</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">br</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">col</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">code</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">div</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">em</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">hr</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">h1</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">h2</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">h3</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">h4</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">h5</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">h6</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">i</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">img</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;alt&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;width&#39;</span><span class="p">,</span> <span class="s1">&#39;height&#39;</span><span class="p">],</span>
-  <span class="nx">li</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">ol</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">p</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">pre</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">s</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">small</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">span</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">sub</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">sup</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">strong</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">u</span><span class="o">:</span> <span class="p">[],</span>
-  <span class="nx">ul</span><span class="o">:</span> <span class="p">[]</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>If you want to add new values to this default <code>whiteList</code> you can do the following:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">myDefaultWhiteList</span> <span class="o">=</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">whiteList</span>
-
-<span class="c1">// To allow table elements
-</span><span class="c1"></span><span class="nx">myDefaultWhiteList</span><span class="p">.</span><span class="nx">table</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1">// To allow td elements and data-option attributes on td elements
-</span><span class="c1"></span><span class="nx">myDefaultWhiteList</span><span class="p">.</span><span class="nx">td</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;data-option&#39;</span><span class="p">]</span>
-
-<span class="c1">// You can push your custom regex to validate your attributes.
-</span><span class="c1">// Be careful about your regular expressions being too lax
-</span><span class="c1"></span><span class="kd">var</span> <span class="nx">myCustomRegex</span> <span class="o">=</span> <span class="sr">/^data-my-app-[\w-]+/</span>
-<span class="nx">myDefaultWhiteList</span><span class="p">[</span><span class="s1">&#39;*&#39;</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">myCustomRegex</span><span class="p">)</span>
-</code></pre></div>
-
-<p>If you want to bypass our sanitizer because you prefer to use a dedicated library, for example <a href="https://www.npmjs.com/package/dompurify">DOMPurify</a>, you should do the following:</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">yourTooltipEl</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;yourTooltip&#39;</span><span class="p">)</span>
-<span class="kd">var</span> <span class="nx">tooltip</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Tooltip</span><span class="p">(</span><span class="nx">yourTooltipEl</span><span class="p">,</span> <span class="p">{</span>
-  <span class="nx">sanitizeFn</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">content</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">DOMPurify</span><span class="p">.</span><span class="nx">sanitize</span><span class="p">(</span><span class="nx">content</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">})</span>
-</code></pre></div>
+<ul class="list-unstyled row">
+  
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #f8f9fa"><title>Square color 100</title><rect fill="#f8f9fa" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">100th</h5>
+      #f8f9fa<br/>
+      <code>$100</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #e9ecef"><title>Square color 200</title><rect fill="#e9ecef" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">200th</h5>
+      #e9ecef<br/>
+      <code>$200</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #dee2e6"><title>Square color 300</title><rect fill="#dee2e6" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">300th</h5>
+      #dee2e6<br/>
+      <code>$300</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #ced4da"><title>Square color 400</title><rect fill="#ced4da" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">400th</h5>
+      #ced4da<br/>
+      <code>$400</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #adb5bd"><title>Square color 500</title><rect fill="#adb5bd" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">500th</h5>
+      #adb5bd<br/>
+      <code>$500</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #868e96"><title>Square color 600</title><rect fill="#868e96" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">600th</h5>
+      #868e96<br/>
+      <code>$600</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #495057"><title>Square color 700</title><rect fill="#495057" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">700th</h5>
+      #495057<br/>
+      <code>$700</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #343a40"><title>Square color 800</title><rect fill="#343a40" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">800th</h5>
+      #343a40<br/>
+      <code>$800</code>
+    </div> 
+  </li>
+  <li class="col-12 col-sm-6 col-xl-4 media my-4">
+    <svg class="mr-3" width="64" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Square color #212529"><title>Square color 900</title><rect fill="#212529" width="100%" height="100%"></rect></svg>
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">900th</h5>
+      #212529<br/>
+      <code>$900</code>
+    </div> 
+  </li>
+</ul>
 
           </main>
 
