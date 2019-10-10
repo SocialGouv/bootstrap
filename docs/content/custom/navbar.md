@@ -12,8 +12,8 @@ Le header traditionnel avec la Marianne en SVG (⚠️ 52Ko)
 
 {{< example >}}
 
-<nav class="navbar navbar-marianne navbar-expand-lg navbar-light bg-light">
-  <div class="marianne"></div>
+<nav class="navbar sgb-navbar-marianne navbar-expand-lg navbar-light bg-light">
+  <div class="sgb-marianne"></div>
   <div  class="navbar-brand">
     <a href="#">Nom du produit</a>
     <div class="navbar-baseline" href="#">Un produit au service de l'usager</div>
