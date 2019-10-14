@@ -12,15 +12,15 @@
   </url>
   
   <url>
-    <loc>/bootstrap/master/docs/custom/colors/</loc>
+    <loc>/bootstrap/master/docs/developer/elements/colors/</loc>
   </url>
   
   <url>
-    <loc>/bootstrap/master/docs/custom/</loc>
+    <loc>/bootstrap/master/docs/developer/</loc>
   </url>
   
   <url>
-    <loc>/bootstrap/master/docs/custom/navbar/</loc>
+    <loc>/bootstrap/master/docs/developer/elements/navbar/</loc>
   </url>
   
   <url>
@@ -28,7 +28,7 @@
   </url>
   
   <url>
-    <loc>/bootstrap/master/docs/custom/typography/</loc>
+    <loc>/bootstrap/master/docs/developer/elements/typography/</loc>
   </url>
   
 </urlset>
