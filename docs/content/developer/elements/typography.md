@@ -2,6 +2,9 @@
 layout: docs
 title: Typographie
 description: Les fontes @socialgouv/bootstrap
+aliases:
+  - "/developer/elements/"
+  - "/developer/"
 ---
 
 ## Fontes utilisées

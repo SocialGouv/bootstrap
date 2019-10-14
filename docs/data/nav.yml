@@ -1,11 +1,5 @@
-- title: Accueil
-  url: /
-
-- title: Typographie
-  url: /custom/typography/
-
-- title: Colors
-  url: /custom/colors/
-
-- title: NavBar
-  url: /custom/navbar/
+- title: Elements
+  pages:
+    - title: Typography
+    - title: Colors
+    - title: NavBar
