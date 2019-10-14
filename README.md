@@ -9,10 +9,11 @@ The Social Gouv Bootstrap monorepo
 ```html
 <link
   rel="stylesheet"
-  href="https://socialgouv.github.io/bootstrap/master/@socialgouv/bootstrap.core/dist/socialgouv-bootstrap.min.css"
-  integrity="grB93+Lj8+H7BK2kCBM0dGAJD+8tE7pYqy6qkcykr8DfCJt7PhJOF998Bwj7BAWc"
-  crossorigin="anonymous">
+  href="//socialgouv.github.io/bootstrap/master/@socialgouv/bootstrap.core/dist/socialgouv-bootstrap.min.css"
+>
 ```
+
+See [full documentation](https://socialgouv.github.io/bootstrap)
 
 ## Dev
 
