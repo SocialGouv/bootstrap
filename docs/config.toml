@@ -1,5 +1,5 @@
-baseURL = ""
-languageCode = "en-us"
+baseURL = "https://socialgouv.github.io/bootstrap"
+languageCode = "fr-FR"
 title = "Social Gouv Bootstrap"
 email = "dsi-incubateur@sg.social.gouv.fr"
 description = "The Social Gouv Bootstrap Website"
