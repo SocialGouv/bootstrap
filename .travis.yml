@@ -61,6 +61,7 @@ jobs:
           mkdir -p out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core &&
           mv packages/core/dist out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/dist &&
           mv packages/core/fonts out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/fonts &&
+          mv packages/core/images out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/images &&
           mv packages/core/LICENSE out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/LICENSE &&
           mv packages/core/package.json out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/package.json
 
