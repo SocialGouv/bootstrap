@@ -4,14 +4,15 @@
 
 The Social Gouv Bootstrap monorepo
 
+See documentation : https://incubateur.social.gouv.fr/bootstrap/master/docs
+
 ## Usage
 
 ```html
 <link
   rel="stylesheet"
   href="https://socialgouv.github.io/bootstrap/master/@socialgouv/bootstrap.core/dist/socialgouv-bootstrap.min.css"
-  integrity="grB93+Lj8+H7BK2kCBM0dGAJD+8tE7pYqy6qkcykr8DfCJt7PhJOF998Bwj7BAWc"
-  crossorigin="anonymous">
+/>
 ```
 
 ## Dev
