@@ -4,27 +4,10 @@
   
   <url>
     <loc>/bootstrap/master/docs/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/bootstrap/master/docs/developer/elements/colors/</loc>
-  </url>
-  
-  <url>
-    <loc>/bootstrap/master/docs/developer/</loc>
-  </url>
-  
-  <url>
-    <loc>/bootstrap/master/docs/developer/elements/navbar/</loc>
-  </url>
-  
-  <url>
-    <loc>/bootstrap/master/docs/index.html</loc>
-  </url>
-  
-  <url>
-    <loc>/bootstrap/master/docs/developer/elements/typography/</loc>
+    <loc>/bootstrap/master/docs/</loc>
   </url>
   
 </urlset>
