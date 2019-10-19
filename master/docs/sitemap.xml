@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/bootstrap/master/docs/___index/</loc>
-  </url>
-  
-  <url>
     <loc>/bootstrap/master/docs/</loc>
     <priority>0</priority>
   </url>
