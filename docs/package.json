@@ -18,7 +18,7 @@
     "live-server": "^1.2.1",
     "node-sass": "^4.13.0",
     "nps": "^5.9.8",
-    "rollup": "^1.27.5",
+    "rollup": "^1.27.6",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0"
   }
