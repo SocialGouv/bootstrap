@@ -1,6 +1,6 @@
 {
   "name": "@socialgouv/bootstrap.core",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Social Gouv Bootstrap Core Design",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/SocialGouv/bootstrap#readme",
   "dependencies": {
-    "@socialgouv/bootstrap.tokens": "^0.1.1",
-    "bootstrap": "^4.3.1"
+    "@socialgouv/bootstrap.tokens": "^0.2.0",
+    "bootstrap": "^4.4.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",
