@@ -24,9 +24,7 @@
 
         <h3>Installation</h3>
         <p>
-          Include {{ .Site.Title }}’s source Sass and JavaScript files via npm.
-          Package managed installs don’t include documentation, but do include
-          our build system and readme.
+          Installer {{ .Site.Title }} Sass et JavaScript source via yarn ou npm.
         </p>
 
         {{ highlight `npm install @socialgouv/bootstrap.core` "sh" "" }}
@@ -34,7 +32,7 @@
 
         <hr class="half-rule" />
 
-        <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/developer/getting-started/download/">Read installation docs</a>
+        <a class="btn btn-outline-primary" href="{{ .Site.BaseURL }}/developer/getting-started/download/">Documentation d'installation</a>
 
       </div>
 
@@ -44,18 +42,17 @@
         {{ partial "icons/download.svg" (dict "class" "text-primary mb-2" "width" "32" "height" "32") }}
         <h3>BootstrapCDN</h3>
         <p>
-          When you only need to include Bootstrap’s compiled CSS or JS, you can
-          use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.
+          Si vous avez uniquelent besoin d'inclure la version compilé du CSS ou JS, vous pouvez utiliser notre repo Github comme CDN.
         </p>
 
-        <h5>CSS only</h5>
+        <h5>Uniquement le CSS</h5>
         {{ highlight (printf (`<link
   rel="stylesheet"
   href="%s/%s/%s/%s"
   integrity="%s"
   crossorigin="anonymous">`) .Site.Params.cdn.url .Site.Params.version .Site.Params.cdn.core.css.name .Site.Params.cdn.core.css.path .Site.Params.cdn.core.css.integrity ) "html" "" }}
 
-        <h5>JS and Popper.js</h5>
+        <h5>JS et Popper.js</h5>
         {{ highlight (printf (`<script
   src="%s"
   integrity="%s"
