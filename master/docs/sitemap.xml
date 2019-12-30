@@ -3,11 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/bootstrap/master/docs/</loc>
+    <loc>/bootstrap/master/docs/developer/elements/colors/</loc>
+  </url>
+  
+  <url>
+    <loc>/bootstrap/master/docs/developer/</loc>
+  </url>
+  
+  <url>
+    <loc>/bootstrap/master/docs/developer/elements/navbar/</loc>
   </url>
   
   <url>
     <loc>/bootstrap/master/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>/bootstrap/master/docs/developer/elements/typography/</loc>
   </url>
   
 </urlset>
