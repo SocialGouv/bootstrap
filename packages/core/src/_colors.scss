@@ -29,7 +29,6 @@ $teal: map-get($token-theme-colors, teal) !default;
 $cyan: map-get($token-theme-colors, cyan) !default;
 
 $colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
     "blue": $blue,
@@ -59,7 +58,6 @@ $light: map-get($token-bootstrap-colors, light) !default;
 $dark: map-get($token-bootstrap-colors, dark) !default;
 
 $theme-colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
     "primary": $primary,

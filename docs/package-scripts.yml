@@ -2,7 +2,6 @@ scripts:
   build:
     default: nps build.scss build.hugo
     hugo: hugo --cleanDestinationDir
-    rollup: rollup --config
     scss: >-
       node-sass
       --include-path node_modules

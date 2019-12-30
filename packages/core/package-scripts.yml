@@ -1,5 +1,5 @@
 scripts:
-  lint: sass-lint
+  lint: stylelint src/**/*.scss --config-basedir ../.. --cache --cache-location .cache/.stylelintcache
   test: jest
   build:
     default: nps build.main build.prefix build.minify
