@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/SocialGouv/bootstrap/compare/v0.1.1...v0.2.0) (2019-12-30)
+
+
+### Bug Fixes
+
+* **marianne:** add sgb- prefix ([754b3d9](https://github.com/SocialGouv/bootstrap/commit/754b3d9c99e00a12932241947375e61dc94aaa9f))
+
+
+### Features
+
+* add nav-marianne ([f92e9f3](https://github.com/SocialGouv/bootstrap/commit/f92e9f396e5120c4f18288e26708ddd86d76dbaa))
+
+
+
+
+
 ## [0.1.1](https://github.com/SocialGouv/bootstrap/compare/v0.1.0...v0.1.1) (2019-08-22)
 
 **Note:** Version bump only for package @socialgouv/bootstrap.core
