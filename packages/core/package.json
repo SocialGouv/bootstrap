@@ -31,7 +31,7 @@
     "clean-css-cli": "^4.3.0",
     "jest": "^24.9.0",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "node-sass-yaml-importer": "^4.0.0",
     "nps": "^5.9.12",
     "popper.js": "^1.16.0",
