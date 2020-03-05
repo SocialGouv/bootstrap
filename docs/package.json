@@ -11,8 +11,8 @@
     "hugo-bin": "^0.54.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.1.0",
     "live-server": "^1.2.1",
