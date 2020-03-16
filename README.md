@@ -4,7 +4,7 @@
 
 The Social Gouv Bootstrap monorepo
 
-See documentation : https://incubateur.social.gouv.fr/bootstrap/master/docs
+See documentation : https://socialgouv.github.io/bootstrap/master/docs/
 
 ## Usage
 
