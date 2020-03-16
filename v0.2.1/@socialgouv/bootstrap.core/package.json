@@ -1,0 +1,42 @@
+{
+  "name": "@socialgouv/bootstrap.core",
+  "version": "0.2.1",
+  "description": "Social Gouv Bootstrap Core Design",
+  "main": "index.js",
+  "scripts": {
+    "build": "nps build",
+    "lint": "nps lint",
+    "serve": "nps serve",
+    "start": "nps",
+    "test": "nps test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SocialGouv/bootstrap.git"
+  },
+  "keywords": [],
+  "author": "Douglas Duteil <douglasduteil@gmail.com> (douglasduteil.github.io)",
+  "license": "APACHE-2.0",
+  "bugs": {
+    "url": "https://github.com/SocialGouv/bootstrap/issues"
+  },
+  "homepage": "https://github.com/SocialGouv/bootstrap#readme",
+  "dependencies": {
+    "@socialgouv/bootstrap.tokens": "^0.2.0",
+    "bootstrap": "^4.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "chokidar-cli": "^2.1.0",
+    "clean-css-cli": "^4.3.0",
+    "jest": "^25.1.0",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.1",
+    "node-sass-yaml-importer": "^4.0.0",
+    "nps": "^5.9.12",
+    "popper.js": "^1.16.1",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.2.1",
+    "stylelint-config-twbs-bootstrap": "^2.0.1"
+  }
+}
