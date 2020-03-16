@@ -1,6 +1,6 @@
 {
   "name": "@socialgouv/bootstrap.core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Social Gouv Bootstrap Core Design",
   "main": "index.js",
   "scripts": {

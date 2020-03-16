@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/SocialGouv/bootstrap/compare/v0.2.0...v0.2.1) (2020-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency hugo-bin to ^0.50.1 ([#237](https://github.com/SocialGouv/bootstrap/issues/237)) ([89a8dbc](https://github.com/SocialGouv/bootstrap/commit/89a8dbcdea63f9da9a2dcaeaa3d225456aef35a0))
+* **deps:** update dependency hugo-bin to ^0.50.2 ([#239](https://github.com/SocialGouv/bootstrap/issues/239)) ([8d9dd87](https://github.com/SocialGouv/bootstrap/commit/8d9dd87aad46a1a39e31f821e926f03622febff4))
+* **deps:** update dependency hugo-bin to ^0.51.1 ([#250](https://github.com/SocialGouv/bootstrap/issues/250)) ([aead92a](https://github.com/SocialGouv/bootstrap/commit/aead92ab79e103d5da9d9f249d73d059fc85c137))
+* **deps:** update dependency hugo-bin to ^0.51.2 ([#252](https://github.com/SocialGouv/bootstrap/issues/252)) ([86e4c15](https://github.com/SocialGouv/bootstrap/commit/86e4c153c1329eda66a36a223352e18b5a5587df))
+* **deps:** update dependency hugo-bin to ^0.52.0 ([#255](https://github.com/SocialGouv/bootstrap/issues/255)) ([892794a](https://github.com/SocialGouv/bootstrap/commit/892794ab5cc4d16d22d9e3ecf0c2853ad153fe79))
+* **deps:** update dependency hugo-bin to ^0.52.2 ([#257](https://github.com/SocialGouv/bootstrap/issues/257)) ([398a8df](https://github.com/SocialGouv/bootstrap/commit/398a8df4443365c2838418ea2df86a1741aebbff))
+* **deps:** update dependency hugo-bin to ^0.53.1 ([#261](https://github.com/SocialGouv/bootstrap/issues/261)) ([dd7c454](https://github.com/SocialGouv/bootstrap/commit/dd7c4541a37b7206cef880bb60a663746f1c39ba))
+* **deps:** update dependency hugo-bin to ^0.53.2 ([#262](https://github.com/SocialGouv/bootstrap/issues/262)) ([417b411](https://github.com/SocialGouv/bootstrap/commit/417b4115bcd0bf824239caecac0095921931067f))
+* **deps:** update dependency hugo-bin to ^0.53.3 ([#263](https://github.com/SocialGouv/bootstrap/issues/263)) ([300c40b](https://github.com/SocialGouv/bootstrap/commit/300c40b271e23aebaeb2a166b16d4fb76a0219ea))
+* **deps:** update dependency hugo-bin to ^0.54.0 ([#265](https://github.com/SocialGouv/bootstrap/issues/265)) ([aa4f9f5](https://github.com/SocialGouv/bootstrap/commit/aa4f9f53146c1d2388a030015c5b0d7181bc7188))
+* **deps:** update dependency hugo-bin to ^0.55.0 ([#268](https://github.com/SocialGouv/bootstrap/issues/268)) ([3033cda](https://github.com/SocialGouv/bootstrap/commit/3033cdad3e41ead0962548f38763b23a5562088e))
+* **deps:** update dependency hugo-bin to ^0.55.1 ([#270](https://github.com/SocialGouv/bootstrap/issues/270)) ([84c37fd](https://github.com/SocialGouv/bootstrap/commit/84c37fdb9ef9d9ee946fd491f086e9f7d5c23606))
+
+
+
+
+
 # [0.2.0](https://github.com/SocialGouv/bootstrap/compare/v0.1.1...v0.2.0) (2019-12-30)
 
 

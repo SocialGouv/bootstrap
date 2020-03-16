@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/SocialGouv/bootstrap/compare/v0.2.0...v0.2.1) (2020-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency bootstrap to ^4.4.1 ([#232](https://github.com/SocialGouv/bootstrap/issues/232)) ([1ef4adb](https://github.com/SocialGouv/bootstrap/commit/1ef4adb272686e46c58c07f5a754df788ee033a8))
+
+
+
+
+
 # [0.2.0](https://github.com/SocialGouv/bootstrap/compare/v0.1.1...v0.2.0) (2019-12-30)
 
 
