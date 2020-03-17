@@ -19,6 +19,14 @@ install:
   npm_keys: &npm_keys
     - secure: "RP6Vt7h6SopCqQcneCXl87fUHPZGQYl5vO26W/oPZ/zLI7doTg9JPXqwsSXpBfD+zbKd1ZCzJg1ETnHQi2VHueHUT/hvLjdjGW/wU8PGedA3sAxfL8wYGa23v2cJefOX69Fe392liul6YXXo9JFHd6KimH9qu2xmcBsWNXsOh5jHjSI2t9YrVHbRp3MVPTVqM1oMvOSBjlPA3BDIGAWaxLjiwGIAXZT07pzyqjetVGL7moiiYXgoPU7/EOAoSqZdtzg9GmUAsXMpe3gfgxXGruGVWwRQRdHKmg1pCwHLeIg34XSqrXor464LAz2mYOl3chGF127oCBBuaeytkFl523YMv7FCrv4kN9UFgNMz3z66sxst6RQkmtoMjq9+GjbCSLg/PAyg3OYZMP8Ew64mDVuqZfjctT9KW7bigGmE3sluRslkSEA60FqlT/zKFj6FgIzzKVUpnFr1jcNIRCBT+BrTFFuFd3Cl7/T8PIZ+TWTjgB8ed+ra1hTL+vvCUYZiRauSeQMz8bFhsAGXD0SXEflBMor0pgvZKSRxhMjFYXpVUgdO6L/B+vNSN4uqx0klm7RdW310jxgcoHNptthVm02FY3xM++tIkJfVJ+OnTiA6mNpQEjMb+DlCojO6Zf+Zv0TESYp3pjqHjcOyQejahCTnB96edBbVV1WvwB5RRMI="
 
+.deploy_to_ghpages: &deploy_to_ghpages
+  provider: pages
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  local_dir: out
+  skip_cleanup: true
+  target-branch: gh-pages
+
 jobs:
   include:
     - stage: Build
@@ -60,14 +68,12 @@ jobs:
           mv packages/core/package.json out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/package.json
 
       deploy:
-        - provider: pages
-          github-token: "$GITHUB_TOKEN"
-          keep-history: true
-          local_dir: out
-          skip_cleanup: true
-          target-branch: gh-pages
+        - <<: *deploy_to_ghpages
           on:
             branch: master
+
+        - <<: *deploy_to_ghpages
+          on:
             tags: true
 
     - stage: Release
