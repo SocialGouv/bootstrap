@@ -50,6 +50,8 @@ jobs:
 
           mkdir -p out/$TRAVIS_BRANCH/docs &&
           mv docs/public/* out/$TRAVIS_BRANCH/docs &&
+          cp docs/assets/302.html out/index.hml &&
+          cp docs/assets/302.html out/$TRAVIS_BRANCH/index.hml &&
           mkdir -p out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core &&
           mv packages/core/dist out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/dist &&
           mv packages/core/fonts out/$TRAVIS_BRANCH/@socialgouv/bootstrap.core/fonts &&
