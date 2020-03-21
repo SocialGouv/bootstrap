@@ -4883,10 +4883,10 @@ https-proxy-agent@^2.2.3:
     agent-base "^4.3.0"
     debug "^3.1.0"
 
-hugo-bin@^0.55.1:
-  version "0.55.1"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.55.1.tgz#9daa6fd3531a5eb124e17749f603ca72d479114e"
-  integrity sha512-y8//2kuCdH7cTtA8DftTDCmmiG41oHcSfGWHbYQQPc5tqW+wwYvc39h3tm+OhAO+8ohflJYKCntOqRY3M/BJlQ==
+hugo-bin@^0.56.0:
+  version "0.56.0"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.56.0.tgz#72cb13721a6615c5556ced5c1038674e30cee13d"
+  integrity sha512-SZXOicZa1OnrqAuy7RRCPHgxmc3nTRoCwQcxI+b4dTYtscsPFpYAugrlHvUpuANad1oyMaVr/hx92MXhbtAtBg==
   dependencies:
     bin-wrapper "^4.1.0"
     pkg-conf "^3.1.0"
