@@ -6864,10 +6864,10 @@ node-releases@^1.1.52:
   dependencies:
     semver "^6.3.0"
 
-node-sass-yaml-importer@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/node-sass-yaml-importer/-/node-sass-yaml-importer-4.0.0.tgz#66c1d276fe1db35415801037b40d29238de5234e"
-  integrity sha512-32rtQnx0qiXVsAklCYpWizdRmJ1C2ruIZymHnJTM55oOxWVvSAS3lIoR2ZK7RpJyWMwvIDkc8U4eGX2CPmfupw==
+node-sass-yaml-importer@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/node-sass-yaml-importer/-/node-sass-yaml-importer-4.0.1.tgz#27da11fc6295cf4471a9b43d569863f9e3808dfd"
+  integrity sha512-i+NDYtjp1qOYCwD2SarjYYJJoq416MQhSoAM2a0sTvUsnLFMvutkxjRGZJq07o2vtEi3rCHxDnErpv5OkvcFSQ==
   dependencies:
     is-plain-object "^2.0.4"
     js-yaml "^3.8.4"
