@@ -30,7 +30,7 @@
     "chokidar-cli": "^2.1.0",
     "clean-css-cli": "^4.3.0",
     "jest": "^25.3.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "node-sass-yaml-importer": "^4.0.1",
     "nps": "^5.9.12",
