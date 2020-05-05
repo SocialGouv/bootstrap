@@ -16,7 +16,7 @@
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.2.0",
     "live-server": "^1.2.1",
-    "node-sass": "^4.14.0",
+    "node-sass": "^4.14.1",
     "nps": "^5.9.12"
   }
 }
