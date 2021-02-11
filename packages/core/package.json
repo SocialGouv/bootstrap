@@ -23,7 +23,7 @@
   "homepage": "https://github.com/SocialGouv/bootstrap#readme",
   "dependencies": {
     "@socialgouv/bootstrap.tokens": "^0.2.0",
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
