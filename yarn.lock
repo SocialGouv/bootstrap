@@ -7214,10 +7214,10 @@ node-releases@^1.1.70:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.70.tgz#66e0ed0273aa65666d7fe78febe7634875426a08"
   integrity sha512-Slf2s69+2/uAD79pVVQo8uSiC34+g8GWY8UH2Qtqv34ZfhYrxpYpfzs9Js9d6O0mbDmALuxaTlplnBTnSELcrw==
 
-node-sass-yaml-importer@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/node-sass-yaml-importer/-/node-sass-yaml-importer-5.0.0.tgz#5808b73d690ea6b6cd146cfdfd8f4d55750444e8"
-  integrity sha512-LFFQ51c3FR/lrHBJ6YXoRxOE/FErKPh/Jr6zyjRDbkhveAq4j7l5Ue/KaqyWw0mBceVoK39ek07l4672urq9BQ==
+node-sass-yaml-importer@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/node-sass-yaml-importer/-/node-sass-yaml-importer-6.0.0.tgz#caf1fec808607d1404b9c096cc8363ad6981311f"
+  integrity sha512-rBvDlhmoCuLnCe3+mDTGKgMeRFI9v2ueBnWKWGloNEWsUv4eaFrwjs/pYMwgitSs8OsB9mJzzQDPcsGmGcGg7g==
   dependencies:
     is-plain-object "^2.0.4"
     js-yaml "^4.0.0"
