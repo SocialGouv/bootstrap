@@ -2998,11 +2998,12 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-clean-css-cli@^5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-5.4.2.tgz#4b242e0bfd42f25af56633326fbf9c50744502c2"
-  integrity sha512-BYxVOuBQL8f2+yucOgmwUi1idpAQV4k9bxG6mxTrBikuwrkXBG5/Pq6tqCi4GZUtgvslMj8dGVtFSoXp9OLzeA==
+clean-css-cli@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-5.5.0.tgz#86a927e102149a2b950cf4edab045670a70c1a96"
+  integrity sha512-Vr9t8o59YaPcRw/4hyJjEh4zU/BlOtlJJ8465El6QMYWbkf5nN1mhAljX6FIb0bfpkGlYNFKPCyTz7oFCHOblQ==
   dependencies:
+    chokidar "^3.5.2"
     clean-css "^5.2.2"
     commander "7.x"
     glob "^7.1.6"
