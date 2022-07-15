@@ -38,6 +38,6 @@
     "postcss": "^8.4.5",
     "postcss-cli": "^10.0.0",
     "stylelint": "^14.1.0",
-    "stylelint-config-twbs-bootstrap": "^4.0.0"
+    "stylelint-config-twbs-bootstrap": "^5.0.0"
   }
 }
