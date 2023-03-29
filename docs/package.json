@@ -14,7 +14,7 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "chokidar-cli": "^3.0.0",
-    "concurrently": "^7.0.0",
+    "concurrently": "^8.0.0",
     "live-server": "^1.2.1",
     "node-sass": "^8.0.0",
     "nps": "^5.10.0"
