@@ -1788,14 +1788,14 @@
     execa "^5.1.1"
     isexe "^2.0.0"
 
-"@xhmikosr/bin-wrapper@^11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@xhmikosr/bin-wrapper/-/bin-wrapper-11.0.0.tgz#f878f0753cada4a10a6f352a9fb644b46b544cc7"
-  integrity sha512-luT6tORVcLXpumvpgMxtbU10/Xrj5Av09V7WVnsDGnzAEAWZ6WCyGnewfsWmWpDxOwnlka26u5K8BkcfReruLg==
+"@xhmikosr/bin-wrapper@^11.0.2":
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/@xhmikosr/bin-wrapper/-/bin-wrapper-11.0.2.tgz#d07f3aaddc2830d5c4e1e32a3e947ae22ff31c77"
+  integrity sha512-pm71RomgwM9M/2bW6JBqzdNY04DXtdSUIQDj4wKY353eqvTNhc32SwS451EvJVjLb4Nn5/8W9n4+MREn+wCxSA==
   dependencies:
     "@xhmikosr/bin-check" "^6.0.0"
-    "@xhmikosr/downloader" "^13.0.0"
-    bin-version-check "^5.0.0"
+    "@xhmikosr/downloader" "^13.0.1"
+    bin-version-check "^5.1.0"
     os-filter-obj "^2.0.0"
 
 "@xhmikosr/decompress-tar@^7.0.0":
@@ -1836,26 +1836,26 @@
     get-stream "^6.0.1"
     yauzl "^2.10.0"
 
-"@xhmikosr/decompress@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@xhmikosr/decompress/-/decompress-9.0.0.tgz#f23c7b44ac2fb64b467f557baa7b35069250c1e7"
-  integrity sha512-q9Lr02hKKofuKZTqqANpDgNUDCDrs1OEwRj6n13SUv7PlVDsTsoQyo/HP+vAdFhXqwRr09EURt/nRPnimXSbQA==
+"@xhmikosr/decompress@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@xhmikosr/decompress/-/decompress-9.0.1.tgz#e35977739da39bc664e0b49015b402a7cf9b1d91"
+  integrity sha512-9Lvlt6Qdpo9SaRQyRIXCo3lgU++eMZ68lzgjcTwtuKDrlwT635+5zsHZ1yrSx/Blc5IDuVLlPkBPj5CZkx+2+Q==
   dependencies:
     "@xhmikosr/decompress-tar" "^7.0.0"
     "@xhmikosr/decompress-tarbz2" "^7.0.0"
     "@xhmikosr/decompress-targz" "^7.0.0"
     "@xhmikosr/decompress-unzip" "^6.0.0"
     graceful-fs "^4.2.11"
-    make-dir "^3.1.0"
+    make-dir "^4.0.0"
     strip-dirs "^3.0.0"
 
-"@xhmikosr/downloader@^13.0.0":
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/@xhmikosr/downloader/-/downloader-13.0.0.tgz#0f18423fcdef2b572c26b8d5d827437ba652a233"
-  integrity sha512-hQsJZs+KjOW3AY5qBD1CkfJsP5nPHHisjze/iFWinSyOpxtTHhEGJGzn7ejuoajDo8vQR5f/WjoDVy1IHB7uQw==
+"@xhmikosr/downloader@^13.0.1":
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/@xhmikosr/downloader/-/downloader-13.0.1.tgz#8478b36606d2108eb86bff419e1df36d84cc262d"
+  integrity sha512-mBvWew1kZJHfNQVVfVllMjUDwCGN9apPa0t4/z1zaUJ9MzpXjRL3w8fsfJKB8gHN/h4rik9HneKfDbh2fErN+w==
   dependencies:
     "@xhmikosr/archive-type" "^6.0.1"
-    "@xhmikosr/decompress" "^9.0.0"
+    "@xhmikosr/decompress" "^9.0.1"
     content-disposition "^0.5.4"
     ext-name "^5.0.0"
     file-type "^18.5.0"
@@ -2294,14 +2294,14 @@ before-after-hook@^2.2.0:
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.2.3.tgz#c51e809c81a4e354084422b9b26bad88249c517c"
   integrity sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ==
 
-bin-version-check@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/bin-version-check/-/bin-version-check-5.0.0.tgz#958de30174d3fcedadbfc52f89f37bca62594877"
-  integrity sha512-Q3FMQnS5eZmrBGqmDXLs4dbAn/f+52voP6ykJYmweSA60t6DyH4UTSwZhtbK5UH+LBoWvDljILUQMLRUtsynsA==
+bin-version-check@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/bin-version-check/-/bin-version-check-5.1.0.tgz#788e80e036a87313f8be7908bc20e5abe43f0837"
+  integrity sha512-bYsvMqJ8yNGILLz1KP9zKLzQ6YpljV3ln1gqhuLkUtyfGi3qXKGuK2p+U4NAvjVFzDFiBBtOpCOSFNuYYEGZ5g==
   dependencies:
     bin-version "^6.0.0"
-    semver "^7.3.5"
-    semver-truncate "^2.0.0"
+    semver "^7.5.3"
+    semver-truncate "^3.0.0"
 
 bin-version@^6.0.0:
   version "6.0.0"
@@ -4271,12 +4271,12 @@ https-proxy-agent@^5.0.0:
     agent-base "6"
     debug "4"
 
-hugo-bin@^0.110.0:
-  version "0.110.0"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.110.0.tgz#b09fbed41975d9912cd53ea20ca69930aa5c9857"
-  integrity sha512-VFMF7JIUytrHtwbjdFAcnySnHg2ZuiaVEuzU9dzBI0YoEp0VNRzU5dnU5GqRME/Q3UoN6Zt/2pHOMR8Hr90sYQ==
+hugo-bin@^0.111.0:
+  version "0.111.0"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.111.0.tgz#1b86247b3665827871afa013fef817d8822fb072"
+  integrity sha512-raVol9zsi91AtNIds9hcjNTuLBiolrlfPonM8CohcrBlthAJX6bqFDkPYkqa2rF/HupkQEHvMSkaIw1nRmwnbA==
   dependencies:
-    "@xhmikosr/bin-wrapper" "^11.0.0"
+    "@xhmikosr/bin-wrapper" "^11.0.2"
     pkg-conf "^4.0.0"
 
 human-signals@^2.1.0:
@@ -5516,7 +5516,7 @@ lru-cache@^9.1.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.1.2.tgz#255fdbc14b75589d6d0e73644ca167a8db506835"
   integrity sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==
 
-make-dir@3.1.0, make-dir@^3.0.0, make-dir@^3.1.0:
+make-dir@3.1.0, make-dir@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
   integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
@@ -5530,6 +5530,13 @@ make-dir@^2.1.0:
   dependencies:
     pify "^4.0.1"
     semver "^5.6.0"
+
+make-dir@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-4.0.0.tgz#c3c2307a771277cd9638305f915c29ae741b614e"
+  integrity sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==
+  dependencies:
+    semver "^7.5.3"
 
 make-fetch-happen@^10.0.3, make-fetch-happen@^10.0.4:
   version "10.2.1"
@@ -7386,12 +7393,12 @@ semver-regex@^4.0.5:
   resolved "https://registry.yarnpkg.com/semver-regex/-/semver-regex-4.0.5.tgz#fbfa36c7ba70461311f5debcb3928821eb4f9180"
   integrity sha512-hunMQrEy1T6Jr2uEVjrAIqjwWcQTgOAcIM52C8MY1EZSD3DDNft04XzvYKPqjED65bNVVko0YI38nYeEHCX3yw==
 
-semver-truncate@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/semver-truncate/-/semver-truncate-2.0.0.tgz#cce4c0af36dbd97e898b821be870d17fbfb67f56"
-  integrity sha512-Rh266MLDYNeML5h90ttdMwfXe1+Nc4LAWd9X1KdJe8pPHP4kFmvLZALtsMNHNdvTyQygbEC0D59sIz47DIaq8w==
+semver-truncate@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/semver-truncate/-/semver-truncate-3.0.0.tgz#0e3b4825d4a4225d8ae6e7c72231182b42edba40"
+  integrity sha512-LJWA9kSvMolR51oDE6PN3kALBNaUdkxzAGcexw8gjMA8xr5zUqK0JiR3CgARSqanYF3Z1YHvsErb1KDgh+v7Rg==
   dependencies:
-    semver "^6.0.0"
+    semver "^7.3.5"
 
 "semver@2 || 3 || 4 || 5", semver@^5.6.0:
   version "5.7.1"
@@ -7410,10 +7417,10 @@ semver@^6.0.0, semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8:
-  version "7.5.1"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.1.tgz#c90c4d631cf74720e46b21c1d37ea07edfab91ec"
-  integrity sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==
+semver@^7.0.0, semver@^7.1.1, semver@^7.3.4, semver@^7.3.5, semver@^7.3.7, semver@^7.3.8, semver@^7.5.3:
+  version "7.5.3"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.3.tgz#161ce8c2c6b4b3bdca6caadc9fa3317a4c4fe88e"
+  integrity sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==
   dependencies:
     lru-cache "^6.0.0"
 
